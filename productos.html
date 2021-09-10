@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <meta name="keywords" content="importacion, venta, tienda, descuentos">
+    <mata name="description" content="Somos Art Vandelay. Conozca nuestros productos y promociones">
+    <link href="https://fonts.googleapis.com/css2?family=Maiden+Orange&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
+    <title>Art Vandelay - Productos</title>
+</head>
+<body>
+    <div class="contenedorPrincipal">
+        <header class="sticky-top">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="menu container-fluid">
+                    <a class="navbar-brand" href="index.html"><img class="menu__logo" src="assets/logo.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="menucollapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="menu__enlaces nav-link fs-3 text-white" aria-current="page" href="index.html">Home</a>
+                            <a class="menu__enlaces nav-link fs-3 text-white" href="historia.html">Historia</a>
+                            <a class="menu__enlaces nav-link fs-3 disabled" href="productos.html">Productos</a>
+                            <a class="menu__enlaces nav-link fs-3 text-white" href="ubicacion.html">Ubicacion</a>
+                            <a class="menu__enlaces nav-link fs-3 text-white" href="contacto.html">Contacto</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!--contenido exclusivo de seccion productos-->
+        <main class="portada">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="./assets/productosDestacados.jpg" class="portada__foto d-block w-100" alt="Libro The Book of Coffe Table">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="./assets/imgCuatro.jpg" class="portada__foto d-block w-100" alt="Campera reforzada de Gore Tex">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="./assets/imgSeis.jpg" class="portada__foto d-block w-100" alt="Bolígrafo anti-gravedad">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                </div>
+        </main>
+        <div class="containerTres row mx-auto">
+            <section class="secciones secciones--encabezado col-xs-12 col-md-12 mx-auto">
+                <h1 class="secciones__titulos text-center">CONOZCA NUESTROS PRODUCTOS</h1>
+                <p class="secciones__texto text-center">A continuación les presentamos los productos más destacados de este mes. Aproveche las imperdibles promociones y téngalos ya en su casa</p>
+            </section>
+            <section id="gore" class="secciones secciones--productos col-xs-12 col-md-4">
+                <h2 class="secciones__subtitulos text-center">Campera Gore Tex</h2>
+                <img class="secciones__foto rounded mx-auto d-block" src="./assets/imgCuatro.jpg" alt="campera Gore Tex">
+                <p>Aíslese del frió con la distinguida campera Gore Tex. Confeccionada con la mejor materia prima, lo distanciará del frio y probablemente del resto de la sociedad</p>
+            </section>
+            <section id="dispenser" class="secciones secciones--productos col-xs-12 col-md-4">
+                <h2 class="secciones__subtitulos text-center">Pez Dispenser</h2>
+                <img class="secciones__foto rounded mx-auto d-block" src="./assets/imgCinco.png" alt="Dispenser para golosinas Marca Pez">
+                <p class="secciones__texto">Este Pez Dispenser es un objeto escencial al monento de llevar sus pastillas favoritas. Golosinas o medicamentos llevados con un gracia especial que lo destacará sobre el resto de las personas</p>
+            </section>
+            <section id="boligrafo" class="secciones secciones--productos col-xs-12 col-md-4">
+                <h2 class="secciones__subtitulos text-center">Bolígrafo anti-gravedad NASA</h2>
+                <img class="secciones__foto rounded mx-auto d-block" src="./assets/imgSeis.jpg" alt="Bolígrafo anti-gravedad">
+                <p class="secciones__texto">Olvídese de tomar notas sobre la espalda de otra persona, con este bolígrafo diseñado por la NASA usted podrá realizar anotaciones en las condiciones mas extremas, incluso contra el techo de su casa</p>
+            </section>
+        </div>
+        <!-- fin del contenido exclusivo de seccion productos-->
+        <aside class="informacion"><!--comparte estructura y estilo con todas las secciones-->
+            <ul class="informacion__enlaces nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="http://www.infoleg.gob.ar/" target="blank">Legales</a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Redes</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="http://facebook.com" target="blank">Facebook</a></li>
+                    <li><a class="dropdown-item" href="http://Twitter.com" target="blank">Twitter</a></li>
+                    <li><a class="dropdown-item" href="http://Instagram.com" target="blank">Instagram</a></li>
+                </ul>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="https://www.argentina.gob.ar/produccion/defensadelconsumidor" target="blank">Defensa del Consumidor</a>
+                </li>
+            </ul>
+        </aside>
+        <footer class="footer">
+            <div class="footer__map">
+                <ul class="footer__secciones">
+                    <li><a href="historia.html">Historia</a>
+                        <ul class="footer__articulos">
+                            <li><a href="historia.html#art">Art Vandelay</a></li>
+                            <li><a href="historia.html#origenes">Origenes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="productos.html">Productos</a>
+                        <ul class="footer__articulos">
+                            <li><a href="productos.html#gore">Campera Gore Tex</a></li>
+                            <li><a href="productos.html#dispenser">Pez Dispenser</a></li>
+                            <li><a href="productos.html#boligrafo">Bolígrafo anti-Gravedad</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="ubicacion.html">Ubicacion</a>
+                        <ul class="footer__articulos">
+                            <li><a href="ubicacion.html#central">Casa Central</a></li>
+                            <li><a href="ubicacion.html#instalaciones">Instalaciones</a></li>
+                            <li><a href="ubicacion.html#oficinas">Nuestras oficinas</a></li>
+                            <li><a href="ubicacion.html#staff">Staff</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contacto">Contacto</a>
+                        <ul class="footer__articulos">
+                            <li><a href="contacto.html#formulario">Formulario<br>de contacto</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__sucursales">
+                <h2>Visitenos en nuestras Sucursales:</h2>
+                <ul>
+                    <li>Casa Central: Paseo Colón N° 1857, Piso 7, Depto. "Z", CABA</li>
+                    <li>Centro de Logística: Av. Córdoba N° 525, CABA</li>
+                    <li>Sucursal Zona Norte: Av. del Libertador 1525, Vicente Lopez</li>
+                    <li>Sucursal Zona Oeste: Av. Rivadavia N° 16251, Piso 1°, Depto. "F", Haedo</li>
+                    <li>Sucursal Zona Sur: Av. Hipólito Yrigoyen 11021, Adrogué</li>
+                </ul>
+            </div>
+            <div class="footer__contacto">
+                <h2>Para más información contáctenos en:</h2>
+                <ul>
+                    <li>Teléfono: 5555-5555</li>
+                    <li>whattsap: 115-555-5555</li>
+                </ul>
+                <label for="mail">Ingrese su dirección de Mail para recibir ofertas y novedades</label>
+                <input type="email" name="mail" id="mail"><br><br>
+            </div>
+            <p class="text-center">Todos los derechos reservados. 2021</p>
+        </footer>   
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <meta name="keywords" content="importacion, venta, tienda, descuentos">
+    <mata name="description" content="Somos Art Vandelay. Conozca los orígenes y trayectoria de nuestra empresa">
+    <link href="https://fonts.googleapis.com/css2?family=Maiden+Orange&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
+    <title>Art Vandelay - Historia</title>
+</head>
+<body>
+    <div class="contenedorPrincipal mx-auto">
+        <header class="sticky-top">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="menu container-fluid">
+                    <a class="navbar-brand" href="index.html"><img class="menu__logo" src="assets/logo.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="menucollapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="menu__enlaces nav-link fs-3 text-white" aria-current="page" href="index.html">Home</a>
+                            <a class="menu__enlaces nav-link disabled fs-3" href="historia.html">Historia</a>
+                            <a class="menu__enlaces nav-link fs-3 text-white" href="productos.html">Productos</a>
+                            <a class="menu__enlaces nav-link fs-3 text-white" href="ubicacion.html">Ubicacion</a>
+                            <a class="menu__enlaces nav-link fs-3 text-white" href="contacto.html">Contacto</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!--contenido exclusivo de seccion historia-->
+        <main id="art" class="row mx-auto secciones secciones--encabezado"><!--la clase secciones da estilo a historia, productos, ubicación y contacto-->
+            <h1 class="secciones__titulos col-xs-9 col-md-9">Art Vandelay</h1>
+            <img class="col-xs-6 col-md-3" src="./assets/art.jpg" alt="Art Vandelay, Fundador de la empresa">
+            <p class="secciones__texto col-xs-12 col-md-9">Fundador y ceo esta empresa. Recibido de Arquitecto en la Universidad de Anaheim California, sin embargo siempre tuvo una fuerte orientación hacia el comercio. En sus inicios trabajó en la venta de productos de latex para luego dedicarse de lleno a las importaciones.</p>
+        </main>
+        <section id="origenes" class="secciones">
+            <article>
+                <h2 class="secciones__titulos">Los orígenes de nuestra empresa</h2>
+                <p class="secciones__texto">Luego de un breve paso por la industria editorial, Art Vandelay decidió llevar adelante su sueño y fundar ART VANDELAY INDUSTRIES, donde en sus inicios se dedicó a la producción y venta de productos de latex.<br><br> Tras la consolidación y crecimiento de la empresa y ante las nuevas necesidades que se generan en un mercado global, es que se amplio el aspectro de la empresa a la importación de productos tecnológicos y demás esenciales para la vida moderna.</p>
+            </article> 
+        </section>
+        <section class="row mx-auto secciones">
+            <img class="col-xs-6 col-md-4 imgUno bordeImagenes" src="./assets/imgTres.jfif" alt="Art Vandelay Trabajando">
+            <img class="col-xs-6 col-md-4 imgDos bordeImagenes" src="./assets/imgUno.jpg" alt="Art Vandelay pensando">
+            <img class="col-xs-6 col-md-4 imgTres bordeImagenes" src="./assets/imgDos.gif" alt="Art Vandelay en su oficina"> 
+        </section>
+        <!-- fin del contenido exclusivo de la seccion historia-->
+        <aside class="informacion"><!--comparte estructura y estilo con todas las secciones-->
+            <ul class="informacion__enlaces nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="http://www.infoleg.gob.ar/" target="blank">Legales</a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Redes</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="http://facebook.com" target="blank">Facebook</a></li>
+                    <li><a class="dropdown-item" href="http://Twitter.com" target="blank">Twitter</a></li>
+                    <li><a class="dropdown-item" href="http://Instagram.com" target="blank">Instagram</a></li>
+                </ul>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="https://www.argentina.gob.ar/produccion/defensadelconsumidor" target="blank">Defensa del Consumidor</a>
+                </li>
+            </ul>
+        </aside>
+        <footer class="footer">
+            <div class="footer__map">
+                <ul class="footer__secciones">
+                    <li><a href="historia.html">Historia</a>
+                        <ul class="footer__articulos">
+                            <li><a href="historia.html#art">Art Vandelay</a></li>
+                            <li><a href="historia.html#origenes">Origenes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="productos.html">Productos</a>
+                        <ul class="footer__articulos">
+                            <li><a href="productos.html#gore">Campera Gore Tex</a></li>
+                            <li><a href="productos.html#dispenser">Pez Dispenser</a></li>
+                            <li><a href="productos.html#boligrafo">Bolígrafo anti-Gravedad</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="ubicacion.html">Ubicacion</a>
+                        <ul class="footer__articulos">
+                            <li><a href="ubicacion.html#central">Casa Central</a></li>
+                            <li><a href="ubicacion.html#instalaciones">Instalaciones</a></li>
+                            <li><a href="ubicacion.html#oficinas">Nuestras oficinas</a></li>
+                            <li><a href="ubicacion.html#staff">Staff</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contacto">Contacto</a>
+                        <ul class="footer__articulos">
+                            <li><a href="contacto.html#formulario">Formulario<br>de contacto</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__sucursales">
+                <h2>Visitenos en nuestras Sucursales:</h2>
+                <ul>
+                    <li>Casa Central: Paseo Colón N° 1857, Piso 7, Depto. "Z", CABA</li>
+                    <li>Centro de Logística: Av. Córdoba N° 525, CABA</li>
+                    <li>Sucursal Zona Norte: Av. del Libertador 1525, Vicente Lopez</li>
+                    <li>Sucursal Zona Oeste: Av. Rivadavia N° 16251, Piso 1°, Depto. "F", Haedo</li>
+                    <li>Sucursal Zona Sur: Av. Hipólito Yrigoyen 11021, Adrogué</li>
+                </ul>
+            </div>
+            <div class="footer__contacto">
+                <h2>Para más información contáctenos en:</h2>
+                <ul>
+                    <li>Teléfono: 5555-5555</li>
+                    <li>whattsap: 115-555-5555</li>
+                </ul>
+                <label for="mail">Ingrese su dirección de Mail para recibir ofertas y novedades</label>
+                <input type="email" name="mail" id="mail"><br><br>
+            </div>
+            <p class="text-center">Todos los derechos reservados. 2021</p>
+        </footer>     
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    </body>
+</html>
