@@ -60,7 +60,6 @@ header {
   height: 135px;
   display: flex;
   align-content: center;
-  justify-content: space-between;
   box-sizing: border-box; }
 
 .menu {
