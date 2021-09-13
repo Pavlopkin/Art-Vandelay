@@ -1,7 +1,7 @@
 /*variables*/
 $titulos: 2.5em;
 $medidaFotos: 180px;
-$tamanoPortada: 600px;
+$tamanoPortada: 540px;
 
 
 @mixin titulos($width, $heigth, $font-size, $padding, $background-color, $color, $box-sizing){
@@ -20,14 +20,6 @@ $tamanoPortada: 600px;
     }
     100%{
         opacity: 1;
-    }
-}
-@keyframes inicio{
-    0% {
-        margin-top: -100%;
-    }
-    100%{
-        margin-top: none;
     }
 }
 @keyframes animacionUno {
@@ -65,32 +57,33 @@ $tamanoPortada: 600px;
 *{
     margin:0;
     padding:0;
+    font-family: calibri;
 }
 body{
     width: 100vw;
-    background-color: rgb(203, 230, 243);
+    background-color: white;
 }
 .contenedorPrincipal{
     margin: auto;
     width: 98%;
     max-width: 1100px;
     height: auto;
-    background-color: rgb(96, 216, 216);
+    background: linear-gradient(234deg, rgba(12,189,208,1) 41%, rgba(52,95,162,1) 72%);
     animation-name: aparece;
     animation-duration: 3s;
 }
 header{
-    background-color: rgb(96, 216, 216);
+    background: linear-gradient(234deg, rgba(12,189,208,1) 41%, rgba(52,95,162,1) 72%);
     height: 135px;
     display: flex;
     align-content: center;
     box-sizing: border-box;
 }
 .menu{
-    background-color: rgb(96, 216, 216);;
     .menu__logo{
         width: 100px;
         opacity: 0.7;
+        margin-right: 50px;
     }
     .menu__logo:hover{
         transform: scale(1.1,1.1);
@@ -98,16 +91,8 @@ header{
         transition: 1s;
     }
     .menu__enlaces{
-        font-size: 2em;
-        font-weight: 900;
-        font-family: Arial, Helvetica, sans-serif;
-        text-align: center;
-        border-radius: 25%;
-        margin-right: 25px;
-    }
-    .menu__enlaces:hover{
-        transform: scale(1.2,1.2);
-        transition: 1s;
+        margin-left: 30px;
+        font-size: $titulos/1.3;
     }
 }
 .informacion{
@@ -121,22 +106,9 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: rgb(96, 216, 216);
+    background: linear-gradient(234deg, rgba(12,189,208,1) 41%, rgba(52,95,162,1) 72%);
     height: auto;
     color: rgb(33, 2, 73);
-    .footer__map{
-        background-color: rgb(96, 178, 216);
-        width: 100%;
-        height: auto;
-        text-align: center;
-        text-decoration: none;
-        padding: 25px 10px 0px 10px;
-        margin-bottom: 25px;
-        a{
-            color: rgb(195, 255, 255);
-            text-decoration: none;
-        }
-    }
     .footer__secciones{
         display: flex;
         justify-content: space-around;
@@ -190,43 +162,22 @@ header{
         font-weight: 600;
     }
 }
-/*solo para actividad seo II*/
-.activarError{
-    background-color: white;
-    text-align: center;
-    height: 80px;
-    padding: 10px;
-    a{
-        text-decoration: none;
-        animation-name: Texto;
-        animation-duration: 2.5s;
-        animation-iteration-count: infinite;
-    }
-}
 /*index.html*/
 .portada{
-    animation-name: inicio;
-    animation-duration: 2s;
     .portada__foto{
         height: $tamanoPortada;
     }
 }
-.slogan{
-    background-color: rgb(96, 216, 216);
-    text-align: center;
-    padding: 20px 0;
-    height: auto;
-    box-sizing: border-box;
-}
-@for $i from 3 through 5 {
-    h#{$i}{
-        font-size: 80px - ($i*8);
-        font-weight: 1000 - ($i*10);
+.titulos{
+    h1{
+        text-align: center;
+        @include titulos (100%, 60px, $titulos, 0, rgba(24, 219, 245, 0.301), rgb(254, 254, 255), border-box);
     }
 }
 .flyer{
     display: flex;
-    background-color: rgb(178, 248, 248);
+    background: rgb(12,189,208);
+    background: linear-gradient(71deg, rgba(12,189,208,0.33133247800586507) 41%, rgba(52,95,162,0.4838251466275659) 72%);
     height: 300px;
     justify-content: center;
     align-items: center;
@@ -250,7 +201,7 @@ header{
     }
 }
 .flyer--colores{
-    background-color: rgb(96, 178, 216);
+    background: linear-gradient(234deg, rgba(12,189,208,1) 41%, rgba(52,95,162,1) 72%);
     color: white;
 }
 /*el bloque secciones da estilos al contenido de las siguientes secciones: 
@@ -359,6 +310,10 @@ historia - poductos - ubicacion - contacto*/
 
 /*responsive*/
 @media screen and (max-width: 770px) { 
+    .menu__desplegable{
+        background-image: linear-gradient(40deg, #71a874 0, #67a97b 5.56%, #5daa82 11.11%, #53ab8a 16.67%, #48ab92 22.22%, #3cac99 27.78%, #30aca1 33.33%, #23aca9 38.89%, #16abb1 44.44%, #07abb8 50%, #02aabf 55.56%, #0ba9c5 61.11%, #1ba8cb 66.67%, #2ba7cf 72.22%, #3aa5d3 77.78%, #49a3d6 83.33%, #57a1d8 88.89%, #659fda 94.44%, #729dda 100%);
+        opacity: 0.8;
+    }
     .footer{
         height: auto;
         .footer__contacto{
@@ -398,6 +353,7 @@ historia - poductos - ubicacion - contacto*/
         background-size: contain;
         height: 50px;
     }
+    
 }
 @media screen and (max-width: 480px) {
     .flyer{
