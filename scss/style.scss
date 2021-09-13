@@ -1,6 +1,6 @@
 /*variables*/
 $titulos: 2.5em;
-$medidaFotos: 180px;
+$medidaFotos: 200px;
 $tamanoPortada: 540px;
 
 
@@ -171,7 +171,7 @@ header{
 .titulos{
     h1{
         text-align: center;
-        @include titulos (100%, 60px, $titulos, 0, rgba(24, 219, 245, 0.301), rgb(254, 254, 255), border-box);
+        @include titulos (100%, 60px, $titulos, 0, rgba(3, 37, 151, 0.815), rgb(254, 254, 255), border-box);
     }
 }
 .flyer{
@@ -195,9 +195,35 @@ header{
         font-size: $titulos;
         width: 30%;
     }
+    .flyer__enlaces{
+        display: block;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
     .flyer__foto{
         height: $medidaFotos;
         width: $medidaFotos;
+    }
+    .flyer__foto--Uno{
+        background-image: url(../assets/prodCuatro.JPG);
+        background-size: cover;
+    }
+    .flyer__foto--Dos{
+        background-image: url(../assets/prodUno.jpg);
+        background-size: cover;
+    }
+    .flyer__foto--Tres{
+        background-image: url(../assets/prodDos.JPG);
+        background-size: cover;
+    }
+    .flyer__foto--Cuatro{
+        background-image: url(../assets/prodTres.JPG);
+        background-size: cover;
+    }
+    .flyer__foto:hover{
+        background-image: url(../assets/carro.png);
+        transition: 1s;
     }
 }
 .flyer--colores{

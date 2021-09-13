@@ -135,7 +135,7 @@ header {
   height: 60px;
   font-size: 2.5em;
   padding: 0;
-  background-color: rgba(24, 219, 245, 0.301);
+  background-color: rgba(3, 37, 151, 0.815);
   color: #fefeff;
   box-sizing: border-box; }
 
@@ -158,9 +158,29 @@ header {
   .flyer .flyer__texto {
     font-size: 2.5em;
     width: 30%; }
+  .flyer .flyer__enlaces {
+    display: block;
+    margin: auto;
+    display: flex;
+    justify-content: center; }
   .flyer .flyer__foto {
-    height: 180px;
-    width: 180px; }
+    height: 200px;
+    width: 200px; }
+  .flyer .flyer__foto--Uno {
+    background-image: url(../assets/prodCuatro.JPG);
+    background-size: cover; }
+  .flyer .flyer__foto--Dos {
+    background-image: url(../assets/prodUno.jpg);
+    background-size: cover; }
+  .flyer .flyer__foto--Tres {
+    background-image: url(../assets/prodDos.JPG);
+    background-size: cover; }
+  .flyer .flyer__foto--Cuatro {
+    background-image: url(../assets/prodTres.JPG);
+    background-size: cover; }
+  .flyer .flyer__foto:hover {
+    background-image: url(../assets/carro.png);
+    transition: 1s; }
 
 .flyer--colores {
   background: linear-gradient(234deg, #0cbdd0 41%, #345fa2 72%);
@@ -285,8 +305,8 @@ historia - poductos - ubicacion - contacto*/
   .flyer .flyer__titulo {
     font-size: 1.66667em; }
   .flyer .flyer__foto {
-    width: 120px;
-    height: 120px;
+    width: 133.33333px;
+    height: 133.33333px;
     margin: 5px; }
   .flyer--largo {
     height: auto;
@@ -306,8 +326,8 @@ historia - poductos - ubicacion - contacto*/
   .flyer .flyer__titulo {
     font-size: 1.47059em; }
   .flyer .flyer__foto {
-    width: 105.88235px;
-    height: 105.88235px; }
+    width: 117.64706px;
+    height: 117.64706px; }
   .activarError a {
     text-decoration: none;
     animation-name: TextoResp;
