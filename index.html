@@ -13,20 +13,30 @@
 <body>
     <div class="contenedorPrincipal mx-auto"><!--Contenedor principal comun a todas las secciones-->
         <header class="sticky-top"><!--comparte estructura y estilo con todas las secciones-->
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="menu container-fluid"><!--BLOQUE 1-->
-                    <a class="navbar-brand" href="index.html"><img class="menu__logo" src="assets/logo.png" alt="Logo empresa: Art Vandelay Industries"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+            <nav class="menu navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a href=""><img class="menu__logo" src="./assets/logo.png" alt="Logo Art Vandelay"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="menucollapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                            <a class="menu__enlaces nav-link disabled fs-3" aria-current="page" href="index.html">Home</a>
-                            <a class="menu__enlaces nav-link fs-3 text-white" href="historia.html">Historia</a>
-                            <a class="menu__enlaces nav-link fs-3 text-white" href="productos.html">Productos</a>
-                            <a class="menu__enlaces nav-link fs-3 text-white" href="ubicacion.html">Ubicacion</a>
-                            <a class="menu__enlaces nav-link fs-3 text-white" href="contacto.html">Contacto</a>
-                        </div>
+                    <div class="menu__desplegable collapse navbar-collapse" id="navbarTogglerDemo01">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="menu__enlaces nav-link fw-bold text-muted disabled" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="menu__enlaces nav-link fw-bold text-white" href="historia.html">Historia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="menu__enlaces nav-link fw-bold text-white" href="productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="menu__enlaces nav-link fw-bold text-white" href="ubicacion.html">Ubicacion</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="menu__enlaces nav-link fw-bold text-white" href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </nav>
@@ -42,15 +52,15 @@
         </section>
         <section class="flyer justify-content-evenly">
             <img class="flyer__foto" src="./assets/suc.png" alt="dibujo sucursales">
-            <p class="flyer__texto">Atención personalizada en nuestras sucursales</p>
+            <h2 class="flyer__texto">Atención personalizada en nuestras sucursales</h2>
         </section>
         <section class="flyer flyer--colores justify-content-evenly">
             <img class="flyer__foto" src="./assets/envio.png" alt="camion logística">
-            <p class="flyer__texto">Envíos a todo el pais</p>
+            <h2 class="flyer__texto">Envíos a todo el pais</h2>
             <img class="flyer__foto" src="./assets/mapa.png" alt="mapa argentina">
         </section>
         <section class="flyer justify-content-evenly">
-            <p class="flyer__texto">Servicio post-venta las 24 hs</p>
+            <h2 class="flyer__texto">Servicio post-venta las 24 hs</h2>
             <img class="flyer__foto" src="./assets/serviciopostventa.png" alt="atención telefónica">
         </section>
         <!--fin del contenido exclusivo de la página principal-->

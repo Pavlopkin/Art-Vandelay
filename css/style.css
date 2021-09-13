@@ -7,12 +7,6 @@
   100% {
     opacity: 1; } }
 
-@keyframes inicio {
-  0% {
-    margin-top: -100%; }
-  100% {
-    margin-top: none; } }
-
 @keyframes animacionUno {
   0% {
     border: #4d4dd6 3px solid; }
@@ -40,48 +34,46 @@
 /*Estilo común a todas las secciones*/
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: calibri; }
 
 body {
   width: 100vw;
+<<<<<<< HEAD
   background-color: #f30000; }
+=======
+  background-color: white; }
+>>>>>>> menu
 
 .contenedorPrincipal {
   margin: auto;
   width: 98%;
   max-width: 1100px;
   height: auto;
-  background-color: #60d8d8;
+  background: linear-gradient(234deg, #0cbdd0 41%, #345fa2 72%);
   animation-name: aparece;
   animation-duration: 3s; }
 
 header {
-  background-color: #60d8d8;
+  background: linear-gradient(234deg, #0cbdd0 41%, #345fa2 72%);
   height: 135px;
   display: flex;
   align-content: center;
-  justify-content: space-between;
   box-sizing: border-box; }
 
-.menu {
-  background-color: #60d8d8; }
-  .menu .menu__logo {
-    width: 100px;
-    opacity: 0.7; }
-  .menu .menu__logo:hover {
-    transform: scale(1.1, 1.1);
-    opacity: 0.9;
-    transition: 1s; }
-  .menu .menu__enlaces {
-    font-size: 2em;
-    font-weight: 900;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    border-radius: 25%;
-    margin-right: 25px; }
-  .menu .menu__enlaces:hover {
-    transform: scale(1.2, 1.2);
-    transition: 1s; }
+.menu .menu__logo {
+  width: 100px;
+  opacity: 0.7;
+  margin-right: 50px; }
+
+.menu .menu__logo:hover {
+  transform: scale(1.1, 1.1);
+  opacity: 0.9;
+  transition: 1s; }
+
+.menu .menu__enlaces {
+  margin-left: 30px;
+  font-size: 1.92308em; }
 
 .informacion {
   background-color: white; }
@@ -93,20 +85,9 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: #60d8d8;
+  background: linear-gradient(234deg, #0cbdd0 41%, #345fa2 72%);
   height: auto;
   color: #210249; }
-  .footer .footer__map {
-    background-color: #60b2d8;
-    width: 100%;
-    height: auto;
-    text-align: center;
-    text-decoration: none;
-    padding: 25px 10px 0px 10px;
-    margin-bottom: 25px; }
-    .footer .footer__map a {
-      color: #c3ffff;
-      text-decoration: none; }
   .footer .footer__secciones {
     display: flex;
     justify-content: space-around; }
@@ -148,47 +129,24 @@ header {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600; }
 
-/*solo para actividad seo II*/
-.activarError {
-  background-color: white;
-  text-align: center;
-  height: 80px;
-  padding: 10px; }
-  .activarError a {
-    text-decoration: none;
-    animation-name: Texto;
-    animation-duration: 2.5s;
-    animation-iteration-count: infinite; }
-
 /*index.html*/
-.portada {
-  animation-name: inicio;
-  animation-duration: 2s; }
-  .portada .portada__foto {
-    height: 600px; }
+.portada .portada__foto {
+  height: 540px; }
 
-.slogan {
-  background-color: #60d8d8;
+.titulos h1 {
   text-align: center;
-  padding: 20px 0;
-  height: auto;
+  width: 100%;
+  height: 60px;
+  font-size: 2.5em;
+  padding: 0;
+  background-color: rgba(3, 37, 151, 0.815);
+  color: #fefeff;
   box-sizing: border-box; }
-
-h3 {
-  font-size: 56px;
-  font-weight: 970; }
-
-h4 {
-  font-size: 48px;
-  font-weight: 960; }
-
-h5 {
-  font-size: 40px;
-  font-weight: 950; }
 
 .flyer {
   display: flex;
-  background-color: #b2f8f8;
+  background: #0cbdd0;
+  background: linear-gradient(71deg, rgba(12, 189, 208, 0.331332) 41%, rgba(52, 95, 162, 0.483825) 72%);
   height: 300px;
   justify-content: center;
   align-items: center;
@@ -204,12 +162,32 @@ h5 {
   .flyer .flyer__texto {
     font-size: 2.5em;
     width: 30%; }
+  .flyer .flyer__enlaces {
+    display: block;
+    margin: auto;
+    display: flex;
+    justify-content: center; }
   .flyer .flyer__foto {
-    height: 180px;
-    width: 180px; }
+    height: 200px;
+    width: 200px; }
+  .flyer .flyer__foto--Uno {
+    background-image: url(../assets/prodCuatro.JPG);
+    background-size: cover; }
+  .flyer .flyer__foto--Dos {
+    background-image: url(../assets/prodUno.jpg);
+    background-size: cover; }
+  .flyer .flyer__foto--Tres {
+    background-image: url(../assets/prodDos.JPG);
+    background-size: cover; }
+  .flyer .flyer__foto--Cuatro {
+    background-image: url(../assets/prodTres.JPG);
+    background-size: cover; }
+  .flyer .flyer__foto:hover {
+    background-image: url(../assets/carro.png);
+    transition: 1s; }
 
 .flyer--colores {
-  background-color: #60b2d8;
+  background: linear-gradient(234deg, #0cbdd0 41%, #345fa2 72%);
   color: white; }
 
 /*el bloque secciones da estilos al contenido de las siguientes secciones: 
@@ -317,6 +295,9 @@ historia - poductos - ubicacion - contacto*/
 
 /*responsive*/
 @media screen and (max-width: 770px) {
+  .menu__desplegable {
+    background-image: linear-gradient(40deg, #71a874 0, #67a97b 5.56%, #5daa82 11.11%, #53ab8a 16.67%, #48ab92 22.22%, #3cac99 27.78%, #30aca1 33.33%, #23aca9 38.89%, #16abb1 44.44%, #07abb8 50%, #02aabf 55.56%, #0ba9c5 61.11%, #1ba8cb 66.67%, #2ba7cf 72.22%, #3aa5d3 77.78%, #49a3d6 83.33%, #57a1d8 88.89%, #659fda 94.44%, #729dda 100%);
+    opacity: 0.8; }
   .footer {
     height: auto; }
     .footer .footer__contacto {
@@ -328,17 +309,17 @@ historia - poductos - ubicacion - contacto*/
   .flyer .flyer__titulo {
     font-size: 1.66667em; }
   .flyer .flyer__foto {
-    width: 120px;
-    height: 120px;
+    width: 133.33333px;
+    height: 133.33333px;
     margin: 5px; }
   .flyer--largo {
     height: auto;
     padding: 20px;
     box-sizing: border-box; }
   .portada .portada__foto {
-    max-height: 300px; }
+    max-height: 270px; }
   .carousel-inner {
-    height: 300px; }
+    height: 270px; }
   .banner {
     background-size: contain;
     height: 50px; } }
@@ -349,8 +330,8 @@ historia - poductos - ubicacion - contacto*/
   .flyer .flyer__titulo {
     font-size: 1.47059em; }
   .flyer .flyer__foto {
-    width: 105.88235px;
-    height: 105.88235px; }
+    width: 117.64706px;
+    height: 117.64706px; }
   .activarError a {
     text-decoration: none;
     animation-name: TextoResp;

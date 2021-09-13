@@ -12,21 +12,31 @@
 </head>
 <body>
     <div class="contenedorPrincipal mx-auto">
-        <header class="sticky-top">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="menu container-fluid">
-                    <a class="navbar-brand" href="index.html"><img class="menu__logo" src="assets/logo.png" alt=""></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+        <header class="sticky-top"><!--comparte estructura y estilo con todas las secciones-->
+            <nav class="menu navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a href=""><img class="menu__logo" src="./assets/logo.png" alt="Logo Art Vandelay"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="menucollapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                            <a class="menu__enlaces nav-link fs-3 text-white" aria-current="page" href="index.html">Home</a>
-                            <a class="menu__enlaces nav-link disabled fs-3" href="historia.html">Historia</a>
-                            <a class="menu__enlaces nav-link fs-3 text-white" href="productos.html">Productos</a>
-                            <a class="menu__enlaces nav-link fs-3 text-white" href="ubicacion.html">Ubicacion</a>
-                            <a class="menu__enlaces nav-link fs-3 text-white" href="contacto.html">Contacto</a>
-                        </div>
+                    <div class="menu__desplegable collapse navbar-collapse" id="navbarTogglerDemo01">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="menu__enlaces nav-link fw-bold text-muted disabled" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="menu__enlaces nav-link fw-bold text-white" href="historia.html">Historia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="menu__enlaces nav-link fw-bold text-white" href="productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="menu__enlaces nav-link fw-bold text-white" href="ubicacion.html">Ubicacion</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="menu__enlaces nav-link fw-bold text-white" href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </nav>
@@ -68,36 +78,6 @@
             </ul>
         </aside>
         <footer class="footer">
-            <div class="footer__map">
-                <ul class="footer__secciones">
-                    <li><a href="historia.html">Historia</a>
-                        <ul class="footer__articulos">
-                            <li><a href="historia.html#art">Art Vandelay</a></li>
-                            <li><a href="historia.html#origenes">Origenes</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="productos.html">Productos</a>
-                        <ul class="footer__articulos">
-                            <li><a href="productos.html#gore">Campera Gore Tex</a></li>
-                            <li><a href="productos.html#dispenser">Pez Dispenser</a></li>
-                            <li><a href="productos.html#boligrafo">Bolígrafo anti-Gravedad</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="ubicacion.html">Ubicacion</a>
-                        <ul class="footer__articulos">
-                            <li><a href="ubicacion.html#central">Casa Central</a></li>
-                            <li><a href="ubicacion.html#instalaciones">Instalaciones</a></li>
-                            <li><a href="ubicacion.html#oficinas">Nuestras oficinas</a></li>
-                            <li><a href="ubicacion.html#staff">Staff</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="contacto">Contacto</a>
-                        <ul class="footer__articulos">
-                            <li><a href="contacto.html#formulario">Formulario<br>de contacto</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
             <div class="footer__sucursales">
                 <h2>Visitenos en nuestras Sucursales:</h2>
                 <ul>
