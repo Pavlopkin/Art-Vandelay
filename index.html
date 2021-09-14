@@ -42,13 +42,38 @@
             </nav>
         </header>
         <!--contenido exclusivo de la página principal-->
-        <p>acá había un carrusel</p>
+        <main class="portada"><!--BLOQUE 2-->
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/carruselDos.JPG" class="portada__foto d-block w-100" alt="imagen de oficinas de la empresa">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/carruselTres.JPG" class="portada__foto d-block w-100" alt="imagen del puerto">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/CarruselUno.JPG" class="portada__foto d-block w-100" alt="imagen de trabajadores">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <section class="titulos">
+                <h1>Art Vandelay Industries</h1>
+            </section>
+        </main>
         <section class="flyer flyer--largo flyer--colores justify-content-evenly row mx-auto">
-            <h1 class="flyer__titulo col-12 col-md-12">Las mejores marcas al mejor precio</h1>
-            <img class="flyer__foto con-xs-10 col-sm-10 col-md-3 rounded-circle" src="./assets/prodCuatro.JPG" alt="Libro The Coffe Table Book">
-            <img class="flyer__foto col-xs-10 col-sm-10 col-md-3 rounded-circle" src="./assets/prodUno.jpg" alt="Pez Dispenser (golosinas)">
-            <img class="flyer__foto col-xs-10 col-sm-10 col-md-3 rounded-circle" src="./assets/prodDos.JPG" alt="Campera reforzada">
-            <img class="flyer__foto col-xs-10 col-sm-10 col-md-3 rounded-circle" src="./assets/prodTres.JPG" alt="Lapicera anti-gravedad">
+            <h2 class="flyer__titulo col-12 col-md-12">Las mejores marcas al mejor precio</h2>
+            <div class="con-xs-10 col-sm-6 col-md-3 flyer__foto flyer__foto--Uno flyer__foto--enlaces rounded-circle"><a href="">COMPRAR</a></div> 
+            <div class="con-xs-10 col-sm-6 col-md-3 flyer__foto flyer__foto--Dos flyer__foto--enlaces rounded-circle"><a href="">COMPRAR</a></div> 
+            <div class="con-xs-10 col-sm-6 col-md-3 flyer__foto flyer__foto--Tres flyer__foto--enlaces rounded-circle"><a href="">COMPRAR</a></div> 
+            <div class="con-xs-10 col-sm-6 col-md-3 flyer__foto flyer__foto--Cuatro flyer__foto--enlaces rounded-circle"><a href="">COMPRAR</a></div> 
         </section>
         <section class="flyer justify-content-evenly">
             <img class="flyer__foto" src="./assets/suc.png" alt="dibujo sucursales">

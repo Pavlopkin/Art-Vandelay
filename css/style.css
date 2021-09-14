@@ -50,12 +50,12 @@ body {
   width: 98%;
   max-width: 1100px;
   height: auto;
-  background: linear-gradient(234deg, #0cbdd0 41%, #345fa2 72%);
+  background: linear-gradient(90deg, #ec7d00 0%, #fd211d 50%, #fcf645 100%);
   animation-name: aparece;
   animation-duration: 3s; }
 
 header {
-  background: linear-gradient(234deg, #0cbdd0 41%, #345fa2 72%);
+  background: linear-gradient(90deg, #ec7d00 0%, #fd211d 50%, #fcf645 100%);
   height: 135px;
   display: flex;
   align-content: center;
@@ -85,9 +85,11 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background: linear-gradient(234deg, #0cbdd0 41%, #345fa2 72%);
+  background: linear-gradient(90deg, #ec7d00 0%, #fd211d 50%, #fcf645 100%);
   height: auto;
-  color: #210249; }
+  color: #210249;
+  padding: 25px 15px 5px 15px;
+  box-sizing: border-box; }
   .footer .footer__secciones {
     display: flex;
     justify-content: space-around; }
@@ -136,17 +138,18 @@ header {
 .titulos h1 {
   text-align: center;
   width: 100%;
-  height: 60px;
+  height: 50px;
   font-size: 2.5em;
   padding: 0;
-  background-color: rgba(3, 37, 151, 0.815);
+  background-color: linear-gradient(90deg, #ec7d00 0%, #fd211d 50%, #fcf645 100%);
   color: #fefeff;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-weight: 900;
+  letter-spacing: 15px; }
 
 .flyer {
   display: flex;
-  background: #0cbdd0;
-  background: linear-gradient(71deg, rgba(12, 189, 208, 0.331332) 41%, rgba(52, 95, 162, 0.483825) 72%);
+  background-color: rgba(241, 218, 87, 0.445);
   height: 300px;
   justify-content: center;
   align-items: center;
@@ -161,33 +164,38 @@ header {
     font-weight: 900; }
   .flyer .flyer__texto {
     font-size: 2.5em;
-    width: 30%; }
-  .flyer .flyer__enlaces {
-    display: block;
-    margin: auto;
-    display: flex;
-    justify-content: center; }
+    width: 30%;
+    font-weight: 700; }
   .flyer .flyer__foto {
-    height: 200px;
-    width: 200px; }
+    height: 170px;
+    width: 170px; }
   .flyer .flyer__foto--Uno {
     background-image: url(../assets/prodCuatro.JPG);
-    background-size: cover; }
+    background-size: contain; }
   .flyer .flyer__foto--Dos {
     background-image: url(../assets/prodUno.jpg);
-    background-size: cover; }
+    background-size: contain; }
   .flyer .flyer__foto--Tres {
     background-image: url(../assets/prodDos.JPG);
-    background-size: cover; }
+    background-size: contain; }
   .flyer .flyer__foto--Cuatro {
     background-image: url(../assets/prodTres.JPG);
-    background-size: cover; }
-  .flyer .flyer__foto:hover {
-    background-image: url(../assets/carro.png);
-    transition: 1s; }
+    background-size: contain; }
+  .flyer .flyer__foto--enlaces {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .flyer .flyer__foto--enlaces a {
+      text-decoration: none;
+      padding: 5px;
+      color: white;
+      font-weight: 800;
+      letter-spacing: 5px;
+      font-size: 1.25em;
+      text-shadow: black 2px 2px; }
 
 .flyer--colores {
-  background: linear-gradient(234deg, #0cbdd0 41%, #345fa2 72%);
+  background-color: rgba(226, 110, 43, 0.52);
   color: white; }
 
 /*el bloque secciones da estilos al contenido de las siguientes secciones: 
@@ -294,10 +302,11 @@ historia - poductos - ubicacion - contacto*/
     animation-duration: 3s; }
 
 /*responsive*/
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 991px) {
   .menu__desplegable {
-    background-image: linear-gradient(40deg, #71a874 0, #67a97b 5.56%, #5daa82 11.11%, #53ab8a 16.67%, #48ab92 22.22%, #3cac99 27.78%, #30aca1 33.33%, #23aca9 38.89%, #16abb1 44.44%, #07abb8 50%, #02aabf 55.56%, #0ba9c5 61.11%, #1ba8cb 66.67%, #2ba7cf 72.22%, #3aa5d3 77.78%, #49a3d6 83.33%, #57a1d8 88.89%, #659fda 94.44%, #729dda 100%);
-    opacity: 0.8; }
+    background: linear-gradient(90deg, #ec7d00 0%, #fd211d 50%, #fcf645 100%);
+    text-align: center;
+    border-radius: 15px; }
   .footer {
     height: auto; }
     .footer .footer__contacto {
@@ -309,8 +318,8 @@ historia - poductos - ubicacion - contacto*/
   .flyer .flyer__titulo {
     font-size: 1.66667em; }
   .flyer .flyer__foto {
-    width: 133.33333px;
-    height: 133.33333px;
+    width: 113.33333px;
+    height: 113.33333px;
     margin: 5px; }
   .flyer--largo {
     height: auto;
@@ -330,8 +339,8 @@ historia - poductos - ubicacion - contacto*/
   .flyer .flyer__titulo {
     font-size: 1.47059em; }
   .flyer .flyer__foto {
-    width: 117.64706px;
-    height: 117.64706px; }
+    width: 100px;
+    height: 100px; }
   .activarError a {
     text-decoration: none;
     animation-name: TextoResp;
