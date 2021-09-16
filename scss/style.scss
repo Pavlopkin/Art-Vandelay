@@ -104,7 +104,7 @@ header{
 .footer{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     background: linear-gradient(90deg, rgba(236,125,0,1) 0%, rgba(253,33,29,1) 50%, rgba(252,246,69,1) 100%);
     height: auto;
     color: rgb(33, 2, 73);
@@ -137,18 +137,24 @@ header{
         }
     }
     .footer__sucursales{
-        width:47%;
+        width:50%;
         text-align: center;
         li{
             list-style: none;
         }
     }
     .footer__contacto{
-        width: 47%;
+        width: 50%;
         text-align: center;
         li{
             list-style: none;
         }
+    }
+    .footer__titulos{
+        margin: auto;
+        font-size: 1.5em;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
     }
     p{
         width: 100%;
@@ -156,11 +162,6 @@ header{
         letter-spacing: 5px;
         padding-top: 20px;
         box-sizing: border-box;
-    }
-    h2{
-        font-size: 1.5em;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 600;
     }
 }
 /*index.html*/
@@ -346,7 +347,6 @@ historia - poductos - ubicacion - contacto*/
     .menu__desplegable{
         background: linear-gradient(90deg, rgba(236,125,0,1) 0%, rgba(253,33,29,1) 50%, rgba(252,246,69,1) 100%);
         text-align: center;
-        border-radius: 15px;
     }
     .footer{
         height: auto;
@@ -369,6 +369,11 @@ historia - poductos - ubicacion - contacto*/
             height: $medidaFotos/1.5;
             margin: 5px;
         }
+        .flyer__foto--enlaces{
+            a{
+                font-size: $titulos/3;
+            }
+        }
     }
     .flyer--largo{
         height: auto;
@@ -383,13 +388,17 @@ historia - poductos - ubicacion - contacto*/
     .carousel-inner{
         height: $tamanoPortada/2;
     }
-    .banner{
-        background-size: contain;
-        height: 50px;
+    .titulos{
+        h1{
+            text-align: center;
+            @include titulos (100%, 30px, $titulos/2, 0, linear-gradient(90deg, rgba(236,125,0,1) 0%, rgba(253,33,29,1) 50%, rgba(252,246,69,1) 100%), rgb(254, 254, 255), border-box);
+            font-weight: 700;
+            letter-spacing: 5px;
+        }
     }
     
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 544px) {
     .flyer{
         .flyer__texto{
             font-size: $titulos/2.2;
