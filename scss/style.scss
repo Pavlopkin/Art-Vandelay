@@ -241,7 +241,7 @@ header{
 /*el bloque secciones da estilos al contenido de las siguientes secciones: 
 historia - poductos - ubicacion - contacto*/
 .secciones{
-    background-color: rgb(178, 248, 248);
+    background: linear-gradient(90deg, rgba(236,125,0,1) 0%, rgba(253,33,29,1) 50%, rgba(252,246,69,1) 100%);
     height: 300px;
     padding: 15px;
     box-sizing: border-box;
