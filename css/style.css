@@ -46,12 +46,12 @@ body {
   width: 98%;
   max-width: 1000px;
   height: auto;
-  background: linear-gradient(90deg, #ec7d00 0%, #fd211d 50%, #fcf645 100%);
+  background: linear-gradient(114deg, black 0%, #fd2d1d 50%, #fff700 100%);
   animation-name: aparece;
   animation-duration: 3s; }
 
 header {
-  background: linear-gradient(90deg, #ec7d00 0%, #fd211d 50%, #fcf645 100%);
+  background: linear-gradient(114deg, black 0%, #fd2d1d 50%, #fff700 100%);
   height: 135px;
   display: flex;
   align-content: center;
@@ -70,6 +70,35 @@ header {
 .menu .menu__enlaces {
   margin-left: 30px;
   font-size: 1.92308em; }
+
+.menu .menu__home {
+  text-decoration: none;
+  margin-left: 15px; }
+
+.menu .menu__home:hover {
+  transform: scale(1.1, 1.1);
+  transition: 2s; }
+
+.menu .menu__ovalo {
+  transform: rotate(-15deg);
+  animation-name: ovalo;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  width: 150px;
+  height: 65px;
+  background-image: linear-gradient(yellow, orange);
+  border-radius: 50%;
+  box-shadow: black 2px 5px; }
+
+.menu .menu__text {
+  font-size: 25px;
+  color: red;
+  text-align: center;
+  font-weight: 800;
+  text-decoration: none;
+  padding: 0 5px;
+  text-shadow: black 1px 1px;
+  transform: rotate(15deg); }
 
 .informacion {
   background-color: white; }
@@ -198,7 +227,6 @@ header {
 /*el bloque secciones da estilos al contenido de las siguientes secciones: 
 historia - poductos - ubicacion - contacto*/
 .secciones {
-  background: linear-gradient(90deg, #ec7d00 0%, #fd211d 50%, #fcf645 100%);
   height: 300px;
   padding: 15px;
   box-sizing: border-box;
@@ -249,8 +277,7 @@ historia - poductos - ubicacion - contacto*/
   height: 500px; }
 
 .secciones--encabezado {
-  height: auto;
-  background-color: #60b2d8; }
+  height: auto; }
 
 /*exclusivo contacto*/
 .secciones--contacto {

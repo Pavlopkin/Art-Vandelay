@@ -15,20 +15,24 @@
         <header class="sticky-top"><!--comparte estructura y estilo con todas las secciones-->
             <nav class="menu navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
-                    <a href=""><img class="menu__logo" src="./assets/logo.png" alt="Logo Art Vandelay"></a>
+                    <a class="menu__home" href="index.html">
+                        <div class="menu__ovalo">
+                            <h1 class="menu__text">Art Vandelay<br>Industries</h1>
+                        </div>
+                    </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="menu__desplegable collapse navbar-collapse" id="navbarTogglerDemo01">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="menu__enlaces nav-link fw-bold text-white" href="index.html">Home</a>
+                                <a class="menu__enlaces nav-link fw-bold text-muted disabled" href="index.html">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="menu__enlaces nav-link fw-bold text-white" href="historia.html">Historia</a>
                             </li>
                             <li class="nav-item">
-                                <a class="menu__enlaces nav-link fw-bold text-muted disabled" href="productos.html">Productos</a>
+                                <a class="menu__enlaces nav-link fw-bold text-white" href="productos.html">Productos</a>
                             </li>
                             <li class="nav-item">
                                 <a class="menu__enlaces nav-link fw-bold text-white" href="ubicacion.html">Ubicacion</a>
@@ -66,10 +70,8 @@
                 </div>
         </main>
         <div class="containerTres row mx-auto">
-            <section class="secciones secciones--encabezado col-xs-12 col-md-12 mx-auto">
-                <h1 class="secciones__titulos text-center">CONOZCA NUESTROS PRODUCTOS</h1>
-                <p class="secciones__texto text-center">A continuación les presentamos los productos más destacados de este mes. Aproveche las imperdibles promociones y téngalos ya en su casa</p>
-            </section>
+            <h1 class="secciones__titulos text-center">CONOZCA NUESTROS PRODUCTOS</h1>
+            <p class="secciones__texto text-center">A continuación les presentamos los productos más destacados de este mes. Aproveche las imperdibles promociones y téngalos ya en su casa</p>
             <section id="gore" class="secciones secciones--productos col-xs-12 col-md-4">
                 <h2 class="secciones__subtitulos text-center">Campera Gore Tex</h2>
                 <img class="secciones__foto rounded mx-auto d-block" src="./assets/imgCuatro.jpg" alt="campera Gore Tex">
