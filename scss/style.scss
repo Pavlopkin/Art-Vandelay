@@ -52,6 +52,14 @@ $tamanoPortada: 540px;
         letter-spacing: 10px;
     }  
 }
+@keyframes logo{
+    0%{
+        font-size: 20px;
+    }
+    100%{
+        font-size: 31px;
+    }
+}
 /*Estilo común a todas las secciones*/
 *{
     margin:0;
@@ -101,25 +109,34 @@ header{
         transition: 2s;
     }
     .menu__ovalo{
-    transform: rotate(-15deg);
-    animation-name: ovalo;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    width: 150px;
-    height: 65px;
-    background-image: linear-gradient(yellow, orange);
-    border-radius: 50%;
-    box-shadow: black 2px 5px;
+        transform: rotate(-15deg);
+        animation-name: ovalo;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        width: 150px;
+        height: 65px;
+        background-image: linear-gradient(yellow, orange);
+        border-radius: 50%;
+        box-shadow: black 2px 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .menu__text{
-    font-size: 25px;
-    color: red;
-    text-align: center;
-    font-weight: 800;
-    text-decoration: none;
-    padding: 0 5px;
-    text-shadow: black 1px 1px;
-    transform: rotate(15deg);
+        font-size: 20px;
+        color: red;
+        text-align: center;
+        font-weight: 800;
+        text-decoration: none;
+        padding: 0 5px;
+        text-shadow: black 1px 1px;
+        transform: rotate(15deg);   
+    }
+    .menu__text--especial{
+        font-size: 31px;
+        text-shadow: black 2px 2px;
+        animation-name: logo;
+        animation-duration: 1s;
     }
 }
 .informacion{
