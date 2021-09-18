@@ -93,7 +93,7 @@ header{
         transition: 1s;
     }
     .menu__enlaces{
-        margin-left: 50px;
+        margin-left: 30px;
         font-size: $titulos/1.2;
         color: rgb(255, 217, 0);
         font-weight: 800;
@@ -103,6 +103,10 @@ header{
     .menu__home{
         text-decoration: none;
         margin: 0 25px;
+    }
+    .menu__img{
+        margin-left: 20px;
+        width: 50px;
     }
     .menu__home:hover{
         transform: scale(1.1,1.1);
@@ -296,28 +300,30 @@ header{
 /*el bloque secciones da estilos al contenido de las siguientes secciones: 
 historia - poductos - ubicacion - contacto*/
 .secciones{
-    height: 300px;
+    height: auto;
     padding: 15px;
     box-sizing: border-box;
     text-align: center;
+    color: rgb(255, 255, 255);
     .secciones__titulos{
         text-align: center;
-        @include titulos (100%, 35px, 1.5em, 5px 0, rgba(255, 255, 255, 0.616), rgb(33, 2, 73), border-box);
+        @include titulos (100%, auto, $titulos/1.2, 0, rgba(255, 255, 255, 0.616), rgb(33, 2, 73), border-box);
     }
     .secciones__subtitulos{
-        @include titulos (100%, 35px, 1.5em, 5px 0, rgba(255, 255, 255, 0.616), rgb(33, 2, 73), border-box);
+        @include titulos (100%, auto, $titulos/1.2, 0, rgba(255, 255, 255, 0.616), rgb(33, 2, 73), border-box);
         margin-bottom: 20px;
         text-align: center;
     }
     .secciones__texto{
-        font-size: 1.2em;
+        font-size: $titulos/1.8;
         text-align: justify;
     }
     .secciones__mapa{
         width: 90%;
         height: 150px;
     }
-    .secciones__foto{
+    /*productos*/
+    .secciones__img{
         width: 90%;
     }
     /*ubicacion*/
@@ -327,7 +333,7 @@ historia - poductos - ubicacion - contacto*/
     }
     /*contacto*/
     .secciones__formulario{
-        width: 50%;
+        width: 80%;
         margin: auto;
         box-sizing: border-box;
     }
@@ -338,9 +344,6 @@ historia - poductos - ubicacion - contacto*/
     }
 }
 /* exclusivo productos*/
-.secciones--productos{
-    height: 500px;
-}
 .secciones--encabezado{
     height: auto;
 }
@@ -396,10 +399,12 @@ historia - poductos - ubicacion - contacto*/
 }
 /*responsive*/
 @media screen and (max-width: 991px) { 
+    /*responsive todas las seccioens*/
     .menu__desplegable{
         background-color: rgba(212, 59, 39, 0.781);
         border-bottom: yellow 2px solid;
         text-align: center;
+        margin-top: 61px;
     }
     .footer{
         height: auto;
@@ -410,6 +415,7 @@ historia - poductos - ubicacion - contacto*/
             width: 90%;
         }
     }
+    /*pagina principal*/
     .flyer{
         .flyer__texto{
             font-size: $titulos/1.5;
@@ -449,9 +455,21 @@ historia - poductos - ubicacion - contacto*/
             letter-spacing: 5px;
         }
     }
-    
+    /*historia*/
+    .secciones{
+        .secciones__titulos{
+            font-size: $titulos/1.5;
+        }
+        .secciones__texto{
+            font-size: $titulos/2;
+        }
+        .secciones__foto{
+            margin-bottom: 15px;
+        }
+    }
 }
 @media screen and (max-width: 544px) {
+    /*pagina principal*/
     .flyer{
         .flyer__texto{
             font-size: $titulos/2.2;
@@ -464,6 +482,18 @@ historia - poductos - ubicacion - contacto*/
             height: $medidaFotos/1.7;
         }
     }
+    /*historia*/
+    .secciones{
+        .secciones__titulos{
+            font-size: $titulos/2;
+        }
+        .secciones__texto{
+            font-size: $titulos/2.2;
+        }
+        .secciones__foto{
+            margin-bottom: 7px;
+        }
+    }
     .activarError{
         a{
             text-decoration: none;
@@ -471,9 +501,5 @@ historia - poductos - ubicacion - contacto*/
             animation-duration: 2.5s;
             animation-iteration-count: infinite;
         }
-    }
-    .banner{
-        background-size: contain;
-        height: 30px;
     }
 }

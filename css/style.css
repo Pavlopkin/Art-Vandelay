@@ -69,7 +69,7 @@ header {
   transition: 1s; }
 
 .menu .menu__enlaces {
-  margin-left: 50px;
+  margin-left: 30px;
   font-size: 2.08333em;
   color: #ffd900;
   font-weight: 800;
@@ -79,6 +79,10 @@ header {
 .menu .menu__home {
   text-decoration: none;
   margin: 0 25px; }
+
+.menu .menu__img {
+  margin-left: 20px;
+  width: 50px; }
 
 .menu .menu__home:hover {
   transform: scale(1.1, 1.1);
@@ -249,44 +253,46 @@ header {
 /*el bloque secciones da estilos al contenido de las siguientes secciones: 
 historia - poductos - ubicacion - contacto*/
 .secciones {
-  height: 300px;
+  height: auto;
   padding: 15px;
   box-sizing: border-box;
   text-align: center;
+  color: white;
+  /*productos*/
   /*ubicacion*/
   /*contacto*/ }
   .secciones .secciones__titulos {
     text-align: center;
     width: 100%;
-    height: 35px;
-    font-size: 1.5em;
-    padding: 5px 0;
+    height: auto;
+    font-size: 2.08333em;
+    padding: 0;
     background-color: rgba(255, 255, 255, 0.616);
     color: #210249;
     box-sizing: border-box; }
   .secciones .secciones__subtitulos {
     width: 100%;
-    height: 35px;
-    font-size: 1.5em;
-    padding: 5px 0;
+    height: auto;
+    font-size: 2.08333em;
+    padding: 0;
     background-color: rgba(255, 255, 255, 0.616);
     color: #210249;
     box-sizing: border-box;
     margin-bottom: 20px;
     text-align: center; }
   .secciones .secciones__texto {
-    font-size: 1.2em;
+    font-size: 1.38889em;
     text-align: justify; }
   .secciones .secciones__mapa {
     width: 90%;
     height: 150px; }
-  .secciones .secciones__foto {
+  .secciones .secciones__img {
     width: 90%; }
   .secciones .secciones__foto--ubi {
     width: 90%;
     height: 200px; }
   .secciones .secciones__formulario {
-    width: 50%;
+    width: 80%;
     margin: auto;
     box-sizing: border-box; }
   .secciones .secciones__datos {
@@ -295,9 +301,6 @@ historia - poductos - ubicacion - contacto*/
     padding: 10px; }
 
 /* exclusivo productos*/
-.secciones--productos {
-  height: 500px; }
-
 .secciones--encabezado {
   height: auto; }
 
@@ -349,16 +352,19 @@ historia - poductos - ubicacion - contacto*/
 
 /*responsive*/
 @media screen and (max-width: 991px) {
+  /*responsive todas las seccioens*/
   .menu__desplegable {
     background-color: rgba(212, 59, 39, 0.781);
     border-bottom: yellow 2px solid;
-    text-align: center; }
+    text-align: center;
+    margin-top: 61px; }
   .footer {
     height: auto; }
     .footer .footer__contacto {
       width: 90%; }
     .footer .footer__sucursales {
       width: 90%; }
+  /*pagina principal*/
   .flyer .flyer__texto {
     font-size: 1.66667em; }
   .flyer .flyer__titulo {
@@ -387,9 +393,17 @@ historia - poductos - ubicacion - contacto*/
     color: #fefeff;
     box-sizing: border-box;
     font-weight: 700;
-    letter-spacing: 5px; } }
+    letter-spacing: 5px; }
+  /*historia*/
+  .secciones .secciones__titulos {
+    font-size: 1.66667em; }
+  .secciones .secciones__texto {
+    font-size: 1.25em; }
+  .secciones .secciones__foto {
+    margin-bottom: 15px; } }
 
 @media screen and (max-width: 544px) {
+  /*pagina principal*/
   .flyer .flyer__texto {
     font-size: 1.13636em; }
   .flyer .flyer__titulo {
@@ -397,11 +411,15 @@ historia - poductos - ubicacion - contacto*/
   .flyer .flyer__foto {
     width: 100px;
     height: 100px; }
+  /*historia*/
+  .secciones .secciones__titulos {
+    font-size: 1.25em; }
+  .secciones .secciones__texto {
+    font-size: 1.13636em; }
+  .secciones .secciones__foto {
+    margin-bottom: 7px; }
   .activarError a {
     text-decoration: none;
     animation-name: TextoResp;
     animation-duration: 2.5s;
-    animation-iteration-count: infinite; }
-  .banner {
-    background-size: contain;
-    height: 30px; } }
+    animation-iteration-count: infinite; } }
