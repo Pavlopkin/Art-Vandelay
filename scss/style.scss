@@ -464,11 +464,22 @@ historia - poductos - ubicacion - contacto*/
     .carousel-inner{
         height: $tamanoPortada/2;
     }
+    /*compartido en todas las secciones*/
+    .titulos{ 
+        font-size: $titulos/1.7;
+        letter-spacing: 10px;
+    }
+    .titulos--principales{
+        font-size: $titulos/1.8;
+    }
+    .titulos--secundarios{
+        font-size: $titulos/1.9;
+    }
+    .titulos--productos{
+        font-size: $titulos/1.9;
+    }
     /*historia*/
     .secciones{
-        .secciones__titulos{
-            font-size: $titulos/1.5;
-        }
         .secciones__texto{
             font-size: $titulos/2;
         }
@@ -491,11 +502,22 @@ historia - poductos - ubicacion - contacto*/
             height: $medidaFotos/1.7;
         }
     }
+    /*compartido en todas las secciones*/
+    .titulos{ 
+        font-size: $titulos/2;
+        letter-spacing: 5px;
+    }
+    .titulos--principales{
+        font-size: $titulos/2.2;
+    }
+    .titulos--secundarios{
+        font-size: $titulos/2.3;
+    }
+    .titulos--productos{
+        font-size: $titulos/2.3;
+    }
     /*historia*/
     .secciones{
-        .secciones__titulos{
-            font-size: $titulos/2;
-        }
         .secciones__texto{
             font-size: $titulos/2.2;
         }
