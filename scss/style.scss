@@ -97,7 +97,7 @@ header{
         transition: 1s;
     }
     .menu__enlaces{
-        margin-left: 40px;
+        margin-left: 35px;
         font-size: $titulos/1.2;
         color: rgb(255, 217, 0);
         font-weight: 800;
@@ -106,7 +106,7 @@ header{
     }
     .menu__home{
         text-decoration: none;
-        margin: 0 25px;
+        margin: 0 15px;
     }
     .menu__home:hover{
         transform: scale(1.1,1.1);
@@ -324,15 +324,25 @@ historia - poductos - ubicacion - contacto*/
     .secciones__mapa{
         width: 90%;
         height: 150px;
+        margin: auto;
     }
     /*productos*/
     .secciones__img{
         width: 90%;
     }
+    /*historia*/
+    .secciones__foto{
+        height: 200px;
+        max-width: 300px;
+        margin: auto;
+    }
+    .secciones__foto--historia{
+        max-width: 300px;
+    }
     /*ubicacion*/
     .secciones__foto--ubi{
         width: 90%;
-        height: 200px;
+        height: 150px;
     }
     /*contacto*/
     .secciones__formulario{

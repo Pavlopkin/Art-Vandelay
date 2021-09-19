@@ -73,7 +73,7 @@ header {
   transition: 1s; }
 
 .menu .menu__enlaces {
-  margin-left: 40px;
+  margin-left: 35px;
   font-size: 2.08333em;
   color: #ffd900;
   font-weight: 800;
@@ -82,7 +82,7 @@ header {
 
 .menu .menu__home {
   text-decoration: none;
-  margin: 0 25px; }
+  margin: 0 15px; }
 
 .menu .menu__home:hover {
   transform: scale(1.1, 1.1);
@@ -270,6 +270,7 @@ historia - poductos - ubicacion - contacto*/
   text-align: center;
   color: white;
   /*productos*/
+  /*historia*/
   /*ubicacion*/
   /*contacto*/ }
   .secciones .secciones__texto {
@@ -279,12 +280,19 @@ historia - poductos - ubicacion - contacto*/
     text-align: center; }
   .secciones .secciones__mapa {
     width: 90%;
-    height: 150px; }
+    height: 150px;
+    margin: auto; }
   .secciones .secciones__img {
     width: 90%; }
+  .secciones .secciones__foto {
+    height: 200px;
+    max-width: 300px;
+    margin: auto; }
+  .secciones .secciones__foto--historia {
+    max-width: 300px; }
   .secciones .secciones__foto--ubi {
     width: 90%;
-    height: 200px; }
+    height: 150px; }
   .secciones .secciones__formulario {
     width: 80%;
     margin: auto;
