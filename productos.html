@@ -1,40 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
-    <meta name="keywords" content="importacion, venta, tienda, descuentos">
-    <mata name="description" content="Somos Art Vandelay. Conozca nuestros productos y promociones">
-    <link href="https://fonts.googleapis.com/css2?family=Maiden+Orange&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link href="./css/style.css" rel="stylesheet" type="text/css">
-    <title>Art Vandelay - Productos</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+        <meta name="keywords" content="gift store, indumentaria, regalos, cumpleaños, zapatillas, accesorios, juguetes, libros">
+        <meta name="description" content="Conocé todo acerca de nuestros productos y promociones">
+        <link href="https://fonts.googleapis.com/css2?family=Maiden+Orange&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <link href="./css/style.css" rel="stylesheet" type="text/css">
+        <title>Art Vandelay - Productos</title>
+    </head>
 <body>
     <div class="contenedorPrincipal">
         <header class="sticky-top"><!--comparte estructura y estilo con todas las secciones-->
             <nav class="menu navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
-                    <a href=""><img class="menu__logo" src="./assets/logo.png" alt="Logo Art Vandelay"></a>
+                    <a class="menu__home" href="index.html">
+                        <div class="menu__ovalo">
+                            <p class="menu__text"><span class="menu__text--especial">A</span>rt <span class="menu__text--especial">V</span>andelay</p>
+                        </div>
+                    </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="menu__desplegable collapse navbar-collapse" id="navbarTogglerDemo01">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="menu__enlaces nav-link fw-bold text-white" href="index.html">Home</a>
+                                <a class="menu__enlaces" href="index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="menu__enlaces nav-link fw-bold text-white" href="historia.html">Historia</a>
+                                <a class="menu__enlaces" href="historia.html">Historia</a>
                             </li>
                             <li class="nav-item">
-                                <a class="menu__enlaces nav-link fw-bold text-muted disabled" href="productos.html">Productos</a>
+                                <a class="menu__enlaces" href="productos.html">Productos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="menu__enlaces nav-link fw-bold text-white" href="ubicacion.html">Ubicacion</a>
+                                <a class="menu__enlaces" href="ubicacion.html">Ubicación</a>
                             </li>
                             <li class="nav-item">
-                                <a class="menu__enlaces nav-link fw-bold text-white" href="contacto.html">Contacto</a>
+                                <a class="menu__enlaces" href="contacto.html">Contacto</a>
                             </li>
                         </ul>
                     </div>
@@ -65,27 +69,28 @@
                 </button>
                 </div>
         </main>
-        <div class="containerTres row mx-auto">
-            <section class="secciones secciones--encabezado col-xs-12 col-md-12 mx-auto">
-                <h1 class="secciones__titulos text-center">CONOZCA NUESTROS PRODUCTOS</h1>
-                <p class="secciones__texto text-center">A continuación les presentamos los productos más destacados de este mes. Aproveche las imperdibles promociones y téngalos ya en su casa</p>
-            </section>
-            <section id="gore" class="secciones secciones--productos col-xs-12 col-md-4">
-                <h2 class="secciones__subtitulos text-center">Campera Gore Tex</h2>
-                <img class="secciones__foto rounded mx-auto d-block" src="./assets/imgCuatro.jpg" alt="campera Gore Tex">
-                <p>Aíslese del frió con la distinguida campera Gore Tex. Confeccionada con la mejor materia prima, lo distanciará del frio y probablemente del resto de la sociedad</p>
-            </section>
-            <section id="dispenser" class="secciones secciones--productos col-xs-12 col-md-4">
-                <h2 class="secciones__subtitulos text-center">Pez Dispenser</h2>
-                <img class="secciones__foto rounded mx-auto d-block" src="./assets/imgCinco.png" alt="Dispenser para golosinas Marca Pez">
+        <section class="secciones row mx-auto center">
+            <h1 class="titulos titulos--principales text-center">CONOZCA NUESTROS PRODUCTOS</h1>
+            <p class="secciones__texto text-center">A continuación les presentamos los productos más destacados de este mes. Aproveche las imperdibles promociones y téngalos ya en su casa</p>
+            <article id="gore" class="secciones secciones--productos col-xs-12 col-md-4">
+                <h2 class="titulos titulos--productos text-center">Campera Gore Tex</h2>
+                <img class="secciones__img rounded mx-auto" src="./assets/imgCuatro.jpg" alt="campera Gore Tex">
+                <p class="secciones__texto">Aíslese del frió con la distinguida campera Gore Tex. Confeccionada con la mejor materia prima, lo distanciará del frio y probablemente del resto de la sociedad</p>
+                <a class="btn btn-warning" href="error.html" role="button">COMPRAR</a>
+            </article>
+            <article id="dispenser" class="secciones secciones--productos col-xs-12 col-md-4">
+                <h2 class="titulos titulos--productos text-center">Pez Dispenser</h2>
+                <img class="secciones__img rounded mx-auto" src="./assets/imgCinco.png" alt="Dispenser para golosinas Marca Pez">
                 <p class="secciones__texto">Este Pez Dispenser es un objeto escencial al monento de llevar sus pastillas favoritas. Golosinas o medicamentos llevados con un gracia especial que lo destacará sobre el resto de las personas</p>
-            </section>
-            <section id="boligrafo" class="secciones secciones--productos col-xs-12 col-md-4">
-                <h2 class="secciones__subtitulos text-center">Bolígrafo anti-gravedad NASA</h2>
-                <img class="secciones__foto rounded mx-auto d-block" src="./assets/imgSeis.jpg" alt="Bolígrafo anti-gravedad">
+                <a class="btn btn-warning" href="error.html" role="button">COMPRAR</a>
+            </article>
+            <article id="boligrafo" class="secciones secciones--productos col-xs-12 col-md-4">
+                <h2 class="titulos titulos--productos text-center">Bolígrafo anti-gravedad NASA</h2>
+                <img class="secciones__img rounded mx-auto" src="./assets/imgSeis.jpg" alt="Bolígrafo anti-gravedad">
                 <p class="secciones__texto">Olvídese de tomar notas sobre la espalda de otra persona, con este bolígrafo diseñado por la NASA usted podrá realizar anotaciones en las condiciones mas extremas, incluso contra el techo de su casa</p>
-            </section>
-        </div>
+                <a class="btn btn-warning" href="error.html" role="button">COMPRAR</a>
+            </article>
+        </section>
         <!-- fin del contenido exclusivo de seccion productos-->
         <aside class="informacion"><!--comparte estructura y estilo con todas las secciones-->
             <ul class="informacion__enlaces nav nav-tabs">
@@ -105,9 +110,9 @@
                 </li>
             </ul>
         </aside>
-        <footer class="footer">
+        <footer class="footer"><!--comparte estructura y estilo con todas las secciones-->
             <div class="footer__sucursales">
-                <h2>Visitenos en nuestras Sucursales:</h2>
+                <h2 class="footer__titulos">Visitenos en nuestras Sucursales:</h2>
                 <ul>
                     <li>Casa Central: Paseo Colón N° 1857, Piso 7, Depto. "Z", CABA</li>
                     <li>Centro de Logística: Av. Córdoba N° 525, CABA</li>
@@ -117,7 +122,7 @@
                 </ul>
             </div>
             <div class="footer__contacto">
-                <h2>Para más información contáctenos en:</h2>
+                <h2 class="footer__titulos">Para más información contáctenos en:</h2>
                 <ul>
                     <li>Teléfono: 5555-5555</li>
                     <li>whattsap: 115-555-5555</li>
@@ -125,7 +130,9 @@
                 <label for="mail">Ingrese su dirección de Mail para recibir ofertas y novedades</label>
                 <input type="email" name="mail" id="mail"><br><br>
             </div>
-            <p class="text-center">Todos los derechos reservados. 2021</p>
+            <div class="footer__referencia">
+                <P class="text-center">Todos los derechos reservados (2021). Inspirada "levemente" en</p><img class="footer__seinfeld" src="./assets/seinfeld.png" alt="">
+            </div>
         </footer>   
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>

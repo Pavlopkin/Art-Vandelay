@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">   
-    <meta name="keywords" content="importacion, venta, tienda, promocion">
-    <mata name="description" content="Somos líderes en importación de los productos más buscados del mercado">
+    <meta name="keywords" content="gift store, indumentaria, regalos, cumpleaños, zapatillas, accesorios, juguetes, libros">
+    <meta name="description" content="Los regalos mas diveritidos e ingeniosos los escontrás en nuestra página web">
     <link href="https://fonts.googleapis.com/css2?family=Maiden+Orange&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link href="./css/style.css" rel="stylesheet" type="text/css">
@@ -15,26 +15,30 @@
         <header class="sticky-top"><!--comparte estructura y estilo con todas las secciones-->
             <nav class="menu navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
-                    <a href=""><img class="menu__logo" src="./assets/logo.png" alt="Logo Art Vandelay"></a>
+                    <a class="menu__home" href="index.html">
+                        <div class="menu__ovalo">
+                            <p class="menu__text"><span class="menu__text--especial">A</span>rt <span class="menu__text--especial">V</span>andelay</p>
+                        </div>
+                    </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="menu__desplegable collapse navbar-collapse" id="navbarTogglerDemo01">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="menu__enlaces nav-link fw-bold text-muted disabled" href="index.html">Home</a>
+                                <a class="menu__enlaces" href="index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="menu__enlaces nav-link fw-bold text-white" href="historia.html">Historia</a>
+                                <a class="menu__enlaces" href="historia.html">Historia</a>
                             </li>
                             <li class="nav-item">
-                                <a class="menu__enlaces nav-link fw-bold text-white" href="productos.html">Productos</a>
+                                <a class="menu__enlaces" href="productos.html">Productos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="menu__enlaces nav-link fw-bold text-white" href="ubicacion.html">Ubicacion</a>
+                                <a class="menu__enlaces" href="ubicacion.html">Ubicación</a>
                             </li>
                             <li class="nav-item">
-                                <a class="menu__enlaces nav-link fw-bold text-white" href="contacto.html">Contacto</a>
+                                <a class="menu__enlaces" href="contacto.html">Contacto</a>
                             </li>
                         </ul>
                     </div>
@@ -42,51 +46,66 @@
             </nav>
         </header>
         <!--contenido exclusivo de la página principal-->
-        <main class="portada"><!--BLOQUE 2-->
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./assets/carruselDos.JPG" class="portada__foto d-block w-100" alt="imagen de oficinas de la empresa">
-                </div>
-                <div class="carousel-item">
-                    <img src="./assets/carruselTres.JPG" class="portada__foto d-block w-100" alt="imagen del puerto">
-                </div>
-                <div class="carousel-item">
-                    <img src="./assets/CarruselUno.JPG" class="portada__foto d-block w-100" alt="imagen de trabajadores">
-                </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-            <section class="titulos">
-                <h1>Art Vandelay Industries</h1>
-            </section>
-        </main>
-        <section class="flyer flyer--largo flyer--colores justify-content-around row mx-auto">
-            <h2 class="flyer__titulo col-12 col-md-12">Las mejores marcas al mejor precio</h2>
-            <div class="con-xs-12 col-sm-6 col-md-3 flyer__foto flyer__foto--Uno flyer__foto--enlaces rounded-circle"><a href="">COMPRAR</a></div> 
-            <div class="con-xs-12 col-sm-6 col-md-3 flyer__foto flyer__foto--Dos flyer__foto--enlaces rounded-circle"><a href="">COMPRAR</a></div> 
-            <div class="con-xs-12 col-sm-6 col-md-3 flyer__foto flyer__foto--Tres flyer__foto--enlaces rounded-circle"><a href="">COMPRAR</a></div> 
-            <div class="con-xs-12 col-sm-6 col-md-3 flyer__foto flyer__foto--Cuatro flyer__foto--enlaces rounded-circle"><a href="">COMPRAR</a></div> 
+        <section>
+            <h1 class="titulos">Art Vandelay</h1>
         </section>
+        <main class="portada">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <img class="portada__foto" src="./assets/portada.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="titulos titulos--carrusel">Productos Innecesarios</h5>
+                            <p class="titulos titulos--carruselDos">que te morís de ganas de tener</p>
+                        </div>
+                        </div>
+                        <div class="carousel-item">
+                        <img class="portada__foto" src="./assets/carruseldos.svg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="titulos titulos--carrusel">Envíos a todo el país</h5>
+                            <p class="titulos titulos--carruselDos">Rápido, gratis y seguro</p>
+                        </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="portada__foto" src="./assets/carruseltres.svg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="titulos titulos--carrusel">La mejor atención</h5>
+                            <p class="titulos titulos--carruselDos">Las 24hs, los 365 días el año</p>
+                        </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+            </div>
+        </main>
         <section class="flyer justify-content-evenly">
-            <img class="flyer__foto" src="./assets/suc.png" alt="dibujo sucursales">
-            <h2 class="flyer__texto">Atención personalizada en nuestras sucursales</h2>
+            <a class="flyer__enlace" href="ubicacion.html">
+                <img class="flyer__foto" src="./assets/flyeruno.png" alt="dibujo sucursales">
+            </a>
+            <h2 class="flyer__texto">Te esperamos en nuestras sucursales</h2>
         </section>
         <section class="flyer flyer--colores justify-content-evenly">
-            <img class="flyer__foto" src="./assets/envio.png" alt="camion logística">
-            <h2 class="flyer__texto">Envíos a todo el pais</h2>
-            <img class="flyer__foto" src="./assets/mapa.png" alt="mapa argentina">
-        </section>
+            <h2 class="flyer__texto">Enviamos tu compra a todo el país</h2>
+            <a class="flyer__enlace" href="productos.html">
+                <img class="flyer__foto" src="./assets/envios.png" alt="camion logística">
+            </a>
+            </section>
         <section class="flyer justify-content-evenly">
-            <h2 class="flyer__texto">Servicio post-venta las 24 hs</h2>
-            <img class="flyer__foto" src="./assets/serviciopostventa.png" alt="atención telefónica">
+            <a class="flyer__enlace" href="contacto.html">
+                <img class="flyer__foto" src="./assets/telefono.png" alt="atención telefónica">
+            </a>
+            <h2 class="flyer__texto">Estamos esperando tu llamado</h2>
         </section>
         <!--fin del contenido exclusivo de la página principal-->
         <aside class="informacion"><!--comparte estructura y estilo con todas las secciones-->
@@ -127,8 +146,9 @@
                 <label for="mail">Ingrese su dirección de Mail para recibir ofertas y novedades</label>
                 <input type="email" name="mail" id="mail"><br><br>
             </div>
-            <p class="text-center">Todos los derechos reservados. 2021</p>
-            <P class="text-center">Inspirada en Seinfeld</p>
+            <div class="footer__referencia">
+                <P class="text-center">Todos los derechos reservados (2021). Inspirada "levemente" en</p><img class="footer__seinfeld" src="./assets/seinfeld.png" alt="">
+            </div>
         </footer>    
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>

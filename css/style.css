@@ -31,6 +31,12 @@
     font-weight: 700;
     letter-spacing: 10px; } }
 
+@keyframes logo {
+  0% {
+    font-size: 20px; }
+  100% {
+    font-size: 31px; } }
+
 /*Estilo común a todas las secciones*/
 * {
   margin: 0;
@@ -44,23 +50,22 @@ body {
 .contenedorPrincipal {
   margin: auto;
   width: 98%;
-  max-width: 1000px;
+  max-width: 1080px;
   height: auto;
-  background: linear-gradient(90deg, #ec7d00 0%, #fd211d 50%, #fcf645 100%);
+  background: linear-gradient(114deg, black 0%, #fd2d1d 50%, #fff700 100%);
   animation-name: aparece;
-  animation-duration: 3s; }
+  animation-duration: 1s; }
 
 header {
-  background: linear-gradient(90deg, #ec7d00 0%, #fd211d 50%, #fcf645 100%);
+  background: linear-gradient(114deg, black 0%, #fd2d1d 50%, #fff700 100%);
   height: 135px;
   display: flex;
   align-content: center;
   box-sizing: border-box; }
 
-.menu .menu__logo {
-  width: 100px;
-  opacity: 0.7;
-  margin-right: 50px; }
+.nav-item:hover {
+  transform: scale(1.3, 1.3);
+  transition: 1s; }
 
 .menu .menu__logo:hover {
   transform: scale(1.1, 1.1);
@@ -68,8 +73,50 @@ header {
   transition: 1s; }
 
 .menu .menu__enlaces {
-  margin-left: 30px;
-  font-size: 1.92308em; }
+  margin-left: 35px;
+  font-size: 2.08333em;
+  color: #ffd900;
+  font-weight: 800;
+  text-decoration: none;
+  text-shadow: black 1px 1px; }
+
+.menu .menu__home {
+  text-decoration: none;
+  margin: 0 15px; }
+
+.menu .menu__home:hover {
+  transform: scale(1.1, 1.1);
+  transition: 1s; }
+
+.menu .menu__ovalo {
+  transform: rotate(-15deg);
+  animation-name: ovalo;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  width: 150px;
+  height: 65px;
+  background-image: linear-gradient(yellow, orange);
+  border-radius: 50%;
+  box-shadow: black 2px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.menu .menu__text {
+  font-size: 20px;
+  color: red;
+  text-align: center;
+  font-weight: 800;
+  text-decoration: none;
+  padding: 0 5px;
+  text-shadow: black 1px 1px;
+  transform: rotate(15deg); }
+
+.menu .menu__text--especial {
+  font-size: 31px;
+  text-shadow: black 2px 2px;
+  animation-name: logo;
+  animation-duration: 1s; }
 
 .informacion {
   background-color: white; }
@@ -81,9 +128,9 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background: linear-gradient(90deg, #ec7d00 0%, #fd211d 50%, #fcf645 100%);
+  background: linear-gradient(114deg, black 0%, #fd2d1d 50%, #fff700 100%);
   height: auto;
-  color: #210249;
+  color: white;
   padding: 25px 15px 5px 15px;
   box-sizing: border-box; }
   .footer .footer__secciones {
@@ -127,31 +174,61 @@ header {
     letter-spacing: 5px;
     padding-top: 20px;
     box-sizing: border-box; }
+  .footer .footer__referencia {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .footer .footer__seinfeld {
+    width: 100px;
+    height: 40px; }
 
-/*index.html*/
-.portada .portada__foto {
-  height: 540px; }
-
-.titulos h1 {
+.titulos {
   text-align: center;
   width: 100%;
-  height: 50px;
+  height: auto;
   font-size: 2.5em;
   padding: 0;
   background-color: linear-gradient(90deg, #ec7d00 0%, #fd211d 50%, #fcf645 100%);
   color: #fefeff;
   box-sizing: border-box;
   font-weight: 900;
-  letter-spacing: 15px; }
+  letter-spacing: 15px;
+  text-shadow: black 2px 2px; }
+
+.titulos--principales {
+  font-size: 2.08333em;
+  background-color: rgba(0, 0, 0, 0.329); }
+
+.titulos--secundarios {
+  font-size: 1.66667em;
+  background-color: rgba(0, 0, 0, 0.329); }
+
+.titulos--productos {
+  font-size: 1.31579em; }
+
+.titulos--carrusel {
+  text-shadow: black 10px 3px 10px; }
+
+.titulos--carruselDos {
+  font-size: 1.47059em;
+  text-shadow: black 2px 3px 2px; }
+
+/*index.html*/
+.portada {
+  text-align: center;
+  background-color: rgba(233, 27, 0, 0.609); }
+  .portada .portada__foto {
+    height: 540px;
+    opacity: 80%; }
 
 .flyer {
   display: flex;
-  background-color: rgba(241, 218, 87, 0.445);
+  background-color: rgba(214, 79, 0, 0.445);
   height: 300px;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  color: #210249;
+  color: #ffb813;
   font-weight: 800;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center; }
@@ -160,36 +237,16 @@ header {
     width: 90%;
     font-weight: 900; }
   .flyer .flyer__texto {
-    font-size: 2.5em;
+    font-size: 2.75em;
     width: 30%;
-    font-weight: 700; }
+    font-weight: 700;
+    text-shadow: black 10px 3px 10px; }
   .flyer .flyer__foto {
-    height: 170px;
-    width: 170px; }
-  .flyer .flyer__foto--Uno {
-    background-image: url(../assets/prodCuatro.JPG);
-    background-size: contain; }
-  .flyer .flyer__foto--Dos {
-    background-image: url(../assets/prodUno.jpg);
-    background-size: contain; }
-  .flyer .flyer__foto--Tres {
-    background-image: url(../assets/prodDos.JPG);
-    background-size: contain; }
-  .flyer .flyer__foto--Cuatro {
-    background-image: url(../assets/prodTres.JPG);
-    background-size: contain; }
-  .flyer .flyer__foto--enlaces {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    .flyer .flyer__foto--enlaces a {
-      text-decoration: none;
-      padding: 5px;
-      color: white;
-      font-weight: 800;
-      letter-spacing: 5px;
-      font-size: 1.25em;
-      text-shadow: black 2px 2px; }
+    height: 250px;
+    width: 250px; }
+  .flyer .flyer__enlace:hover {
+    transform: scale(1.1, 1.1);
+    transition: 1s; }
 
 .flyer--colores {
   background-color: rgba(226, 110, 43, 0.52);
@@ -198,59 +255,51 @@ header {
 /*el bloque secciones da estilos al contenido de las siguientes secciones: 
 historia - poductos - ubicacion - contacto*/
 .secciones {
-  background: linear-gradient(90deg, #ec7d00 0%, #fd211d 50%, #fcf645 100%);
-  height: 300px;
+  height: auto;
   padding: 15px;
   box-sizing: border-box;
   text-align: center;
+  color: white;
+  /*productos*/
+  /*historia*/
   /*ubicacion*/
   /*contacto*/ }
-  .secciones .secciones__titulos {
-    text-align: center;
-    width: 100%;
-    height: 35px;
-    font-size: 1.5em;
-    padding: 5px 0;
-    background-color: rgba(255, 255, 255, 0.616);
-    color: #210249;
-    box-sizing: border-box; }
-  .secciones .secciones__subtitulos {
-    width: 100%;
-    height: 35px;
-    font-size: 1.5em;
-    padding: 5px 0;
-    background-color: rgba(255, 255, 255, 0.616);
-    color: #210249;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-    text-align: center; }
   .secciones .secciones__texto {
-    font-size: 1.2em;
+    font-size: 1.38889em;
     text-align: justify; }
+  .secciones .secciones__texto--ubicacion {
+    text-align: center; }
   .secciones .secciones__mapa {
     width: 90%;
-    height: 150px; }
-  .secciones .secciones__foto {
+    height: 150px;
+    margin: auto; }
+  .secciones .secciones__img {
     width: 90%; }
+  .secciones .secciones__foto {
+    height: 200px;
+    max-width: 300px;
+    margin: auto; }
+  .secciones .secciones__foto--historia {
+    max-width: 300px; }
   .secciones .secciones__foto--ubi {
     width: 90%;
-    height: 200px; }
+    height: 150px; }
   .secciones .secciones__formulario {
-    width: 50%;
+    width: 80%;
     margin: auto;
     box-sizing: border-box; }
   .secciones .secciones__datos {
-    background-color: rgba(255, 255, 255, 0.623);
+    background-color: rgba(0, 0, 0, 0.623);
     border-radius: 25px;
     padding: 10px; }
 
 /* exclusivo productos*/
-.secciones--productos {
-  height: 500px; }
-
 .secciones--encabezado {
-  height: auto;
-  background-color: #60b2d8; }
+  width: 80%; }
+
+.secciones--productos {
+  background-color: rgba(0, 0, 0, 0.329);
+  box-shadow: #ad2503 2px 2px; }
 
 /*exclusivo contacto*/
 .secciones--contacto {
@@ -262,19 +311,16 @@ historia - poductos - ubicacion - contacto*/
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-left: 25px;
   height: 100px; }
-
-.errorLogo {
-  width: 80px; }
 
 .contenedorError {
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: #60b2d8; }
+  align-items: center; }
   .contenedorError .imgError {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     border: 20px solid white;
     background-image: url(../assets/error2.gif);
@@ -289,33 +335,54 @@ historia - poductos - ubicacion - contacto*/
     animation-name: aparece;
     animation-duration: 2s; }
 
-.mensajeError {
-  background-color: #60b2d8; }
-  .mensajeError p {
-    font-size: 5em;
-    color: white;
-    text-align: center;
-    animation-name: aparece;
-    animation-duration: 3s; }
+.mensajeError p {
+  font-size: 3em;
+  color: white;
+  text-align: center;
+  animation-name: aparece;
+  animation-duration: 3s;
+  text-shadow: black 2px 2px 5px; }
+
+.mensajeError--dos {
+  display: flex;
+  justify-content: center; }
+  .mensajeError--dos img {
+    width: 30%;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: solid white 10px;
+    box-shadow: black 3px 3px 5px; }
+  .mensajeError--dos p {
+    font-size: 2em;
+    width: 40%; }
+  .mensajeError--dos a:hover {
+    transform: scale(1.1, 1.1);
+    opacity: 75%;
+    transition: 1s; }
 
 /*responsive*/
 @media screen and (max-width: 991px) {
+  /*responsive todas las seccioens*/
   .menu__desplegable {
-    background: linear-gradient(90deg, #ec7d00 0%, #fd211d 50%, #fcf645 100%);
-    text-align: center; }
+    background-color: rgba(212, 59, 39, 0.781);
+    border-bottom: yellow 2px solid;
+    text-align: center;
+    margin-top: 61px; }
   .footer {
     height: auto; }
     .footer .footer__contacto {
       width: 90%; }
     .footer .footer__sucursales {
       width: 90%; }
+  /*pagina principal*/
   .flyer .flyer__texto {
     font-size: 1.66667em; }
   .flyer .flyer__titulo {
     font-size: 1.66667em; }
   .flyer .flyer__foto {
-    width: 113.33333px;
-    height: 113.33333px;
+    width: 166.66667px;
+    height: 166.66667px;
     margin: 5px; }
   .flyer .flyer__foto--enlaces a {
     font-size: 0.83333em; }
@@ -327,31 +394,48 @@ historia - poductos - ubicacion - contacto*/
     max-height: 270px; }
   .carousel-inner {
     height: 270px; }
-  .titulos h1 {
-    text-align: center;
-    width: 100%;
-    height: 30px;
-    font-size: 1.25em;
-    padding: 0;
-    background-color: linear-gradient(90deg, #ec7d00 0%, #fd211d 50%, #fcf645 100%);
-    color: #fefeff;
-    box-sizing: border-box;
-    font-weight: 700;
-    letter-spacing: 5px; } }
+  /*compartido en todas las secciones*/
+  .titulos {
+    font-size: 1.47059em;
+    letter-spacing: 10px; }
+  .titulos--principales {
+    font-size: 1.38889em; }
+  .titulos--secundarios {
+    font-size: 1.31579em; }
+  .titulos--productos {
+    font-size: 1.31579em; }
+  /*historia*/
+  .secciones .secciones__texto {
+    font-size: 1.25em; }
+  .secciones .secciones__foto {
+    margin-bottom: 15px; } }
 
 @media screen and (max-width: 544px) {
+  /*pagina principal*/
   .flyer .flyer__texto {
     font-size: 1.13636em; }
   .flyer .flyer__titulo {
     font-size: 1.47059em; }
   .flyer .flyer__foto {
-    width: 100px;
-    height: 100px; }
+    width: 147.05882px;
+    height: 147.05882px; }
+  /*compartido en todas las secciones*/
+  .titulos {
+    font-size: 1.25em;
+    letter-spacing: 5px; }
+  .titulos--principales {
+    font-size: 1.13636em; }
+  .titulos--secundarios {
+    font-size: 1.08696em; }
+  .titulos--productos {
+    font-size: 1.08696em; }
+  /*historia*/
+  .secciones .secciones__texto {
+    font-size: 1.13636em; }
+  .secciones .secciones__foto {
+    margin-bottom: 7px; }
   .activarError a {
     text-decoration: none;
     animation-name: TextoResp;
     animation-duration: 2.5s;
-    animation-iteration-count: infinite; }
-  .banner {
-    background-size: contain;
-    height: 30px; } }
+    animation-iteration-count: infinite; } }
