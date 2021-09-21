@@ -216,19 +216,19 @@ header {
 /*index.html*/
 .portada {
   text-align: center;
-  background-color: rgba(233, 159, 0, 0.609); }
+  background-color: rgba(233, 27, 0, 0.609); }
   .portada .portada__foto {
     height: 540px;
-    opacity: 50%; }
+    opacity: 80%; }
 
 .flyer {
   display: flex;
-  background-color: rgba(241, 218, 87, 0.445);
+  background-color: rgba(214, 79, 0, 0.445);
   height: 300px;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  color: white;
+  color: #ffb813;
   font-weight: 800;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center; }
@@ -242,32 +242,11 @@ header {
     font-weight: 700;
     text-shadow: black 10px 3px 10px; }
   .flyer .flyer__foto {
-    height: 170px;
-    width: 170px; }
-  .flyer .flyer__foto--Uno {
-    background-image: url(../assets/prodCuatro.JPG);
-    background-size: contain; }
-  .flyer .flyer__foto--Dos {
-    background-image: url(../assets/prodUno.jpg);
-    background-size: contain; }
-  .flyer .flyer__foto--Tres {
-    background-image: url(../assets/prodDos.JPG);
-    background-size: contain; }
-  .flyer .flyer__foto--Cuatro {
-    background-image: url(../assets/prodTres.JPG);
-    background-size: contain; }
-  .flyer .flyer__foto--enlaces {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    .flyer .flyer__foto--enlaces a {
-      text-decoration: none;
-      padding: 5px;
-      color: white;
-      font-weight: 800;
-      letter-spacing: 5px;
-      font-size: 1.25em;
-      text-shadow: black 2px 2px; }
+    height: 250px;
+    width: 250px; }
+  .flyer .flyer__enlace:hover {
+    transform: scale(1.1, 1.1);
+    transition: 1s; }
 
 .flyer--colores {
   background-color: rgba(226, 110, 43, 0.52);
@@ -332,19 +311,16 @@ historia - poductos - ubicacion - contacto*/
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-left: 25px;
   height: 100px; }
-
-.errorLogo {
-  width: 80px; }
 
 .contenedorError {
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: #60b2d8; }
+  align-items: center; }
   .contenedorError .imgError {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     border: 20px solid white;
     background-image: url(../assets/error2.gif);
@@ -359,14 +335,31 @@ historia - poductos - ubicacion - contacto*/
     animation-name: aparece;
     animation-duration: 2s; }
 
-.mensajeError {
-  background-color: #60b2d8; }
-  .mensajeError p {
-    font-size: 5em;
-    color: white;
-    text-align: center;
-    animation-name: aparece;
-    animation-duration: 3s; }
+.mensajeError p {
+  font-size: 3em;
+  color: white;
+  text-align: center;
+  animation-name: aparece;
+  animation-duration: 3s;
+  text-shadow: black 2px 2px 5px; }
+
+.mensajeError--dos {
+  display: flex;
+  justify-content: center; }
+  .mensajeError--dos img {
+    width: 30%;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: solid white 10px;
+    box-shadow: black 3px 3px 5px; }
+  .mensajeError--dos p {
+    font-size: 2em;
+    width: 40%; }
+  .mensajeError--dos a:hover {
+    transform: scale(1.1, 1.1);
+    opacity: 75%;
+    transition: 1s; }
 
 /*responsive*/
 @media screen and (max-width: 991px) {
@@ -388,8 +381,8 @@ historia - poductos - ubicacion - contacto*/
   .flyer .flyer__titulo {
     font-size: 1.66667em; }
   .flyer .flyer__foto {
-    width: 113.33333px;
-    height: 113.33333px;
+    width: 166.66667px;
+    height: 166.66667px;
     margin: 5px; }
   .flyer .flyer__foto--enlaces a {
     font-size: 0.83333em; }
@@ -424,8 +417,8 @@ historia - poductos - ubicacion - contacto*/
   .flyer .flyer__titulo {
     font-size: 1.47059em; }
   .flyer .flyer__foto {
-    width: 100px;
-    height: 100px; }
+    width: 147.05882px;
+    height: 147.05882px; }
   /*compartido en todas las secciones*/
   .titulos {
     font-size: 1.25em;
