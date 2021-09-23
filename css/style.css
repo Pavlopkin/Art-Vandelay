@@ -44,17 +44,18 @@
   font-family: calibri; }
 
 body {
-  width: 100vw;
+  width: 98vw;
   background-color: white; }
 
 .contenedorPrincipal {
   margin: auto;
   width: 98%;
-  max-width: 1080px;
+  max-width: 1100px;
   height: auto;
   background: linear-gradient(114deg, black 0%, #fd2d1d 50%, #fff700 100%);
   animation-name: aparece;
-  animation-duration: 1s; }
+  animation-duration: 1s;
+  box-sizing: border-box; }
 
 header {
   background: linear-gradient(114deg, black 0%, #fd2d1d 50%, #fff700 100%);
@@ -260,6 +261,7 @@ historia - poductos - ubicacion - contacto*/
   box-sizing: border-box;
   text-align: center;
   color: white;
+  box-sizing: border-box;
   /*productos*/
   /*historia*/
   /*ubicacion*/
@@ -368,7 +370,8 @@ historia - poductos - ubicacion - contacto*/
     background-color: rgba(212, 59, 39, 0.781);
     border-bottom: yellow 2px solid;
     text-align: center;
-    margin-top: 61px; }
+    margin-top: 61px;
+    width: 90vw; }
   .footer {
     height: auto; }
     .footer .footer__contacto {
