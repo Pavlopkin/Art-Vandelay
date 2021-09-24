@@ -46,49 +46,57 @@
             </nav>
         </header>
         <!--contenido exclusivo de seccion productos-->
-        <main class="portada">
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                    <img src="./assets/productosDestacados.jpg" class="portada__foto d-block w-100" alt="Libro The Book of Coffe Table">
-                    </div>
-                    <div class="carousel-item">
-                    <img src="./assets/imgCuatro.jpg" class="portada__foto d-block w-100" alt="Campera reforzada de Gore Tex">
-                    </div>
-                    <div class="carousel-item">
-                    <img src="./assets/imgSeis.jpg" class="portada__foto d-block w-100" alt="Bolígrafo anti-gravedad">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-                </div>
-        </main>
-        <section class="secciones row mx-auto center">
-            <h1 class="titulos titulos--principales text-center">CONOZCA NUESTROS PRODUCTOS</h1>
-            <p class="secciones__texto text-center">A continuación les presentamos los productos más destacados de este mes. Aproveche las imperdibles promociones y téngalos ya en su casa</p>
-            <article id="gore" class="secciones secciones--productos col-xs-12 col-md-4">
+        <section class="secciones">
+            <h1 class="titulos titulos--principales secciones__encabezado">CONOZCA NUESTROS PRODUCTOS</h1>
+            <p class="secciones__texto secciones__encabezado">A continuación les presentamos los productos más destacados de este mes. Aproveche las imperdibles promociones y téngalos ya en su casa</p>
+            <article id="gore" class="secciones__productos">
+                <img class="secciones__img medidaProductos" src="./assets/imgCuatro.jpg" alt="campera Gore Tex">
                 <h2 class="titulos titulos--productos text-center">Campera Gore Tex</h2>
-                <img class="secciones__img rounded mx-auto" src="./assets/imgCuatro.jpg" alt="campera Gore Tex">
-                <p class="secciones__texto">Aíslese del frió con la distinguida campera Gore Tex. Confeccionada con la mejor materia prima, lo distanciará del frio y probablemente del resto de la sociedad</p>
-                <a class="btn btn-warning" href="error.html" role="button">COMPRAR</a>
+                <div class="descripcionProductos">
+                    <p>Aíslese del frió con la distinguida campera Gore Tex. Confeccionada con la mejor materia prima, lo distanciará del frio y probablemente del resto de la sociedad</p>
+                    <a class="btn btn-warning" href="error.html" role="button">COMPRAR</a>
+                </div>
             </article>
-            <article id="dispenser" class="secciones secciones--productos col-xs-12 col-md-4">
+            <article id="dispenser" class="secciones__productos">
+                <img class="secciones__img medidaProductos" src="./assets/imgCinco.png" alt="Dispenser para golosinas Marca Pez">
                 <h2 class="titulos titulos--productos text-center">Pez Dispenser</h2>
-                <img class="secciones__img rounded mx-auto" src="./assets/imgCinco.png" alt="Dispenser para golosinas Marca Pez">
-                <p class="secciones__texto">Este Pez Dispenser es un objeto escencial al monento de llevar sus pastillas favoritas. Golosinas o medicamentos llevados con un gracia especial que lo destacará sobre el resto de las personas</p>
-                <a class="btn btn-warning" href="error.html" role="button">COMPRAR</a>
+                <div class="descripcionProductos">
+                    <p>Este Pez Dispenser es un objeto escencial al monento de llevar sus pastillas favoritas. Golosinas o medicamentos llevados con un gracia especial que lo destacará sobre el resto de las personas</p>
+                    <a class="btn btn-warning" href="error.html" role="button">COMPRAR</a>
+                </div>
             </article>
-            <article id="boligrafo" class="secciones secciones--productos col-xs-12 col-md-4">
+            <article id="boligrafo" class="secciones__productos">
+                <img class="secciones__img medidaProductos" src="./assets/imgSeis.jpg" alt="Bolígrafo anti-gravedad">
                 <h2 class="titulos titulos--productos text-center">Bolígrafo anti-gravedad NASA</h2>
-                <img class="secciones__img rounded mx-auto" src="./assets/imgSeis.jpg" alt="Bolígrafo anti-gravedad">
-                <p class="secciones__texto">Olvídese de tomar notas sobre la espalda de otra persona, con este bolígrafo diseñado por la NASA usted podrá realizar anotaciones en las condiciones mas extremas, incluso contra el techo de su casa</p>
-                <a class="btn btn-warning" href="error.html" role="button">COMPRAR</a>
+                <div class="descripcionProductos">
+                    <p>Olvídese de tomar notas sobre la espalda de otra persona, con este bolígrafo diseñado por la NASA usted podrá realizar anotaciones en las condiciones mas extremas, incluso contra el techo de su casa</p>
+                    <a class="btn btn-warning" href="error.html" role="button">COMPRAR</a>
+                </div>   
+            </article>
+
+            <article id="gore" class="secciones__productos">
+                <img class="secciones__img medidaProductos" src="./assets/imgCuatro.jpg" alt="campera Gore Tex">
+                <h2 class="titulos titulos--productos text-center">Campera Gore Tex</h2>
+                <div class="descripcionProductos">
+                    <p>Aíslese del frió con la distinguida campera Gore Tex. Confeccionada con la mejor materia prima, lo distanciará del frio y probablemente del resto de la sociedad</p>
+                    <a class="btn btn-warning" href="error.html" role="button">COMPRAR</a>
+                </div>
+            </article>
+            <article id="dispenser" class="secciones__productos">
+                <img class="secciones__img medidaProductos" src="./assets/imgCinco.png" alt="Dispenser para golosinas Marca Pez">
+                <h2 class="titulos titulos--productos text-center">Pez Dispenser</h2>
+                <div class="descripcionProductos">
+                    <p>Este Pez Dispenser es un objeto escencial al monento de llevar sus pastillas favoritas. Golosinas o medicamentos llevados con un gracia especial que lo destacará sobre el resto de las personas</p>
+                    <a class="btn btn-warning" href="error.html" role="button">COMPRAR</a>
+                </div>
+            </article>
+            <article id="boligrafo" class="secciones__productos">
+                <img class="secciones__img medidaProductos" src="./assets/imgSeis.jpg" alt="Bolígrafo anti-gravedad">
+                <h2 class="titulos titulos--productos text-center">Bolígrafo anti-gravedad NASA</h2>
+                <div class="descripcionProductos">
+                    <p>Olvídese de tomar notas sobre la espalda de otra persona, con este bolígrafo diseñado por la NASA usted podrá realizar anotaciones en las condiciones mas extremas, incluso contra el techo de su casa</p>
+                    <a class="btn btn-warning" href="error.html" role="button">COMPRAR</a>
+                </div>   
             </article>
         </section>
         <!-- fin del contenido exclusivo de seccion productos-->

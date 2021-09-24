@@ -50,7 +50,7 @@ body {
 .contenedorPrincipal {
   margin: auto;
   width: 98%;
-  max-width: 1100px;
+  max-width: 1050px;
   height: auto;
   background: linear-gradient(114deg, black 0%, #fd2d1d 50%, #fff700 100%);
   animation-name: aparece;
@@ -205,7 +205,10 @@ header {
   background-color: rgba(0, 0, 0, 0.329); }
 
 .titulos--productos {
-  font-size: 1.31579em; }
+  font-size: 1.19048em;
+  background-color: rgba(92, 1, 1, 0.692);
+  letter-spacing: 5px;
+  margin: 0; }
 
 .titulos--carrusel {
   text-shadow: black 10px 3px 10px; }
@@ -256,6 +259,9 @@ header {
 /*el bloque secciones da estilos al contenido de las siguientes secciones: 
 historia - poductos - ubicacion - contacto*/
 .secciones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   height: auto;
   padding: 15px;
   box-sizing: border-box;
@@ -266,6 +272,15 @@ historia - poductos - ubicacion - contacto*/
   /*historia*/
   /*ubicacion*/
   /*contacto*/ }
+  .secciones .secciones__encabezado {
+    width: 100%; }
+  .secciones .secciones__productos {
+    margin: 40px 0;
+    height: 350px;
+    width: 30%;
+    padding: 5px;
+    cursor: pointer;
+    box-sizing: border-box; }
   .secciones .secciones__texto {
     font-size: 1.38889em;
     text-align: justify; }
@@ -277,6 +292,26 @@ historia - poductos - ubicacion - contacto*/
     margin: auto; }
   .secciones .secciones__img {
     width: 90%; }
+  .secciones .medidaProductos {
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px; }
+  .secciones .descripcionProductos {
+    color: white;
+    overflow: hidden;
+    height: 0;
+    background-color: rgba(92, 1, 1, 0.692);
+    box-sizing: border-box; }
+    .secciones .descripcionProductos p {
+      text-align: justify; }
+  .secciones .medidaProductos:hover {
+    opacity: 0.7;
+    transition: 2s; }
+  .secciones .secciones__productos:hover .descripcionProductos {
+    height: 200px;
+    padding-top: 20px;
+    transition: 1s; }
   .secciones .secciones__foto {
     height: 200px;
     max-width: 300px;
@@ -294,14 +329,6 @@ historia - poductos - ubicacion - contacto*/
     background-color: rgba(0, 0, 0, 0.623);
     border-radius: 25px;
     padding: 10px; }
-
-/* exclusivo productos*/
-.secciones--encabezado {
-  width: 80%; }
-
-.secciones--productos {
-  background-color: rgba(0, 0, 0, 0.329);
-  box-shadow: #ad2503 2px 2px; }
 
 /*exclusivo contacto*/
 .secciones--contacto {
