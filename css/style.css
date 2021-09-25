@@ -290,6 +290,20 @@ historia - poductos - ubicacion - contacto*/
     width: 90%;
     height: 150px;
     margin: auto; }
+  .secciones .cabeceraProd {
+    width: 100%;
+    height: 480px;
+    background-image: url(../assets/carrusel3.gif);
+    background-size: cover; }
+  .secciones .cabeceraTitulo {
+    width: 100%;
+    height: auto;
+    font-size: 2.5em;
+    padding: 10px;
+    background-color: red 50%;
+    color: #e94c25;
+    box-sizing: border-box;
+    font-family: fantasy; }
   .secciones .secciones__img {
     width: 90%; }
   .secciones .medidaProductos {
@@ -304,7 +318,8 @@ historia - poductos - ubicacion - contacto*/
     background-color: rgba(92, 1, 1, 0.692);
     box-sizing: border-box; }
     .secciones .descripcionProductos p {
-      text-align: justify; }
+      text-align: justify;
+      margin: 0 15px; }
   .secciones .medidaProductos:hover {
     opacity: 0.7;
     transition: 2s; }

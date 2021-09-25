@@ -332,6 +332,17 @@ historia - poductos - ubicacion - contacto*/
         margin: auto;
     }
     /*productos*/
+
+    .cabeceraProd{
+        width: 100%;
+        height: 480px;
+        background-image: (url(../assets/carrusel3.gif));
+        background-size: cover;
+    }
+    .cabeceraTitulo{
+        @include titulos (100%, auto, $titulos, 10px, red 50%, rgb(233, 76, 37), border-box);
+        font-family: fantasy;
+    }
     .secciones__img{
         width: 90%;
     }
@@ -349,6 +360,7 @@ historia - poductos - ubicacion - contacto*/
         box-sizing: border-box;
         p{
             text-align: justify;
+            margin: 0 15px;
         }
     }
     .medidaProductos:hover{
