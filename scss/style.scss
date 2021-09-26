@@ -68,7 +68,7 @@ $tamanoPortada: 540px;
 }
 body{
     width: 98vw;
-    background-color: white;
+    background-color: rgb(82, 5, 5);
 }
 .contenedorPrincipal{
     margin: auto;
@@ -225,7 +225,7 @@ header{
 }
 .titulos{ 
     text-align: center;
-    @include titulos (100%, auto, $titulos, 0, linear-gradient(90deg, rgba(236,125,0,1) 0%, rgba(253,33,29,1) 50%, rgba(252,246,69,1) 100%), rgb(254, 254, 255), border-box);
+    @include titulos (100%, 60px, $titulos, 0, linear-gradient(90deg, rgba(236,125,0,1) 0%, rgba(253,33,29,1) 50%, rgba(252,246,69,1) 100%), rgb(254, 254, 255), border-box);
     font-weight: 900;
     letter-spacing: 15px;
     text-shadow: black 2px 2px;
@@ -240,8 +240,9 @@ header{
 }
 .titulos--productos{
     font-size: $titulos/2.1;
-    background-color: rgba(92, 1, 1, 0.692);
+    background-color: rgb(88, 27, 8);
     letter-spacing: 5px;
+    width: 300px;
     margin: 0;
 }
 .titulos--carrusel{
@@ -250,6 +251,19 @@ header{
 .titulos--carruselDos{
     font-size: $titulos/1.7;
     text-shadow: rgb(0, 0, 0) 2px 3px 2px; 
+}
+
+.estiloUno{
+    background-color: rgba(66, 2, 2, 0.609);
+}
+.estiloDos{
+    background-color: rgba(131, 45, 5, 0.616);
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+    height: 400px;
+    width: 100%;
 }
 /*index.html*/
 .portada{
@@ -291,6 +305,7 @@ header{
         transform: scale(1.1,1.1) ;
         transition: 1s;
     }
+    
 }
 .flyer--colores{
     background-color: rgba(226, 110, 43, 0.52);
@@ -301,24 +316,11 @@ historia - poductos - ubicacion - contacto*/
 .secciones{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     height: auto;
-    padding: 15px;
     box-sizing: border-box;
     text-align: center;
     color: rgb(255, 255, 255);
     box-sizing: border-box;
-    .secciones__encabezado{
-        width: 100%;
-    }
-    .secciones__productos{
-        margin: 40px 0;
-        height: 350px;
-        width: 30%;
-        padding: 5px;
-        cursor: pointer;
-        box-sizing: border-box;
-    }
     .secciones__texto{
         font-size: $titulos/1.8;
         text-align: justify;
@@ -331,48 +333,12 @@ historia - poductos - ubicacion - contacto*/
         height: 150px;
         margin: auto;
     }
-    /*productos*/
-
-    .cabeceraProd{
+    .secciones__contenedores{
         width: 100%;
-        height: 480px;
-        background-image: (url(../assets/carrusel3.gif));
-        background-size: cover;
+        height: 400px;
+        display: flex;
+        justify-content: space-evenly;
     }
-    .cabeceraTitulo{
-        @include titulos (100%, auto, $titulos, 10px, red 50%, rgb(233, 76, 37), border-box);
-        font-family: fantasy;
-    }
-    .secciones__img{
-        width: 90%;
-    }
-    .medidaProductos{
-        width: 100%;
-        height: 200px;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-    }
-    .descripcionProductos{
-        color: rgb(255, 255, 255);
-        overflow: hidden;
-        height: 0;
-        background-color: rgba(92, 1, 1, 0.692);
-        box-sizing: border-box;
-        p{
-            text-align: justify;
-            margin: 0 15px;
-        }
-    }
-    .medidaProductos:hover{
-        opacity: 0.7;
-        transition: 2s;
-    }
-    .secciones__productos:hover .descripcionProductos{
-        height: 200px;
-        padding-top: 20px;
-        transition: 1s;
-    }
-
     /*historia*/
     .secciones__foto{
         height: 200px;
@@ -398,6 +364,133 @@ historia - poductos - ubicacion - contacto*/
         border-radius: 25px;
         padding: 10px;
     }
+}
+/*exclusivo historia*/
+.cabeceraHistoria{
+    width: 100%;
+    height: 400px;
+    background-image: url(../assets/quienes.png);
+    background-size: cover;
+}
+.kelVarsen{
+    width: 25%;
+    border: solid 2px black;
+    box-sizing: border-box;
+    background-color: rgba(255, 105, 180, 0.561);
+}
+.hePennypacker{
+    width: 25%;
+    background-color: rgba(255, 0, 0, 0.486);
+    border: solid 2px black;
+    box-sizing: border-box;
+}
+.artVandelay{
+    width: 20%;
+    border: solid 2px black;
+    box-sizing: border-box;
+    background-color: rgba(172, 255, 47, 0.644);
+}
+.christineNyhart{
+    width: 30%;
+    border: solid 2px black;
+    box-sizing: border-box;
+    background-color: rgba(76, 0, 130, 0.534);
+}
+/*exlusivo productos*/
+.cabeceraProd{
+    width: 100%;
+    height: 580px;
+    background-image: (url(../assets/carrusel3.gif));
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+}
+.producto{
+    margin: 15px;
+    border: solid 1px rgb(92, 1, 1);
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    width: 35%;
+    background-color: rgba(255, 255, 255, 0.808);
+    cursor: pointer;
+    .producto__foto{
+        width: 300px;
+        height: 190px;
+        margin-top: 10px;
+    }
+}
+.producto:hover .descripcion{
+    height: 200px;
+    transition: 1.5s;
+}
+.detalle{
+    width: 35%;
+    margin: 15px;
+    border-radius: 5%;
+    background-color: rgb(88, 27, 8);
+    border: solid 1px rgb(92, 1, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 15px;
+    box-sizing: border-box;
+    .detalle__texto{
+        font-size: $titulos;
+        font-weight: 900;
+    }
+    .detalleTexto--segundo{
+        font-size: $titulos/1.2;
+    }
+    .detalleTexto--tercero{
+        font-size: $titulos/1.8;
+    }
+    .detalle__boton{
+        width: 30%;
+        font-weight: 900;
+    }
+    .detalle__boton:hover{
+        transition: 1s;
+        transform: scale(1.2,1.2);
+    }
+}
+.descripcion{
+    color: rgb(110, 0, 0);
+    overflow: hidden;
+    width: 300px;
+    height: 0;
+    font-size: $titulos/2.4;
+    font-weight: 700;
+    box-sizing: border-box;
+    p{
+        text-align: justify;
+        margin: 0 10px 15px 10px;
+    }
+}
+.resumenProductos{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    padding: 10px 50px 50px 50px;
+    background-color: rgb(82, 0, 0);
+    box-sizing: border-box;
+}
+.resumenEnlaces{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    opacity: 0.8;
+    border: solid rgb(255, 255, 255) 5px;
+}
+.resumenEnlaces:hover{
+    opacity: 1;
+    transform: scale(1.2,1.2);
+    transition: 1s;
 }
 
 /*exclusivo contacto*/

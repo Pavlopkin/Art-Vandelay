@@ -45,7 +45,7 @@
 
 body {
   width: 98vw;
-  background-color: white; }
+  background-color: #520505; }
 
 .contenedorPrincipal {
   margin: auto;
@@ -186,7 +186,7 @@ header {
 .titulos {
   text-align: center;
   width: 100%;
-  height: auto;
+  height: 60px;
   font-size: 2.5em;
   padding: 0;
   background-color: linear-gradient(90deg, #ec7d00 0%, #fd211d 50%, #fcf645 100%);
@@ -206,8 +206,9 @@ header {
 
 .titulos--productos {
   font-size: 1.19048em;
-  background-color: rgba(92, 1, 1, 0.692);
+  background-color: #581b08;
   letter-spacing: 5px;
+  width: 300px;
   margin: 0; }
 
 .titulos--carrusel {
@@ -216,6 +217,18 @@ header {
 .titulos--carruselDos {
   font-size: 1.47059em;
   text-shadow: black 2px 3px 2px; }
+
+.estiloUno {
+  background-color: rgba(66, 2, 2, 0.609); }
+
+.estiloDos {
+  background-color: rgba(131, 45, 5, 0.616); }
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+  height: 400px;
+  width: 100%; }
 
 /*index.html*/
 .portada {
@@ -261,26 +274,14 @@ historia - poductos - ubicacion - contacto*/
 .secciones {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   height: auto;
-  padding: 15px;
   box-sizing: border-box;
   text-align: center;
   color: white;
   box-sizing: border-box;
-  /*productos*/
   /*historia*/
   /*ubicacion*/
   /*contacto*/ }
-  .secciones .secciones__encabezado {
-    width: 100%; }
-  .secciones .secciones__productos {
-    margin: 40px 0;
-    height: 350px;
-    width: 30%;
-    padding: 5px;
-    cursor: pointer;
-    box-sizing: border-box; }
   .secciones .secciones__texto {
     font-size: 1.38889em;
     text-align: justify; }
@@ -290,43 +291,11 @@ historia - poductos - ubicacion - contacto*/
     width: 90%;
     height: 150px;
     margin: auto; }
-  .secciones .cabeceraProd {
+  .secciones .secciones__contenedores {
     width: 100%;
-    height: 480px;
-    background-image: url(../assets/carrusel3.gif);
-    background-size: cover; }
-  .secciones .cabeceraTitulo {
-    width: 100%;
-    height: auto;
-    font-size: 2.5em;
-    padding: 10px;
-    background-color: red 50%;
-    color: #e94c25;
-    box-sizing: border-box;
-    font-family: fantasy; }
-  .secciones .secciones__img {
-    width: 90%; }
-  .secciones .medidaProductos {
-    width: 100%;
-    height: 200px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px; }
-  .secciones .descripcionProductos {
-    color: white;
-    overflow: hidden;
-    height: 0;
-    background-color: rgba(92, 1, 1, 0.692);
-    box-sizing: border-box; }
-    .secciones .descripcionProductos p {
-      text-align: justify;
-      margin: 0 15px; }
-  .secciones .medidaProductos:hover {
-    opacity: 0.7;
-    transition: 2s; }
-  .secciones .secciones__productos:hover .descripcionProductos {
-    height: 200px;
-    padding-top: 20px;
-    transition: 1s; }
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly; }
   .secciones .secciones__foto {
     height: 200px;
     max-width: 300px;
@@ -344,6 +313,126 @@ historia - poductos - ubicacion - contacto*/
     background-color: rgba(0, 0, 0, 0.623);
     border-radius: 25px;
     padding: 10px; }
+
+/*exclusivo historia*/
+.cabeceraHistoria {
+  width: 100%;
+  height: 400px;
+  background-image: url(../assets/quienes.png);
+  background-size: cover; }
+
+.kelVarsen {
+  width: 25%;
+  border: solid 2px black;
+  box-sizing: border-box;
+  background-color: rgba(255, 105, 180, 0.561); }
+
+.hePennypacker {
+  width: 25%;
+  background-color: rgba(255, 0, 0, 0.486);
+  border: solid 2px black;
+  box-sizing: border-box; }
+
+.artVandelay {
+  width: 20%;
+  border: solid 2px black;
+  box-sizing: border-box;
+  background-color: rgba(172, 255, 47, 0.644); }
+
+.christineNyhart {
+  width: 30%;
+  border: solid 2px black;
+  box-sizing: border-box;
+  background-color: rgba(76, 0, 130, 0.534); }
+
+/*exlusivo productos*/
+.cabeceraProd {
+  width: 100%;
+  height: 580px;
+  background-image: url(../assets/carrusel3.gif);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end; }
+
+.producto {
+  margin: 15px;
+  border: solid 1px #5c0101;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+  width: 35%;
+  background-color: rgba(255, 255, 255, 0.808);
+  cursor: pointer; }
+  .producto .producto__foto {
+    width: 300px;
+    height: 190px;
+    margin-top: 10px; }
+
+.producto:hover .descripcion {
+  height: 200px;
+  transition: 1.5s; }
+
+.detalle {
+  width: 35%;
+  margin: 15px;
+  border-radius: 5%;
+  background-color: #581b08;
+  border: solid 1px #5c0101;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 15px;
+  box-sizing: border-box; }
+  .detalle .detalle__texto {
+    font-size: 2.5em;
+    font-weight: 900; }
+  .detalle .detalleTexto--segundo {
+    font-size: 2.08333em; }
+  .detalle .detalleTexto--tercero {
+    font-size: 1.38889em; }
+  .detalle .detalle__boton {
+    width: 30%;
+    font-weight: 900; }
+  .detalle .detalle__boton:hover {
+    transition: 1s;
+    transform: scale(1.2, 1.2); }
+
+.descripcion {
+  color: #6e0000;
+  overflow: hidden;
+  width: 300px;
+  height: 0;
+  font-size: 1.04167em;
+  font-weight: 700;
+  box-sizing: border-box; }
+  .descripcion p {
+    text-align: justify;
+    margin: 0 10px 15px 10px; }
+
+.resumenProductos {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  padding: 10px 50px 50px 50px;
+  background-color: #520000;
+  box-sizing: border-box; }
+
+.resumenEnlaces {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  opacity: 0.8;
+  border: solid white 5px; }
+
+.resumenEnlaces:hover {
+  opacity: 1;
+  transform: scale(1.2, 1.2);
+  transition: 1s; }
 
 /*exclusivo contacto*/
 .secciones--contacto {
