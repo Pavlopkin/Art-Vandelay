@@ -513,7 +513,7 @@ historia - poductos - ubicacion - contacto*/
     justify-content: space-between;
     height: auto;
     padding: 10px 50px 50px 50px;
-    background-color: rgb(82, 0, 0);
+    background: linear-gradient(114deg, rgba(0,0,0,1) 0%, rgba(253,45,29,1) 50%, rgba(255,247,0,1) 100%);
     box-sizing: border-box;
 }
 .resumenEnlaces{
@@ -522,11 +522,13 @@ historia - poductos - ubicacion - contacto*/
     border-radius: 50%;
     opacity: 0.8;
     border: solid rgb(255, 255, 255) 5px;
+    filter: grayscale(100%)
 }
 .resumenEnlaces:hover{
     opacity: 1;
     transform: scale(1.2,1.2);
     transition: 1s;
+    filter: grayscale(0%);
 }
 
 /*exclusivo contacto*/
