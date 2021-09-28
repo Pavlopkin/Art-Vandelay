@@ -209,6 +209,7 @@ header {
   background-color: #581b08;
   letter-spacing: 5px;
   width: 300px;
+  height: 30px;
   margin: 0; }
 
 .titulos--carrusel {
@@ -219,10 +220,11 @@ header {
   text-shadow: black 2px 3px 2px; }
 
 .estiloUno {
-  background-color: rgba(66, 2, 2, 0.609); }
+  background-color: rgba(66, 2, 2, 0.287); }
 
 .estiloDos {
-  background-color: rgba(131, 45, 5, 0.616); }
+  background-color: rgba(243, 178, 0, 0.397);
+  flex-direction: row-reverse; }
 
 .flex {
   display: flex;
@@ -285,8 +287,12 @@ historia - poductos - ubicacion - contacto*/
   .secciones .secciones__texto {
     font-size: 1.38889em;
     text-align: justify; }
+  .secciones .secciones__texto--destacada {
+    margin: 30px; }
   .secciones .secciones__texto--ubicacion {
     text-align: center; }
+  .secciones .secciones__texto--historia {
+    width: 50%; }
   .secciones .secciones__mapa {
     width: 90%;
     height: 150px;
@@ -296,12 +302,18 @@ historia - poductos - ubicacion - contacto*/
     height: 400px;
     display: flex;
     justify-content: space-evenly; }
+  .secciones .secciones__contenedores--column {
+    flex-direction: column; }
+  .secciones .secciones__contenedores--historia {
+    flex-wrap: wrap; }
   .secciones .secciones__foto {
     height: 200px;
     max-width: 300px;
     margin: auto; }
   .secciones .secciones__foto--historia {
-    max-width: 300px; }
+    width: 30%;
+    margin: 20px 50px;
+    border-radius: 30%; }
   .secciones .secciones__foto--ubi {
     width: 90%;
     height: 150px; }
@@ -324,30 +336,37 @@ historia - poductos - ubicacion - contacto*/
 .kelVarsen {
   width: 25%;
   box-sizing: border-box;
-  background-color: rgba(240, 36, 0, 0.692); }
+  background-color: rgba(246, 49, 0, 0.445); }
 
 .hePennypacker {
   width: 25%;
-  background-color: rgba(243, 153, 9, 0.733);
+  background-color: rgba(251, 192, 0, 0.342);
   box-sizing: border-box; }
 
 .artVandelay {
   width: 20%;
   box-sizing: border-box;
-  background-color: rgba(240, 36, 0, 0.692); }
+  background-color: rgba(246, 49, 0, 0.445); }
 
 .christineNyhart {
   width: 30%;
   box-sizing: border-box;
-  background-color: rgba(243, 153, 9, 0.733); }
+  background-color: rgba(251, 192, 0, 0.342); }
 
 .enlacesHistoria {
   text-decoration: none;
   font-size: 2.5em;
   flex-direction: column;
   justify-content: flex-end;
-  color: white;
+  color: #f0bb0c;
+  text-shadow: black 2px 2px 5px;
   font-weight: 900; }
+
+.enlacesHistoria--oposite {
+  color: red; }
+
+.enlacesHistoria:hover {
+  color: red; }
 
 /*exlusivo productos*/
 .cabeceraProd {
@@ -376,7 +395,7 @@ historia - poductos - ubicacion - contacto*/
     margin-top: 10px; }
 
 .producto:hover .descripcion {
-  height: 200px;
+  height: 130px;
   transition: 1.5s; }
 
 .detalle {
@@ -540,6 +559,9 @@ historia - poductos - ubicacion - contacto*/
     font-size: 1.38889em; }
   .titulos--secundarios {
     font-size: 1.31579em; }
+  .titulos--historia {
+    font-size: 1.31579em;
+    width: 100%; }
   .titulos--productos {
     font-size: 1.31579em; }
   /*historia*/
