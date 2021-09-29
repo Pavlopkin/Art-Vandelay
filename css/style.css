@@ -50,15 +50,17 @@ body {
 .contenedorPrincipal {
   margin: auto;
   width: 98%;
-  max-width: 1050px;
+  max-width: 1150px;
   height: auto;
-  background: linear-gradient(114deg, black 0%, #fd2d1d 50%, #fff700 100%);
+  background: #980b0b;
+  background: linear-gradient(45deg, #980b0b 0%, #ff5e00 30%, #ffa600 70%, red 100%);
   animation-name: aparece;
   animation-duration: 1s;
   box-sizing: border-box; }
 
 header {
-  background: linear-gradient(114deg, black 0%, #fd2d1d 50%, #fff700 100%);
+  background: #980b0b;
+  background: linear-gradient(45deg, #980b0b 0%, #ff5e00 30%, #ffa600 70%, red 100%);
   height: 135px;
   display: flex;
   align-content: center;
@@ -129,9 +131,10 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background: linear-gradient(114deg, black 0%, #fd2d1d 50%, #fff700 100%);
+  background: #980b0b;
+  background: linear-gradient(45deg, #980b0b 0%, #ff5e00 30%, #ffa600 70%, red 100%);
   height: auto;
-  color: white;
+  color: black;
   padding: 25px 15px 5px 15px;
   box-sizing: border-box; }
   .footer .footer__secciones {
@@ -292,7 +295,8 @@ historia - poductos - ubicacion - contacto*/
   .secciones .secciones__texto--ubicacion {
     text-align: center; }
   .secciones .secciones__texto--historia {
-    width: 50%; }
+    width: 40%;
+    color: #580606; }
   .secciones .secciones__mapa {
     width: 90%;
     height: 150px;
@@ -305,7 +309,9 @@ historia - poductos - ubicacion - contacto*/
   .secciones .secciones__contenedores--column {
     flex-direction: column; }
   .secciones .secciones__contenedores--historia {
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    border-top: 2px solid white;
+    padding-top: 25px; }
   .secciones .secciones__foto {
     height: 200px;
     max-width: 300px;
@@ -318,7 +324,7 @@ historia - poductos - ubicacion - contacto*/
     width: 90%;
     height: 150px; }
   .secciones .secciones__formulario {
-    width: 80%;
+    width: 50%;
     margin: auto;
     box-sizing: border-box; }
   .secciones .secciones__datos {
@@ -329,41 +335,41 @@ historia - poductos - ubicacion - contacto*/
 /*exclusivo historia*/
 .cabeceraHistoria {
   width: 100%;
-  height: 400px;
-  background-image: url(../assets/quienes.png);
+  height: 470px;
+  background-image: url(../assets/quien.JPG);
   background-size: cover; }
 
 .kelVarsen {
-  width: 25%;
+  width: 22%;
   box-sizing: border-box;
-  background-color: rgba(246, 49, 0, 0.445); }
+  background-color: rgba(255, 102, 0, 0.65); }
 
 .hePennypacker {
-  width: 25%;
-  background-color: rgba(251, 192, 0, 0.342);
+  width: 26%;
+  background-color: rgba(251, 56, 7, 0.651);
   box-sizing: border-box; }
 
 .artVandelay {
-  width: 20%;
+  width: 24%;
   box-sizing: border-box;
-  background-color: rgba(246, 49, 0, 0.445); }
+  background-color: rgba(255, 102, 0, 0.65); }
 
 .christineNyhart {
-  width: 30%;
+  width: 29%;
   box-sizing: border-box;
-  background-color: rgba(251, 192, 0, 0.342); }
+  background-color: rgba(251, 56, 7, 0.651); }
 
 .enlacesHistoria {
+  display: flex;
   text-decoration: none;
   font-size: 2.5em;
   flex-direction: column;
+  align-items: center;
   justify-content: flex-end;
   color: #f0bb0c;
   text-shadow: black 2px 2px 5px;
-  font-weight: 900; }
-
-.enlacesHistoria--oposite {
-  color: red; }
+  font-weight: 900;
+  height: 470px; }
 
 .enlacesHistoria:hover {
   color: red; }
@@ -442,7 +448,8 @@ historia - poductos - ubicacion - contacto*/
   justify-content: space-between;
   height: auto;
   padding: 10px 50px 50px 50px;
-  background: linear-gradient(114deg, black 0%, #fd2d1d 50%, #fff700 100%);
+  background: #980b0b;
+  background: linear-gradient(45deg, #980b0b 0%, #ff5e00 30%, #ffa600 70%, red 100%);
   box-sizing: border-box; }
 
 .resumenEnlaces {
@@ -463,6 +470,19 @@ historia - poductos - ubicacion - contacto*/
 .secciones--contacto {
   height: auto;
   padding: 20px; }
+
+.estiloBotones {
+  width: 140px;
+  height: 60px;
+  box-shadow: brown 2px 5px 10px;
+  color: red;
+  font-size: 1.38889em;
+  text-shadow: black 1px 2px;
+  font-weight: 900;
+  border-radius: 50%;
+  background-image: linear-gradient(yellow, orange);
+  margin: 10px;
+  box-sizing: border-box; }
 
 /*exclusivo pagina 404*/
 .headerError {

@@ -73,15 +73,17 @@ body{
 .contenedorPrincipal{
     margin: auto;
     width: 98%;
-    max-width: 1050px;
+    max-width: 1150px;
     height: auto;
-    background: linear-gradient(114deg, rgba(0,0,0,1) 0%, rgba(253,45,29,1) 50%, rgba(255,247,0,1) 100%);
+    background: rgb(152,11,11);
+background: linear-gradient(45deg, rgba(152,11,11,1) 0%, rgba(255,94,0,1) 30%, rgba(255,166,0,1) 70%, rgba(255,0,0,1) 100%);
     animation-name: aparece;
     animation-duration: 1s;
     box-sizing: border-box;
 }
 header{
-    background: linear-gradient(114deg, rgba(0,0,0,1) 0%, rgba(253,45,29,1) 50%, rgba(255,247,0,1) 100%);
+    background: rgb(152,11,11);
+background: linear-gradient(45deg, rgba(152,11,11,1) 0%, rgba(255,94,0,1) 30%, rgba(255,166,0,1) 70%, rgba(255,0,0,1) 100%);
     height: 135px;
     display: flex;
     align-content: center;
@@ -155,9 +157,10 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background: linear-gradient(114deg, rgba(0,0,0,1) 0%, rgba(253,45,29,1) 50%, rgba(255,247,0,1) 100%);
+    background: rgb(152,11,11);
+    background: linear-gradient(45deg, rgba(152,11,11,1) 0%, rgba(255,94,0,1) 30%, rgba(255,166,0,1) 70%, rgba(255,0,0,1) 100%);
     height: auto;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     padding: 25px 15px 5px 15px;
     box-sizing: border-box;
     .footer__secciones{
@@ -334,7 +337,8 @@ historia - poductos - ubicacion - contacto*/
         text-align: center;
     }
     .secciones__texto--historia{
-        width: 50%;
+        width: 40%;
+        color: rgb(88, 6, 6);
     }
     .secciones__mapa{
         width: 90%;
@@ -352,6 +356,8 @@ historia - poductos - ubicacion - contacto*/
     }
     .secciones__contenedores--historia{
         flex-wrap: wrap;
+        border-top: 2px solid white;
+        padding-top: 25px;
     }
     /*historia*/
     .secciones__foto{
@@ -371,7 +377,7 @@ historia - poductos - ubicacion - contacto*/
     }
     /*contacto*/
     .secciones__formulario{
-        width: 80%;
+        width: 50%;
         margin: auto;
         box-sizing: border-box;
     }
@@ -384,50 +390,48 @@ historia - poductos - ubicacion - contacto*/
 /*exclusivo historia*/
 .cabeceraHistoria{
     width: 100%;
-    height: 400px;
-    background-image: url(../assets/quienes.png);
+    height: 470px;
+    background-image: url(../assets/quien.JPG);
     background-size: cover;
 }
 .kelVarsen{
-    width: 25%;
+    width: 22%;
     
     box-sizing: border-box;
-    background-color: rgba(246, 49, 0, 0.445);
+    background-color: rgba(255, 102, 0, 0.65);
     
 }
 .hePennypacker{
-    width: 25%;
-    background-color: rgba(251, 192, 0, 0.342);
+    width: 26%;
+    background-color: rgba(251, 56, 7, 0.651);
     
     box-sizing: border-box;
  
 }
 .artVandelay{
-    width: 20%;
-    
+    width: 24%;
     box-sizing: border-box;
-    background-color: rgba(246, 49, 0, 0.445);
+    background-color: rgba(255, 102, 0, 0.65);
 }
 .christineNyhart{
-    width: 30%;
+    width: 29%;
     
     box-sizing: border-box;
-    background-color: rgba(251, 192, 0, 0.342);
+    background-color: rgba(251, 56, 7, 0.651);
 }
 .enlacesHistoria{
+    display: flex;
     text-decoration: none;
     font-size: $titulos;
     flex-direction: column;
+    align-items: center;
     justify-content: flex-end;
     color: rgb(240, 187, 12);
     text-shadow: rgb(0, 0, 0) 2px 2px 5px;
     font-weight: 900;
+    height: 470px;
 }
-.enlacesHistoria--oposite{
-    color: red;
-   
 
-}
 .enlacesHistoria:hover{
     color: red;
 }
@@ -513,7 +517,8 @@ historia - poductos - ubicacion - contacto*/
     justify-content: space-between;
     height: auto;
     padding: 10px 50px 50px 50px;
-    background: linear-gradient(114deg, rgba(0,0,0,1) 0%, rgba(253,45,29,1) 50%, rgba(255,247,0,1) 100%);
+    background: rgb(152,11,11);
+background: linear-gradient(45deg, rgba(152,11,11,1) 0%, rgba(255,94,0,1) 30%, rgba(255,166,0,1) 70%, rgba(255,0,0,1) 100%);
     box-sizing: border-box;
 }
 .resumenEnlaces{
@@ -535,6 +540,19 @@ historia - poductos - ubicacion - contacto*/
 .secciones--contacto{
     height: auto;
     padding: 20px;
+}
+.estiloBotones{
+    width: 140px;
+    height: 60px;
+    box-shadow: brown 2px 5px 10px;
+    color: rgb(255, 0, 0);
+    font-size: $titulos/1.8;
+    text-shadow: black 1px 2px;
+    font-weight: 900;
+    border-radius: 50%;
+    background-image: linear-gradient(yellow, orange);
+    margin: 10px;
+    box-sizing: border-box;
 }
 /*exclusivo pagina 404*/
 .headerError{
