@@ -61,6 +61,13 @@ $tamanoPortada: 540px;
     }
 }
 /*Estilo común a todas las secciones*/
+.enfasisTexto{
+    font-weight: 800;
+    text-decoration: underline 2px;
+}
+.opposite{
+    background-color: rgba(255, 0, 0, 0.486);
+}
 *{
     margin:0;
     padding:0;
@@ -235,11 +242,9 @@ background: linear-gradient(45deg, rgba(152,11,11,1) 0%, rgba(255,94,0,1) 30%, r
 }
 .titulos--principales{
     font-size: $titulos/1.2;
-    background-color: rgba(0, 0, 0, 0.329);
 }
 .titulos--secundarios{
     font-size: $titulos/1.5;
-    background-color: rgba(0, 0, 0, 0.329);
 }
 .titulos--productos{
     font-size: $titulos/2.1;
@@ -340,10 +345,19 @@ historia - poductos - ubicacion - contacto*/
         width: 40%;
         color: rgb(88, 6, 6);
     }
-    .secciones__mapa{
-        width: 90%;
-        height: 150px;
-        margin: auto;
+    .secciones__texto--sucursales{
+        list-style: none;
+        color: rgb(88, 6, 6);
+    }
+    .secciones__texto--envios{
+        font-size: $titulos/1.4;
+        width: 30%;
+        text-shadow: black 2px 2px 5px;
+        color: rgb(255, 255, 255);
+        margin:30px;
+    }
+    .secciones__sucursales{
+        width: 40%;
     }
     .secciones__contenedores{
         width: 100%;
@@ -361,8 +375,8 @@ historia - poductos - ubicacion - contacto*/
     }
     /*historia*/
     .secciones__foto{
-        height: 200px;
-        max-width: 300px;
+        height: 210px;
+        max-width: 330px;
         margin: auto;
     }
     .secciones__foto--historia{
@@ -434,6 +448,8 @@ historia - poductos - ubicacion - contacto*/
 
 .enlacesHistoria:hover{
     color: red;
+    background-color: rgba(255, 210, 184, 0.322);
+    transition: 1s;
 }
 
 /*exlusivo productos*/
