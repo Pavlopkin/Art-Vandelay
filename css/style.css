@@ -189,9 +189,16 @@ header {
     display: flex;
     justify-content: center;
     align-items: center; }
+  .footer .footer__redes {
+    width: 50px;
+    height: 50px;
+    margin: 10px; }
   .footer .footer__seinfeld {
     width: 100px;
     height: 40px; }
+  .footer .footer__texto {
+    font-size: 1.25em;
+    font-weight: 700; }
 
 .titulos {
   text-align: center;
@@ -210,7 +217,8 @@ header {
   font-size: 2.08333em; }
 
 .titulos--secundarios {
-  font-size: 1.66667em; }
+  font-size: 1.66667em;
+  color: #ffd000; }
 
 .titulos--productos {
   font-size: 1.19048em;
@@ -243,9 +251,9 @@ header {
 /*index.html*/
 .portada {
   text-align: center;
-  background-color: rgba(233, 27, 0, 0.609); }
+  background: radial-gradient(circle, #ff1f00 0%, #ff9400 39%, white 100%); }
   .portada .portada__foto {
-    height: 540px;
+    height: 450px;
     opacity: 80%; }
 
 .flyer {
@@ -317,13 +325,19 @@ historia - poductos - ubicacion - contacto*/
     width: 100%;
     height: 400px;
     display: flex;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+    border-top: 2px solid #eb5803; }
   .secciones .secciones__contenedores--column {
     flex-direction: column; }
   .secciones .secciones__contenedores--historia {
     flex-wrap: wrap;
-    border-top: 2px solid white;
     padding-top: 25px; }
+  .secciones .secciones__contenedores--productos {
+    height: 550px;
+    flex-wrap: wrap;
+    padding: 50px;
+    box-sizing: border-box;
+    border-top: 2px solid #eb5803; }
   .secciones .secciones__foto {
     height: 210px;
     max-width: 330px;
@@ -483,7 +497,7 @@ historia - poductos - ubicacion - contacto*/
 /*exclusivo contacto*/
 .secciones--contacto {
   height: auto;
-  padding: 20px; }
+  padding-bottom: 20px; }
 
 .estiloBotones {
   width: 140px;
@@ -584,9 +598,9 @@ historia - poductos - ubicacion - contacto*/
     padding: 20px;
     box-sizing: border-box; }
   .portada .portada__foto {
-    max-height: 270px; }
+    max-height: 225px; }
   .carousel-inner {
-    height: 270px; }
+    height: 225px; }
   /*compartido en todas las secciones*/
   .titulos {
     font-size: 1.47059em;

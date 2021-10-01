@@ -1,7 +1,7 @@
 /*variables*/
 $titulos: 2.5em;
 $medidaFotos: 250px;
-$tamanoPortada: 540px;
+$tamanoPortada: 450px;
 
 @mixin titulos($width, $heigth, $font-size, $padding, $background-color, $color, $box-sizing){
     width:$width;
@@ -228,9 +228,18 @@ background: linear-gradient(45deg, rgba(152,11,11,1) 0%, rgba(255,94,0,1) 30%, r
         justify-content: center;
         align-items: center;
     }
+    .footer__redes{
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+    }
     .footer__seinfeld{
         width: 100px;
         height: 40px;
+    }
+    .footer__texto{
+        font-size: $titulos/2;
+        font-weight: 700;
     }
 }
 .titulos{ 
@@ -245,6 +254,7 @@ background: linear-gradient(45deg, rgba(152,11,11,1) 0%, rgba(255,94,0,1) 30%, r
 }
 .titulos--secundarios{
     font-size: $titulos/1.5;
+    color: rgb(255, 208, 0);
 }
 .titulos--productos{
     font-size: $titulos/2.1;
@@ -278,7 +288,7 @@ background: linear-gradient(45deg, rgba(152,11,11,1) 0%, rgba(255,94,0,1) 30%, r
 /*index.html*/
 .portada{
     text-align: center;
-    background-color: rgba(233, 27, 0, 0.609);
+    background: radial-gradient(circle, rgba(255,31,0,1) 0%, rgba(255,148,0,1) 39%, rgba(255,255,255,1) 100%);
     .portada__foto{
         height: $tamanoPortada;
         opacity: 80%;
@@ -364,14 +374,21 @@ historia - poductos - ubicacion - contacto*/
         height: 400px;
         display: flex;
         justify-content: space-evenly;
+        border-top: 2px solid rgb(235, 88, 3);
     }
     .secciones__contenedores--column{
         flex-direction: column;
     }
     .secciones__contenedores--historia{
         flex-wrap: wrap;
-        border-top: 2px solid white;
         padding-top: 25px;
+    }
+    .secciones__contenedores--productos{
+        height: 550px;
+        flex-wrap: wrap;
+        padding: 50px;
+        box-sizing: border-box;
+        border-top: 2px solid rgb(235, 88, 3);
     }
     /*historia*/
     .secciones__foto{
@@ -555,7 +572,7 @@ background: linear-gradient(45deg, rgba(152,11,11,1) 0%, rgba(255,94,0,1) 30%, r
 /*exclusivo contacto*/
 .secciones--contacto{
     height: auto;
-    padding: 20px;
+    padding-bottom: 20px;
 }
 .estiloBotones{
     width: 140px;
@@ -679,6 +696,7 @@ background: linear-gradient(45deg, rgba(152,11,11,1) 0%, rgba(255,94,0,1) 30%, r
     .portada{
         .portada__foto {
             max-height: $tamanoPortada/2;
+            
         }
     }
     .carousel-inner{
