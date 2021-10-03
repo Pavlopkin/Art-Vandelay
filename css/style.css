@@ -38,13 +38,6 @@
     font-size: 31px; } }
 
 /*Estilo común a todas las secciones*/
-.enfasisTexto {
-  font-weight: 800;
-  text-decoration: underline 2px; }
-
-.opposite {
-  background-color: rgba(255, 251, 0, 0.787); }
-
 * {
   margin: 0;
   padding: 0;
@@ -57,13 +50,20 @@ body {
 .contenedorPrincipal {
   margin: auto;
   width: 98%;
-  max-width: 1150px;
+  max-width: 1100px;
   height: auto;
   background: #980b0b;
   background: linear-gradient(45deg, #980b0b 0%, #ff5e00 30%, #ffa600 70%, red 100%);
   animation-name: aparece;
   animation-duration: 1s;
   box-sizing: border-box; }
+
+.enfasisTexto {
+  font-weight: 800;
+  text-decoration: underline 2px; }
+
+.opposite {
+  background-color: rgba(255, 251, 0, 0.787); }
 
 header {
   background: #980b0b;
@@ -83,8 +83,8 @@ header {
   transition: 1s; }
 
 .menu .menu__enlaces {
-  margin-left: 40px;
-  font-size: 1.69231em;
+  margin-left: 37px;
+  font-size: 1.57143em;
   color: #ffd900;
   font-weight: 800;
   text-decoration: none;
@@ -324,7 +324,7 @@ historia - poductos - ubicacion - contacto*/
     width: 40%; }
   .secciones .secciones__contenedores {
     width: 100%;
-    height: 400px;
+    height: auto;
     display: flex;
     justify-content: space-evenly;
     border-top: 2px solid #eb5803; }
@@ -345,7 +345,6 @@ historia - poductos - ubicacion - contacto*/
     cursor: zoom-in; }
   .secciones .secciones__foto {
     height: 210px;
-    max-width: 330px;
     margin: auto; }
   .secciones .secciones__foto--historia {
     width: 30%;
@@ -457,7 +456,7 @@ historia - poductos - ubicacion - contacto*/
   .detalle .detalleTexto--tercero {
     font-size: 1.22222em; }
   .detalle .detalle__boton {
-    width: 30%;
+    width: auto;
     font-weight: 900; }
   .detalle .detalle__boton:hover {
     transition: 1s;
@@ -620,10 +619,40 @@ historia - poductos - ubicacion - contacto*/
   .titulos--productos {
     font-size: 1.15789em; }
   /*historia*/
-  .secciones .secciones__texto {
-    font-size: 1.1em; }
+  .secciones {
+    /*contacto*/ }
+    .secciones .secciones__texto {
+      font-size: 1.1em; }
+    .secciones .secciones__foto {
+      margin-bottom: 15px; }
+    .secciones .secciones__formulario {
+      width: 80%; } }
+
+@media screen and (max-width: 800px) {
+  .secciones .secciones__contenedores {
+    flex-direction: column;
+    justify-content: none;
+    height: auto;
+    align-items: center; }
   .secciones .secciones__foto {
-    margin-bottom: 15px; } }
+    width: 60%; }
+  .secciones .secciones__texto {
+    width: 90%; }
+  .secciones .secciones__sucursales {
+    margin-top: 25px;
+    width: 90%; }
+  .detalle {
+    width: 60%; }
+  .resumenProductos {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .resumenEnlaces {
+    width: 80px;
+    height: 80px;
+    margin: 5px; } }
 
 @media screen and (max-width: 544px) {
   /*pagina principal*/
@@ -649,8 +678,16 @@ historia - poductos - ubicacion - contacto*/
     font-size: 1em; }
   .secciones .secciones__foto {
     margin-bottom: 7px; }
+  .secciones .secciones__formulario {
+    width: 98%; }
+  .secciones .secciones__contenedores--productos {
+    height: auto;
+    padding: 10px; }
   .activarError a {
     text-decoration: none;
     animation-name: TextoResp;
     animation-duration: 2.5s;
-    animation-iteration-count: infinite; } }
+    animation-iteration-count: infinite; }
+  /*productos*/
+  .detalle {
+    width: 90%; } }

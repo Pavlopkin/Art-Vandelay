@@ -61,13 +61,6 @@ $tamanoPortada: 450px;
     }
 }
 /*Estilo común a todas las secciones*/
-.enfasisTexto{
-    font-weight: 800;
-    text-decoration: underline 2px;
-}
-.opposite{
-    background-color: rgba(255, 251, 0, 0.787);
-}
 *{
     margin:0;
     padding:0;
@@ -80,13 +73,20 @@ body{
 .contenedorPrincipal{
     margin: auto;
     width: 98%;
-    max-width: 1150px;
+    max-width: 1100px;
     height: auto;
     background: rgb(152,11,11);
-background: linear-gradient(45deg, rgba(152,11,11,1) 0%, rgba(255,94,0,1) 30%, rgba(255,166,0,1) 70%, rgba(255,0,0,1) 100%);
+    background: linear-gradient(45deg, rgba(152,11,11,1) 0%, rgba(255,94,0,1) 30%, rgba(255,166,0,1) 70%, rgba(255,0,0,1) 100%);
     animation-name: aparece;
     animation-duration: 1s;
     box-sizing: border-box;
+}
+.enfasisTexto{
+    font-weight: 800;
+    text-decoration: underline 2px;
+}
+.opposite{
+    background-color: rgba(255, 251, 0, 0.787);
 }
 header{
     background: rgb(152,11,11);
@@ -107,8 +107,8 @@ background: linear-gradient(45deg, rgba(152,11,11,1) 0%, rgba(255,94,0,1) 30%, r
         transition: 1s;
     }
     .menu__enlaces{
-        margin-left: 40px;
-        font-size: $titulos/1.3;
+        margin-left: 37px;
+        font-size: $titulos/1.4;
         color: rgb(255, 217, 0);
         font-weight: 800;
         text-decoration: none;
@@ -369,7 +369,7 @@ historia - poductos - ubicacion - contacto*/
     }
     .secciones__contenedores{
         width: 100%;
-        height: 400px;
+        height: auto;
         display: flex;
         justify-content: space-evenly;
         border-top: 2px solid rgb(235, 88, 3);
@@ -397,7 +397,6 @@ historia - poductos - ubicacion - contacto*/
     /*historia*/
     .secciones__foto{
         height: 210px;
-        max-width: 330px;
         margin: auto;
     }
     .secciones__foto--historia{
@@ -527,7 +526,7 @@ historia - poductos - ubicacion - contacto*/
         font-size: $titulos/1.8;
     }
     .detalle__boton{
-        width: 30%;
+        width: auto;
         font-weight: 900;
     }
     .detalle__boton:hover{
@@ -555,7 +554,7 @@ historia - poductos - ubicacion - contacto*/
     height: auto;
     padding: 10px 50px 50px 50px;
     background: rgb(152,11,11);
-background: linear-gradient(45deg, rgba(152,11,11,1) 0%, rgba(255,94,0,1) 30%, rgba(255,166,0,1) 70%, rgba(255,0,0,1) 100%);
+    background: linear-gradient(45deg, rgba(152,11,11,1) 0%, rgba(255,94,0,1) 30%, rgba(255,166,0,1) 70%, rgba(255,0,0,1) 100%);
     box-sizing: border-box;
 }
 .resumenEnlaces{
@@ -732,8 +731,55 @@ background: linear-gradient(45deg, rgba(152,11,11,1) 0%, rgba(255,94,0,1) 30%, r
         .secciones__foto{
             margin-bottom: 15px;
         }
+        /*contacto*/
+        .secciones__formulario{
+            width: 80%;
+        }
     }
 }
+
+@media screen and (max-width: 800px){
+    .secciones{
+        .secciones__contenedores{
+            flex-direction: column;
+            justify-content: none;
+            height: auto;
+            align-items: center;
+        }
+        .secciones__foto{
+            width: 60% ;
+        }
+        .secciones__texto{
+            width: 90% ;
+        }
+        .secciones__sucursales{
+            margin-top: 25px;
+            width: 90%;
+        }
+    }
+    .detalle{
+        width: 60%;
+    }
+    .resumenProductos{
+        width: 20%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+    .resumenEnlaces{
+        width: 80px;
+        height: 80px;
+        margin: 5px;
+    }
+}
+
+
+
+
+
+
+
 @media screen and (max-width: 544px) {
     /*pagina principal*/
     .flyer{
@@ -770,6 +816,14 @@ background: linear-gradient(45deg, rgba(152,11,11,1) 0%, rgba(255,94,0,1) 30%, r
         .secciones__foto{
             margin-bottom: 7px;
         }
+        .secciones__formulario{
+            width: 98%;
+        }
+        .secciones__contenedores--productos{
+            height: auto;
+            padding: 10px;
+        }
+    
     }
     .activarError{
         a{
@@ -778,5 +832,12 @@ background: linear-gradient(45deg, rgba(152,11,11,1) 0%, rgba(255,94,0,1) 30%, r
             animation-duration: 2.5s;
             animation-iteration-count: infinite;
         }
+    }
+    /*productos*/
+    
+
+
+    .detalle{
+        width: 90%;
     }
 }
