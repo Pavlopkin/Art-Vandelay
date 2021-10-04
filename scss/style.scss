@@ -507,7 +507,7 @@ historia - poductos - ubicacion - contacto*/
     width: 35%;
     margin: 15px;
     border-radius: 5%;
-    background-color: rgb(88, 27, 8);
+    background-color: rgb(187, 22, 0);
     border: solid 1px rgb(92, 1, 1);
     display: flex;
     flex-direction: column;
@@ -518,6 +518,9 @@ historia - poductos - ubicacion - contacto*/
     .detalle__texto{
         font-size: $titulos;
         font-weight: 900;
+    }
+    .detalle__enlace{
+        color: rgb(245, 175, 45);
     }
     .detalleTexto--segundo{
         font-size: $titulos/1.2;
@@ -772,6 +775,9 @@ historia - poductos - ubicacion - contacto*/
         .secciones__texto{
             width: 90% ;
         }
+        .secciones__texto--envios{
+            margin: 5px;
+        }
         .secciones__sucursales{
             margin-top: 25px;
             width: 90%;
@@ -840,6 +846,18 @@ historia - poductos - ubicacion - contacto*/
 @media screen and (max-width: 544px) {
     
     /*compartido en todas las secciones*/
+    
+    .flyer{
+        height: 200px;
+        .flyer__texto{
+        font-size: $titulos/2;
+        }    
+        .flyer__foto{
+            width: $medidaFotos/2;
+            height: $medidaFotos/2;
+            margin: 5px;
+        }
+    }
     .titulos{ 
         font-size: $titulos/2;
         letter-spacing: 5px;
@@ -857,8 +875,13 @@ historia - poductos - ubicacion - contacto*/
             font-size: $titulos/2.2;
         }
         .secciones__foto{
-            margin-bottom: 7px;
+            width: 70%;
+            margin: 7px auto;
         }
+        .secciones__foto--historia{
+            margin: 5px 0;
+        }
+       
         .secciones__formulario{
             width: 80%;
         }
@@ -876,12 +899,32 @@ historia - poductos - ubicacion - contacto*/
             animation-iteration-count: infinite;
         }
     }
+    .detalle{
+        
+        .detalleTexto{
+            font-size: $titulos/2;
+            font-weight: 700;
+            
+        }
+    
+        .detalleTexto--segundo{
+            font-size: $titulos/2.2;
+        }
+        .detalleTexto--tercero{
+            font-size: $titulos/2.3;
+        }
+        .detalle__boton{
+        
+            font-weight: 700;
+        }
+
+    }
     /*productos*/
     
 
 
     .detalle{
-        width: 90%;
+        width: 80%;
     }
     .resumenEnlaces{
         margin: 5px 30px;

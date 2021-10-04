@@ -441,7 +441,7 @@ historia - poductos - ubicacion - contacto*/
   width: 35%;
   margin: 15px;
   border-radius: 5%;
-  background-color: #581b08;
+  background-color: #bb1600;
   border: solid 1px #5c0101;
   display: flex;
   flex-direction: column;
@@ -452,6 +452,8 @@ historia - poductos - ubicacion - contacto*/
   .detalle .detalle__texto {
     font-size: 2.2em;
     font-weight: 900; }
+  .detalle .detalle__enlace {
+    color: #f5af2d; }
   .detalle .detalleTexto--segundo {
     font-size: 1.83333em; }
   .detalle .detalleTexto--tercero {
@@ -654,6 +656,8 @@ historia - poductos - ubicacion - contacto*/
     width: 60%; }
   .secciones .secciones__texto {
     width: 90%; }
+  .secciones .secciones__texto--envios {
+    margin: 5px; }
   .secciones .secciones__sucursales {
     margin-top: 25px;
     width: 90%; }
@@ -693,6 +697,14 @@ historia - poductos - ubicacion - contacto*/
 
 @media screen and (max-width: 544px) {
   /*compartido en todas las secciones*/
+  .flyer {
+    height: 200px; }
+    .flyer .flyer__texto {
+      font-size: 1.1em; }
+    .flyer .flyer__foto {
+      width: 125px;
+      height: 125px;
+      margin: 5px; }
   .titulos {
     font-size: 1.1em;
     letter-spacing: 5px; }
@@ -704,7 +716,10 @@ historia - poductos - ubicacion - contacto*/
   .secciones .secciones__texto {
     font-size: 1em; }
   .secciones .secciones__foto {
-    margin-bottom: 7px; }
+    width: 70%;
+    margin: 7px auto; }
+  .secciones .secciones__foto--historia {
+    margin: 5px 0; }
   .secciones .secciones__formulario {
     width: 80%; }
   .secciones .secciones__contenedores--productos {
@@ -715,9 +730,18 @@ historia - poductos - ubicacion - contacto*/
     animation-name: TextoResp;
     animation-duration: 2.5s;
     animation-iteration-count: infinite; }
+  .detalle .detalleTexto {
+    font-size: 1.1em;
+    font-weight: 700; }
+  .detalle .detalleTexto--segundo {
+    font-size: 1em; }
+  .detalle .detalleTexto--tercero {
+    font-size: 0.95652em; }
+  .detalle .detalle__boton {
+    font-weight: 700; }
   /*productos*/
   .detalle {
-    width: 90%; }
+    width: 80%; }
   .resumenEnlaces {
     margin: 5px 30px; }
   .cabeceraProd {
