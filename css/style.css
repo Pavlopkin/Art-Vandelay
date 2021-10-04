@@ -44,13 +44,13 @@
   font-family: 'Rubik', sans-serif; }
 
 body {
-  width: 98vw;
+  width: 100%;
   background-color: #eb5803; }
 
 .contenedorPrincipal {
   margin: auto;
-  width: 98%;
-  max-width: 1100px;
+  width: 100%;
+  max-width: 1150px;
   height: auto;
   background: #980b0b;
   background: linear-gradient(45deg, #980b0b 0%, #ff5e00 30%, #ffa600 70%, red 100%);
@@ -209,7 +209,7 @@ header {
   font-size: 1.83333em; }
 
 .titulos--secundarios {
-  font-size: 1.46667em;
+  font-size: 1.83333em;
   color: #bb1600; }
 
 .titulos--productos {
@@ -246,7 +246,7 @@ header {
   padding: 20px 30px 0 30px; }
   .presentacion .presentacion__texto {
     color: #bb1600;
-    font-size: 1.46667em;
+    font-size: 1.375em;
     text-align: justify; }
 
 .portada {
@@ -326,6 +326,7 @@ historia - poductos - ubicacion - contacto*/
     width: 100%;
     height: auto;
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
     border-top: 2px solid #eb5803; }
   .secciones .secciones__contenedores--column {
@@ -477,9 +478,10 @@ historia - poductos - ubicacion - contacto*/
 .resumenProductos {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   height: auto;
-  padding: 10px 50px 50px 50px;
+  padding: 10px 50px;
   background: #980b0b;
   background: linear-gradient(45deg, #980b0b 0%, #ff5e00 30%, #ffa600 70%, red 100%);
   box-sizing: border-box; }
@@ -588,9 +590,9 @@ historia - poductos - ubicacion - contacto*/
       width: 90%; }
   /*pagina principal*/
   .flyer .flyer__texto {
-    font-size: 1.46667em; }
+    font-size: 1.69231em; }
   .flyer .flyer__titulo {
-    font-size: 1.46667em; }
+    font-size: 1.69231em; }
   .flyer .flyer__foto {
     width: 166.66667px;
     height: 166.66667px;
@@ -612,7 +614,7 @@ historia - poductos - ubicacion - contacto*/
   .titulos--principales {
     font-size: 1.22222em; }
   .titulos--secundarios {
-    font-size: 1.15789em; }
+    font-size: 1.46667em; }
   .titulos--historia {
     font-size: 1.15789em;
     width: 100%; }
@@ -626,14 +628,23 @@ historia - poductos - ubicacion - contacto*/
     .secciones .secciones__foto {
       margin-bottom: 15px; }
     .secciones .secciones__formulario {
-      width: 80%; } }
+      width: 80%; }
+  .enlacesHistoria {
+    font-size: 1.46667em; } }
 
 @media screen and (max-width: 800px) {
+  .contenedorPrincipal {
+    width: 100%; }
+  .presentacion {
+    height: auto;
+    padding: 10px; }
+    .presentacion .presentacion__texto {
+      font-size: 1.1em; }
   .secciones .secciones__contenedores {
     flex-direction: column;
-    justify-content: none;
+    justify-content: center;
     height: auto;
-    align-items: center; }
+    align-items: none; }
   .secciones .secciones__foto {
     width: 60%; }
   .secciones .secciones__texto {
@@ -643,34 +654,38 @@ historia - poductos - ubicacion - contacto*/
     width: 90%; }
   .detalle {
     width: 60%; }
-  .resumenProductos {
-    width: 20%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
   .resumenEnlaces {
-    width: 80px;
-    height: 80px;
-    margin: 5px; } }
+    width: 60px;
+    height: 60px;
+    border: 2px solid white; }
+  .cabeceraHistoria {
+    width: 100%;
+    height: 400px; }
+  .kelVarsen {
+    width: 100%; }
+  .hePennypacker {
+    width: 100%; }
+  .artVandelay {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgba(255, 102, 0, 0.65); }
+  .christineNyhart {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgba(251, 56, 7, 0.651); }
+  .enlacesHistoria {
+    height: 100px; }
+  .flex {
+    flex-direction: column;
+    justify-content: center; } }
 
 @media screen and (max-width: 544px) {
-  /*pagina principal*/
-  .flyer .flyer__texto {
-    font-size: 1em; }
-  .flyer .flyer__titulo {
-    font-size: 1.29412em; }
-  .flyer .flyer__foto {
-    width: 147.05882px;
-    height: 147.05882px; }
   /*compartido en todas las secciones*/
   .titulos {
     font-size: 1.1em;
     letter-spacing: 5px; }
   .titulos--principales {
     font-size: 1em; }
-  .titulos--secundarios {
-    font-size: 0.95652em; }
   .titulos--productos {
     font-size: 0.95652em; }
   /*historia*/
@@ -690,4 +705,20 @@ historia - poductos - ubicacion - contacto*/
     animation-iteration-count: infinite; }
   /*productos*/
   .detalle {
-    width: 90%; } }
+    width: 90%; }
+  .resumenEnlaces {
+    margin: 5px 30px; }
+  .cabeceraProd {
+    height: 400px;
+    background-size: contain;
+    background-position: top; } }
+
+@media screen and (max-width: 460px) {
+  .resumenEnlaces {
+    margin: 3px 20px; } }
+
+@media screen and (max-width: 405px) {
+  .resumenEnlaces {
+    width: 50px;
+    height: 50px;
+    margin: 3px 13px; } }

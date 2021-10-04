@@ -67,13 +67,13 @@ $tamanoPortada: 450px;
     font-family: 'Rubik', sans-serif;
 }
 body{
-    width: 98vw;
+    width: 100%;
     background-color: rgb(235, 88, 3);
 }
 .contenedorPrincipal{
     margin: auto;
-    width: 98%;
-    max-width: 1100px;
+    width: 100%;
+    max-width: 1150px;
     height: auto;
     background: rgb(152,11,11);
     background: linear-gradient(45deg, rgba(152,11,11,1) 0%, rgba(255,94,0,1) 30%, rgba(255,166,0,1) 70%, rgba(255,0,0,1) 100%);
@@ -90,7 +90,7 @@ body{
 }
 header{
     background: rgb(152,11,11);
-background: linear-gradient(45deg, rgba(152,11,11,1) 0%, rgba(255,94,0,1) 30%, rgba(255,166,0,1) 70%, rgba(255,0,0,1) 100%);
+    background: linear-gradient(45deg, rgba(152,11,11,1) 0%, rgba(255,94,0,1) 30%, rgba(255,166,0,1) 70%, rgba(255,0,0,1) 100%);
     height: 135px;
     display: flex;
     align-content: center;
@@ -242,7 +242,7 @@ background: linear-gradient(45deg, rgba(152,11,11,1) 0%, rgba(255,94,0,1) 30%, r
     font-size: $titulos/1.2;
 }
 .titulos--secundarios{
-    font-size: $titulos/1.5;
+    font-size: $titulos/1.2;
     color: rgb(187, 22, 0);
 }
 .titulos--productos{
@@ -280,7 +280,7 @@ background: linear-gradient(45deg, rgba(152,11,11,1) 0%, rgba(255,94,0,1) 30%, r
     padding: 20px 30px 0 30px;
     .presentacion__texto{
         color: rgb(187, 22, 0);
-        font-size: $titulos/1.5;
+        font-size: $titulos/1.6;
         text-align: justify;
     }
 }
@@ -371,6 +371,7 @@ historia - poductos - ubicacion - contacto*/
         width: 100%;
         height: auto;
         display: flex;
+        align-items: center;
         justify-content: space-evenly;
         border-top: 2px solid rgb(235, 88, 3);
     }
@@ -440,7 +441,6 @@ historia - poductos - ubicacion - contacto*/
     background-color: rgba(251, 56, 7, 0.651);
     
     box-sizing: border-box;
- 
 }
 .artVandelay{
     width: 24%;
@@ -550,9 +550,10 @@ historia - poductos - ubicacion - contacto*/
 .resumenProductos{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     height: auto;
-    padding: 10px 50px 50px 50px;
+    padding: 10px 50px;
     background: rgb(152,11,11);
     background: linear-gradient(45deg, rgba(152,11,11,1) 0%, rgba(255,94,0,1) 30%, rgba(255,166,0,1) 70%, rgba(255,0,0,1) 100%);
     box-sizing: border-box;
@@ -675,10 +676,10 @@ historia - poductos - ubicacion - contacto*/
     /*pagina principal*/
     .flyer{
         .flyer__texto{
-            font-size: $titulos/1.5;
+            font-size: $titulos/1.3;
         }
         .flyer__titulo{
-            font-size: $titulos/1.5;
+            font-size: $titulos/1.3;
         }
         .flyer__foto{
             width: $medidaFotos/1.5;
@@ -714,7 +715,7 @@ historia - poductos - ubicacion - contacto*/
         font-size: $titulos/1.8;
     }
     .titulos--secundarios{
-        font-size: $titulos/1.9;
+        font-size: $titulos/1.5;
     }
     .titulos--historia{
         font-size: $titulos/1.9;
@@ -736,15 +737,28 @@ historia - poductos - ubicacion - contacto*/
             width: 80%;
         }
     }
+    .enlacesHistoria{
+        font-size: $titulos/1.5;
+    }
 }
 
 @media screen and (max-width: 800px){
+    .contenedorPrincipal{
+        width: 100%;
+    }
+    .presentacion{
+        height: auto;
+        padding: 10px;
+        .presentacion__texto{
+            font-size: $titulos/2;
+        }
+    }
     .secciones{
         .secciones__contenedores{
             flex-direction: column;
-            justify-content: none;
+            justify-content: center;
             height: auto;
-            align-items: center;
+            align-items: none;
         }
         .secciones__foto{
             width: 60% ;
@@ -760,18 +774,44 @@ historia - poductos - ubicacion - contacto*/
     .detalle{
         width: 60%;
     }
-    .resumenProductos{
-        width: 20%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center; 
-    }
     .resumenEnlaces{
-        width: 80px;
-        height: 80px;
-        margin: 5px;
+        width: 60px;
+        height: 60px;
+        border: 2px solid white;
     }
+    .cabeceraHistoria{
+        width: 100%;
+        height: 400px;
+ 
+       
+    }
+    .kelVarsen{
+        width: 100%;
+    }
+    .hePennypacker{
+        width: 100%;
+    }
+    .artVandelay{
+        width: 100%;
+        box-sizing: border-box;
+        background-color: rgba(255, 102, 0, 0.65);
+    }
+    .christineNyhart{
+        width: 100%;
+        
+        box-sizing: border-box;
+        background-color: rgba(251, 56, 7, 0.651);
+    }
+    .enlacesHistoria{
+      
+        height: 100px;
+    }
+    .flex{
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    
 }
 
 
@@ -779,21 +819,8 @@ historia - poductos - ubicacion - contacto*/
 
 
 
-
 @media screen and (max-width: 544px) {
-    /*pagina principal*/
-    .flyer{
-        .flyer__texto{
-            font-size: $titulos/2.2;
-        }
-        .flyer__titulo{
-            font-size: $titulos/1.7;
-        }
-        .flyer__foto{
-            width: $medidaFotos/1.7;
-            height: $medidaFotos/1.7;
-        }
-    }
+    
     /*compartido en todas las secciones*/
     .titulos{ 
         font-size: $titulos/2;
@@ -802,9 +829,7 @@ historia - poductos - ubicacion - contacto*/
     .titulos--principales{
         font-size: $titulos/2.2;
     }
-    .titulos--secundarios{
-        font-size: $titulos/2.3;
-    }
+  
     .titulos--productos{
         font-size: $titulos/2.3;
     }
@@ -839,5 +864,28 @@ historia - poductos - ubicacion - contacto*/
 
     .detalle{
         width: 90%;
+    }
+    .resumenEnlaces{
+        margin: 5px 30px;
+        
+    }
+    .cabeceraProd{
+        height: 400px;
+        background-size: contain;
+        background-position:top;
+  
+    }
+    
+}
+@media screen and (max-width: 460px) {
+    .resumenEnlaces{
+        margin: 3px 20px;
+    }
+}
+@media screen and (max-width: 405px) {
+    .resumenEnlaces{
+        width: 50px;
+        height: 50px;
+        margin: 3px 13px;
     }
 }
