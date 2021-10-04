@@ -1,7 +1,11 @@
-/*variables*/
+//////////////////////////*Art Vandelay*/////////////////////////////
+
+/* 1 -------VARIABLES------------*/
 $titulos: 2.2em;
 $medidaFotos: 250px;
 $tamanoPortada: 450px;
+
+/* 2 -------ELEMENTOS------------*/
 
 @mixin titulos($width, $heigth, $font-size, $padding, $background-color, $color, $box-sizing){
     width:$width;
@@ -12,7 +16,7 @@ $tamanoPortada: 450px;
     color:$color;
     box-sizing: $box-sizing;
 }
-/*animaciones*/
+/* 3 -------ANIMACIONES------------*/
 @keyframes aparece {
     0%{
         opacity: 0.1;
@@ -60,7 +64,7 @@ $tamanoPortada: 450px;
         font-size: 31px;
     }
 }
-/*Estilo común a todas las secciones*/
+/* 4 -------ESTILOS COMUNES A TODAS LAS SECCIONES------------*/
 *{
     margin:0;
     padding:0;
@@ -70,7 +74,8 @@ body{
     width: 100%;
     background-color: rgb(235, 88, 3);
 }
-.contenedorPrincipal{
+/* 4.a -------Contiene el layout de la página------------*/
+.contenedorPrincipal{ 
     margin: auto;
     width: 100%;
     max-width: 1100px;
@@ -81,13 +86,7 @@ body{
     animation-duration: 1s;
     box-sizing: border-box;
 }
-.enfasisTexto{
-    font-weight: 800;
-    text-decoration: underline 2px;
-}
-.opposite{
-    background-color: rgba(255, 251, 0, 0.787);
-}
+/* 4.b -------repite estructura y contenido en todas las secciones------------*/
 header{
     background: rgb(152,11,11);
     background: linear-gradient(45deg, rgba(152,11,11,1) 0%, rgba(255,94,0,1) 30%, rgba(255,166,0,1) 70%, rgba(255,0,0,1) 100%);
@@ -155,6 +154,7 @@ header{
         animation-duration: 1s;
     }
 }
+/* 4.c -------aside: enlaces externos y redes.------------*/
 .informacion{
     background-color: white;
     .informacion__enlaces{
@@ -162,6 +162,7 @@ header{
         justify-content: space-evenly;
     }
 }
+/* 4.d -------repite contenido y estructura en todas las secciones------------*/
 .footer{
     display: flex;
     flex-wrap: wrap;
@@ -230,6 +231,7 @@ header{
         font-weight: 700;
     }
 }
+/* 5 -------Se utiliza con modificadores en todas las secciones------------*/
 .titulos{ 
     text-align: center;
     @include titulos (100%, 60px, $titulos, 15px, linear-gradient(90deg, rgba(236,125,0,1) 0%, rgba(253,33,29,1) 50%, rgba(252,246,69,1) 100%), rgb(254, 254, 255), border-box);
@@ -261,20 +263,14 @@ header{
     font-size: $titulos/1.7;
     text-shadow: rgb(0, 0, 0) 2px 3px 2px; 
 }
-
-.estiloUno{
-    background-color: rgba(66, 2, 2, 0.287);
-}
-.estiloDos{
-    background-color: rgba(243, 178, 0, 0.397);
-    flex-direction: row-reverse;
-}
+/* 6 -------convierte contenedores en flex-box------------*/
 .flex{
     display: flex;
     justify-content: space-around;
     height: 400px;
     width: 100%;
 }
+
 /*index.html*/
 .presentacion{
     height: auto;
@@ -410,6 +406,13 @@ historia - poductos - ubicacion - contacto*/
     .secciones__foto--ubi{
         width: 90%;
         height: 150px;
+    }
+    .enfasisTexto{
+        font-weight: 800;
+        text-decoration: underline 2px;
+    }
+    .opposite{
+        background-color: rgba(255, 251, 0, 0.787);
     }
     /*contacto*/
     .secciones__formulario{
@@ -585,21 +588,17 @@ historia - poductos - ubicacion - contacto*/
     padding-bottom: 20px;
 }
 .estiloBotones{
-    width: 150px;
-    height: 70px;
-    box-shadow: brown 2px 5px 10px;
-    color: rgb(255, 0, 0);
+    background-color: rgb(238, 202, 0);
+    width: 130px;
+    height: 50px;
+    color: rgb(0, 0, 0);
     font-size: $titulos/1.8;
-    text-shadow: black 1px 2px;
-    font-weight: 900;
-    border-radius: 50%;
-    background-image: linear-gradient(yellow, orange);
+    font-weight: 600;
+    border-radius: 13%;
     margin: 10px;
-    box-sizing: border-box;
 }
 .estiloBotones:hover{
     transform: scale(1.1,1.1);
-    box-shadow: red 2px 5px 10px;
     transition: 1s;
 
 }

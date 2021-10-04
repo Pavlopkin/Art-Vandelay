@@ -1,6 +1,7 @@
 @charset "UTF-8";
-/*variables*/
-/*animaciones*/
+/* 1 -------VARIABLES------------*/
+/* 2 -------ELEMENTOS------------*/
+/* 3 -------ANIMACIONES------------*/
 @keyframes aparece {
   0% {
     opacity: 0.1; }
@@ -37,7 +38,7 @@
   100% {
     font-size: 31px; } }
 
-/*Estilo común a todas las secciones*/
+/* 4 -------ESTILOS COMUNES A TODAS LAS SECCIONES------------*/
 * {
   margin: 0;
   padding: 0;
@@ -47,6 +48,7 @@ body {
   width: 100%;
   background-color: #eb5803; }
 
+/* 4.a -------Contiene el layout de la página------------*/
 .contenedorPrincipal {
   margin: auto;
   width: 100%;
@@ -58,13 +60,7 @@ body {
   animation-duration: 1s;
   box-sizing: border-box; }
 
-.enfasisTexto {
-  font-weight: 800;
-  text-decoration: underline 2px; }
-
-.opposite {
-  background-color: rgba(255, 251, 0, 0.787); }
-
+/* 4.b -------repite estructura y contenido en todas las secciones------------*/
 header {
   background: #980b0b;
   background: linear-gradient(45deg, #980b0b 0%, #ff5e00 30%, #ffa600 70%, red 100%);
@@ -130,12 +126,14 @@ header {
   animation-name: logo;
   animation-duration: 1s; }
 
+/* 4.c -------aside: enlaces externos y redes.------------*/
 .informacion {
   background-color: white; }
   .informacion .informacion__enlaces {
     display: flex;
     justify-content: space-evenly; }
 
+/* 4.d -------repite contenido y estructura en todas las secciones------------*/
 .footer {
   display: flex;
   flex-wrap: wrap;
@@ -191,6 +189,7 @@ header {
     font-size: 1.1em;
     font-weight: 700; }
 
+/* 5 -------Se utiliza con modificadores en todas las secciones------------*/
 .titulos {
   text-align: center;
   width: 100%;
@@ -228,13 +227,7 @@ header {
   font-size: 1.29412em;
   text-shadow: black 2px 3px 2px; }
 
-.estiloUno {
-  background-color: rgba(66, 2, 2, 0.287); }
-
-.estiloDos {
-  background-color: rgba(243, 178, 0, 0.397);
-  flex-direction: row-reverse; }
-
+/* 6 -------convierte contenedores en flex-box------------*/
 .flex {
   display: flex;
   justify-content: space-around;
@@ -355,6 +348,11 @@ historia - poductos - ubicacion - contacto*/
   .secciones .secciones__foto--ubi {
     width: 90%;
     height: 150px; }
+  .secciones .enfasisTexto {
+    font-weight: 800;
+    text-decoration: underline 2px; }
+  .secciones .opposite {
+    background-color: rgba(255, 251, 0, 0.787); }
   .secciones .secciones__formulario {
     width: 50%;
     margin: auto;
@@ -509,21 +507,17 @@ historia - poductos - ubicacion - contacto*/
   padding-bottom: 20px; }
 
 .estiloBotones {
-  width: 150px;
-  height: 70px;
-  box-shadow: brown 2px 5px 10px;
-  color: red;
+  background-color: #eeca00;
+  width: 130px;
+  height: 50px;
+  color: black;
   font-size: 1.22222em;
-  text-shadow: black 1px 2px;
-  font-weight: 900;
-  border-radius: 50%;
-  background-image: linear-gradient(yellow, orange);
-  margin: 10px;
-  box-sizing: border-box; }
+  font-weight: 600;
+  border-radius: 13%;
+  margin: 10px; }
 
 .estiloBotones:hover {
   transform: scale(1.1, 1.1);
-  box-shadow: red 2px 5px 10px;
   transition: 1s; }
 
 /*exclusivo pagina 404*/
