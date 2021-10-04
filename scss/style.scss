@@ -73,7 +73,7 @@ body{
 .contenedorPrincipal{
     margin: auto;
     width: 100%;
-    max-width: 1150px;
+    max-width: 1100px;
     height: auto;
     background: rgb(152,11,11);
     background: linear-gradient(45deg, rgba(152,11,11,1) 0%, rgba(255,94,0,1) 30%, rgba(255,166,0,1) 70%, rgba(255,0,0,1) 100%);
@@ -579,8 +579,8 @@ historia - poductos - ubicacion - contacto*/
     padding-bottom: 20px;
 }
 .estiloBotones{
-    width: 140px;
-    height: 60px;
+    width: 150px;
+    height: 70px;
     box-shadow: brown 2px 5px 10px;
     color: rgb(255, 0, 0);
     font-size: $titulos/1.8;
@@ -590,6 +590,12 @@ historia - poductos - ubicacion - contacto*/
     background-image: linear-gradient(yellow, orange);
     margin: 10px;
     box-sizing: border-box;
+}
+.estiloBotones:hover{
+    transform: scale(1.1,1.1);
+    box-shadow: red 2px 5px 10px;
+    transition: 1s;
+
 }
 /*exclusivo pagina 404*/
 .headerError{
@@ -810,6 +816,18 @@ historia - poductos - ubicacion - contacto*/
         flex-direction: column;
         justify-content: center;
     }
+    .footer{
+        .footer__texto{
+            font-size: $titulos/3;
+        }
+    }
+    .estiloBotones{
+        width: 90px;
+        height: 40px;
+        font-size: $titulos/2.8;
+        font-weight: 600;      
+    }
+    
     
     
 }
@@ -842,7 +860,7 @@ historia - poductos - ubicacion - contacto*/
             margin-bottom: 7px;
         }
         .secciones__formulario{
-            width: 98%;
+            width: 80%;
         }
         .secciones__contenedores--productos{
             height: auto;
