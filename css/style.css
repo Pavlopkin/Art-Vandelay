@@ -507,14 +507,7 @@ historia - poductos - ubicacion - contacto*/
   padding-bottom: 20px; }
 
 .estiloBotones {
-  background-color: #eeca00;
-  width: 130px;
-  height: 50px;
-  color: black;
-  font-size: 1.22222em;
-  font-weight: 600;
-  border-radius: 13%;
-  margin: 10px; }
+  margin: 5px; }
 
 .estiloBotones:hover {
   transform: scale(1.1, 1.1);

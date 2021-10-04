@@ -588,19 +588,11 @@ historia - poductos - ubicacion - contacto*/
     padding-bottom: 20px;
 }
 .estiloBotones{
-    background-color: rgb(238, 202, 0);
-    width: 130px;
-    height: 50px;
-    color: rgb(0, 0, 0);
-    font-size: $titulos/1.8;
-    font-weight: 600;
-    border-radius: 13%;
-    margin: 10px;
+    margin: 5px;
 }
 .estiloBotones:hover{
     transform: scale(1.1,1.1);
     transition: 1s;
-
 }
 /*exclusivo pagina 404*/
 .headerError{
