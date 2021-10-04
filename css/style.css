@@ -209,8 +209,9 @@ header {
   font-size: 1.83333em; }
 
 .titulos--secundarios {
-  font-size: 1.83333em;
-  color: #bb1600; }
+  font-size: 1.46667em;
+  color: #bb1600;
+  height: auto; }
 
 .titulos--productos {
   font-size: 1.04762em;
@@ -359,7 +360,7 @@ historia - poductos - ubicacion - contacto*/
     margin: auto;
     box-sizing: border-box; }
   .secciones .secciones__datos {
-    background-color: rgba(0, 0, 0, 0.623);
+    background-color: rgba(187, 22, 0, 0.52);
     border-radius: 25px;
     padding: 10px; }
 
@@ -616,7 +617,6 @@ historia - poductos - ubicacion - contacto*/
     height: 225px; }
   /*compartido en todas las secciones*/
   .titulos {
-    font-size: 1.29412em;
     letter-spacing: 10px; }
   .titulos--principales {
     font-size: 1.22222em; }
@@ -627,6 +627,10 @@ historia - poductos - ubicacion - contacto*/
     width: 100%; }
   .titulos--productos {
     font-size: 1.15789em; }
+  .titulos--carrusel {
+    font-size: 1.1em; }
+  .titulos--carruselDos {
+    font-size: 0.88em; }
   /*historia*/
   .secciones {
     /*contacto*/ }
@@ -712,6 +716,10 @@ historia - poductos - ubicacion - contacto*/
     font-size: 1em; }
   .titulos--productos {
     font-size: 0.95652em; }
+  .titulos--carrusel {
+    font-size: 0.73333em; }
+  .titulos--carruselDos {
+    font-size: 0.55em; }
   /*historia*/
   .secciones .secciones__texto {
     font-size: 1em; }
