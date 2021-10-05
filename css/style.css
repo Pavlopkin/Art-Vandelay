@@ -51,8 +51,8 @@ body {
 /* 4.a -------Contiene el layout de la página------------*/
 .contenedorPrincipal {
   margin: auto;
-  width: 100%;
-  max-width: 1100px;
+  width: 98%;
+  max-width: 1150px;
   height: auto;
   background: #980b0b;
   background: linear-gradient(45deg, #980b0b 0%, #ff5e00 30%, #ffa600 70%, red 100%);
@@ -186,7 +186,7 @@ header {
     width: 100px;
     height: 40px; }
   .footer .footer__texto {
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: 700; }
 
 /* 5 -------Se utiliza con modificadores en todas las secciones------------*/
@@ -237,10 +237,13 @@ header {
 /* 7 -------INDEX.HTML------------*/
 .presentacion {
   height: auto;
-  padding: 20px 30px 0 30px; }
+  background-image: linear-gradient(rgba(255, 123, 0, 0.616), rgba(221, 8, 8, 0.609));
+  padding: 30px 50px; }
   .presentacion .presentacion__texto {
-    color: #bb1600;
-    font-size: 1.375em;
+    color: #ffe600;
+    text-shadow: black 2px 2px 7px;
+    letter-spacing: 3px;
+    font-size: 1.29412em;
     text-align: justify; }
 
 .portada {
@@ -403,7 +406,7 @@ header {
 
 .cabeceraProd {
   width: 100%;
-  height: 580px;
+  height: 540px;
   background-image: url(../assets/carrusel3.gif);
   background-size: cover;
   background-position: center;
@@ -673,7 +676,7 @@ header {
     border: 2px solid white; }
   .cabeceraHistoria {
     width: 100%;
-    height: 400px; }
+    height: 320px; }
   .kelVarsen {
     width: 100%; }
   .hePennypacker {
@@ -683,7 +686,7 @@ header {
   .christineNyhart {
     width: 100%; }
   .enlacesHistoria {
-    height: 100px; }
+    height: 80px; }
   .flex {
     flex-direction: column;
     justify-content: center; }
@@ -758,7 +761,7 @@ header {
   .resumenEnlaces {
     margin: 5px 30px; }
   .cabeceraProd {
-    height: 400px;
+    height: 380px;
     background-size: contain;
     background-position: top; } }
 

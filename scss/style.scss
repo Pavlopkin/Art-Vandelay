@@ -77,8 +77,8 @@ body{
 /* 4.a -------Contiene el layout de la página------------*/
 .contenedorPrincipal{ 
     margin: auto;
-    width: 100%;
-    max-width: 1100px;
+    width: 98%;
+    max-width: 1150px;
     height: auto;
     background: rgb(152,11,11);
     background: linear-gradient(45deg, rgba(152,11,11,1) 0%, rgba(255,94,0,1) 30%, rgba(255,166,0,1) 70%, rgba(255,0,0,1) 100%);
@@ -227,7 +227,7 @@ header{
         height: 40px;
     }
     .footer__texto{
-        font-size: $titulos/2;
+        font-size: $titulos/2.2;
         font-weight: 700;
     }
 }
@@ -274,10 +274,13 @@ header{
 /* 7 -------INDEX.HTML------------*/
 .presentacion{
     height: auto;
-    padding: 20px 30px 0 30px;
+    background-image: linear-gradient(rgba(255, 123, 0, 0.616), rgba(221, 8, 8, 0.609));
+    padding: 30px 50px;
     .presentacion__texto{
-        color: rgb(187, 22, 0);
-        font-size: $titulos/1.6;
+        color: rgb(255, 230, 0);
+        text-shadow: black 2px 2px 7px;
+        letter-spacing: 3px;
+        font-size: $titulos/1.7;
         text-align: justify;
     }
 }
@@ -465,7 +468,7 @@ header{
 }
 .cabeceraProd{
     width: 100%;
-    height: 580px;
+    height: 540px;
     background-image: (url(../assets/carrusel3.gif));
     background-size: cover;
     background-position: center;
@@ -800,7 +803,7 @@ header{
     }
     .cabeceraHistoria{
         width: 100%;
-        height: 400px;
+        height: 320px;
     }
     .kelVarsen{
         width: 100%;
@@ -815,7 +818,7 @@ header{
         width: 100%;
     }
     .enlacesHistoria{
-        height: 100px;
+        height: 80px;
     }
     .flex{
         flex-direction: column;
@@ -928,7 +931,7 @@ header{
         margin: 5px 30px; 
     }
     .cabeceraProd{
-        height: 400px;
+        height: 380px;
         background-size: contain;
         background-position:top;
     }
