@@ -271,7 +271,7 @@ header{
     width: 100%;
 }
 
-/*index.html*/
+/* 7 -------INDEX.HTML------------*/
 .presentacion{
     height: auto;
     padding: 20px 30px 0 30px;
@@ -287,7 +287,6 @@ header{
     .portada__foto{
         height: $tamanoPortada;
         opacity: 80%;
-        
     }
 }
 .flyer{
@@ -319,15 +318,14 @@ header{
     .flyer__enlace:hover{
         transform: scale(1.1,1.1) ;
         transition: 1s;
-    }
-    
+    }    
 }
 .flyer--colores{
     background-color: rgba(226, 110, 43, 0.52);
     color: white;
 }
-/*el bloque secciones da estilos al contenido de las siguientes secciones: 
-historia - poductos - ubicacion - contacto*/
+/* 8 -------SECCIONES y sus ramas dan estilo a-----------------------------
+-------las secciones: productos / historia / ubicacion / contacto................*/
 .secciones{
     display: flex;
     flex-wrap: wrap;
@@ -386,13 +384,6 @@ historia - poductos - ubicacion - contacto*/
         box-sizing: border-box;
         border-top: 2px solid rgb(235, 88, 3);
     }
-    /*productos*/
-    .zoom:hover{
-        transform: scale(1.3,1.3);
-        transition: 2s;
-        cursor: zoom-in;
-    }
-    /*historia*/
     .secciones__foto{
         height: 210px;
         margin: auto;
@@ -402,11 +393,6 @@ historia - poductos - ubicacion - contacto*/
         margin: 20px 50px;
         border-radius: 30%;
     }
-    /*ubicacion*/
-    .secciones__foto--ubi{
-        width: 90%;
-        height: 150px;
-    }
     .enfasisTexto{
         font-weight: 800;
         text-decoration: underline 2px;
@@ -414,7 +400,6 @@ historia - poductos - ubicacion - contacto*/
     .opposite{
         background-color: rgba(255, 251, 0, 0.787);
     }
-    /*contacto*/
     .secciones__formulario{
         width: 50%;
         margin: auto;
@@ -426,9 +411,7 @@ historia - poductos - ubicacion - contacto*/
         padding: 10px;
     }
 }
-
-
-/*exclusivo historia*/
+/* 9 -------HISTORIA.HTML------------*/
 .cabeceraHistoria{
     width: 100%;
     height: 530px;
@@ -437,7 +420,6 @@ historia - poductos - ubicacion - contacto*/
 }
 .kelVarsen{
     width: 22%;
-    
     box-sizing: border-box;
     background-color: rgba(255, 102, 0, 0.65);
     
@@ -455,7 +437,6 @@ historia - poductos - ubicacion - contacto*/
 }
 .christineNyhart{
     width: 29%;
-    
     box-sizing: border-box;
     background-color: rgba(251, 56, 7, 0.651);
 }
@@ -471,14 +452,17 @@ historia - poductos - ubicacion - contacto*/
     font-weight: 900;
     height: 530px;
 }
-
 .enlacesHistoria:hover{
     color: red;
     background-color: rgba(255, 210, 184, 0.322);
     transition: 1s;
 }
-
-/*exlusivo productos*/
+/* 10 -------PRODUCTOS.HTML------------*/
+.zoom:hover{
+    transform: scale(1.3,1.3);
+    transition: 2s;
+    cursor: zoom-in;
+}
 .cabeceraProd{
     width: 100%;
     height: 580px;
@@ -581,8 +565,7 @@ historia - poductos - ubicacion - contacto*/
     transition: 1s;
     filter: grayscale(0%);
 }
-
-/*exclusivo contacto*/
+/* 11 -------CONTACTO.HTML------------*/
 .secciones--contacto{
     height: auto;
     padding-bottom: 20px;
@@ -594,7 +577,7 @@ historia - poductos - ubicacion - contacto*/
     transform: scale(1.1,1.1);
     transition: 1s;
 }
-/*exclusivo pagina 404*/
+/* 12 -------ERROR.HTML------------*/
 .headerError{
     display: flex;
     justify-content: center;
@@ -657,9 +640,37 @@ historia - poductos - ubicacion - contacto*/
         transition: 1s;
     }
 }
-/*responsive*/
+/* 13 -------MAPA.HTML------------*/
+.mapa{
+    .mapa__lista{
+        margin-top: 50px;
+        text-align: center;
+    .mapa__titulo{
+        font-size: $titulos/1.3;
+    }
+        li{
+            display: inline-block;
+            a{
+                text-decoration: none;
+                display: block;
+                padding: 15px;
+                font-size: $titulos/1.8;
+                color: rgb(255, 217, 0);
+                text-shadow: black 2px 1px 5px;
+            }
+        }
+    }
+    .mapa__enlaces{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 15px 5px 0px;
+    }
+}
+/*--------------------------------------------------------------------------
+----------------RESPONSIVE DESIGN------------------------------------------
+--------------------------------------------------------------------------*/
+/* a)------------------< 991 px ------------------------------------------*/
 @media screen and (max-width: 991px) { 
-    /*responsive todas las seccioens*/
     .menu__desplegable{
         background-color: rgba(212, 59, 39, 0.781);
         border-bottom: yellow 2px solid;
@@ -676,8 +687,6 @@ historia - poductos - ubicacion - contacto*/
             width: 90%;
         }
     }
-    /*pagina principal*/
-  
     .flyer{
         .flyer__texto{
             font-size: $titulos/1.3;
@@ -710,7 +719,6 @@ historia - poductos - ubicacion - contacto*/
     .carousel-inner{
         height: $tamanoPortada/2;
     }
-    /*compartido en todas las secciones*/
     .titulos{ 
         letter-spacing: 10px;
     }
@@ -734,7 +742,6 @@ historia - poductos - ubicacion - contacto*/
         font-size: $titulos/2.5;
         
     }
-    /*historia*/
     .secciones{
         .secciones__texto{
             font-size: $titulos/2;
@@ -742,7 +749,6 @@ historia - poductos - ubicacion - contacto*/
         .secciones__foto{
             margin-bottom: 15px;
         }
-        /*contacto*/
         .secciones__formulario{
             width: 80%;
         }
@@ -751,7 +757,7 @@ historia - poductos - ubicacion - contacto*/
         font-size: $titulos/1.5;
     }
 }
-
+/* b)-----------------< 800 px ------------------------------------------*/
 @media screen and (max-width: 800px){
     .contenedorPrincipal{
         width: 100%;
@@ -763,7 +769,6 @@ historia - poductos - ubicacion - contacto*/
             font-size: $titulos/2;
         }
     }
-  
     .secciones{
         .secciones__contenedores{
             flex-direction: column;
@@ -796,8 +801,6 @@ historia - poductos - ubicacion - contacto*/
     .cabeceraHistoria{
         width: 100%;
         height: 400px;
- 
-       
     }
     .kelVarsen{
         width: 100%;
@@ -807,17 +810,11 @@ historia - poductos - ubicacion - contacto*/
     }
     .artVandelay{
         width: 100%;
-        box-sizing: border-box;
-        background-color: rgba(255, 102, 0, 0.65);
     }
     .christineNyhart{
         width: 100%;
-        
-        box-sizing: border-box;
-        background-color: rgba(251, 56, 7, 0.651);
     }
     .enlacesHistoria{
-      
         height: 100px;
     }
     .flex{
@@ -835,20 +832,26 @@ historia - poductos - ubicacion - contacto*/
         font-size: $titulos/2.8;
         font-weight: 600;      
     }
-    
-    
-    
+    .mapa{
+        width: 80%;
+        margin: auto;
+        .mapa__lista{
+            margin: 25px;
+        .mapa__titulo{
+            font-size: $titulos/1.6;
+        }
+            li{
+                a{
+                    padding: 7px 25px;
+                    font-size: $titulos/2.1;
+                    width: 150px;
+                }
+            }
+        }
+    }
 }
-
-
-
-
-
-
+/* c)-----------------< 544 px ------------------------------------------*/
 @media screen and (max-width: 544px) {
-    
-    /*compartido en todas las secciones*/
-    
     .flyer{
         height: 200px;
         .flyer__texto{
@@ -867,7 +870,6 @@ historia - poductos - ubicacion - contacto*/
     .titulos--principales{
         font-size: $titulos/2.2;
     }
-  
     .titulos--productos{
         font-size: $titulos/2.3;
     }
@@ -876,9 +878,7 @@ historia - poductos - ubicacion - contacto*/
     }
     .titulos--carruselDos{
         font-size: $titulos/4;
-        
     }
-    /*historia*/
     .secciones{
         .secciones__texto{
             font-size: $titulos/2.2;
@@ -890,7 +890,6 @@ historia - poductos - ubicacion - contacto*/
         .secciones__foto--historia{
             margin: 5px 0;
         }
-       
         .secciones__formulario{
             width: 80%;
         }
@@ -898,7 +897,6 @@ historia - poductos - ubicacion - contacto*/
             height: auto;
             padding: 10px;
         }
-    
     }
     .activarError{
         a{
@@ -908,14 +906,11 @@ historia - poductos - ubicacion - contacto*/
             animation-iteration-count: infinite;
         }
     }
-    .detalle{
-        
+    .detalle{      
         .detalleTexto{
             font-size: $titulos/2;
             font-weight: 700;
-            
         }
-    
         .detalleTexto--segundo{
             font-size: $titulos/2.2;
         }
@@ -923,35 +918,28 @@ historia - poductos - ubicacion - contacto*/
             font-size: $titulos/2.3;
         }
         .detalle__boton{
-        
             font-weight: 700;
         }
-
     }
-    /*productos*/
-    
-
-
     .detalle{
         width: 80%;
     }
     .resumenEnlaces{
-        margin: 5px 30px;
-        
+        margin: 5px 30px; 
     }
     .cabeceraProd{
         height: 400px;
         background-size: contain;
         background-position:top;
-  
     }
-    
 }
+/* d)-----------------< 460 px ------------------------------------------*/
 @media screen and (max-width: 460px) {
     .resumenEnlaces{
         margin: 3px 20px;
     }
 }
+/* e)-----------------< 405 px ------------------------------------------*/
 @media screen and (max-width: 405px) {
     .resumenEnlaces{
         width: 50px;
