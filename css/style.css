@@ -215,6 +215,9 @@ header {
 .titulos--carrusel {
   text-shadow: black 10px 3px 10px; }
 
+.titulos--carrusel {
+  font-size: 1.57143em; }
+
 .titulos--carruselDos {
   font-size: 1.29412em;
   text-shadow: black 2px 3px 2px; }
@@ -606,24 +609,26 @@ header {
       width: 90%; }
     .footer .footer__sucursales {
       width: 90%; }
-  .flyer .flyer__texto {
-    font-size: 1.69231em; }
-  .flyer .flyer__titulo {
-    font-size: 1.69231em; }
-  .flyer .flyer__foto {
-    width: 166.66667px;
-    height: 166.66667px;
-    margin: 5px; }
-  .flyer .flyer__foto--enlaces a {
-    font-size: 0.73333em; }
+  .flyer {
+    height: 250px; }
+    .flyer .flyer__texto {
+      font-size: 1.69231em; }
+    .flyer .flyer__titulo {
+      font-size: 1.69231em; }
+    .flyer .flyer__foto {
+      width: 166.66667px;
+      height: 166.66667px;
+      margin: 5px; }
+    .flyer .flyer__foto--enlaces a {
+      font-size: 0.73333em; }
   .flyer--largo {
     height: auto;
     padding: 20px;
     box-sizing: border-box; }
   .portada .portada__foto {
-    max-height: 225px; }
+    max-height: 346.15385px; }
   .carousel-inner {
-    height: 225px; }
+    height: 346.15385px; }
   .titulos {
     font-size: 1.83333em;
     letter-spacing: 10px; }
@@ -632,11 +637,11 @@ header {
   .titulos--secundarios {
     font-size: 1.46667em; }
   .titulos--carrusel {
-    font-size: 1.1em; }
+    font-size: 1.29412em; }
   .titulos--carruselDos {
-    font-size: 0.88em; }
-  .secciones .secciones__texto {
     font-size: 1.1em; }
+  .secciones .secciones__texto {
+    font-size: 1.46667em; }
   .secciones .secciones__foto {
     margin-bottom: 15px; }
   .secciones .secciones__formulario {
@@ -648,6 +653,10 @@ header {
 @media screen and (max-width: 800px) {
   .titulos {
     font-size: 1.69231em; }
+  .titulos--carrusel {
+    font-size: 1.15789em; }
+  .titulos--carruselDos {
+    font-size: 0.95652em; }
   .contenedorPrincipal {
     width: 100%; }
   .presentacion {
@@ -713,7 +722,7 @@ header {
 /* c)-----------------< 544 px ------------------------------------------*/
 @media screen and (max-width: 544px) {
   .flyer {
-    height: 200px; }
+    height: 170px; }
     .flyer .flyer__texto {
       font-size: 1.1em; }
     .flyer .flyer__foto {
@@ -725,9 +734,9 @@ header {
   .titulos--principales {
     font-size: 1.46667em; }
   .titulos--carrusel {
-    font-size: 0.73333em; }
+    font-size: 0.91667em; }
   .titulos--carruselDos {
-    font-size: 0.55em; }
+    font-size: 0.75862em; }
   .secciones .secciones__texto {
     font-size: 1em; }
   .secciones .secciones__foto {
@@ -769,6 +778,10 @@ header {
 @media screen and (max-width: 460px) {
   .titulos {
     font-size: 1.375em; }
+  .titulos--carrusel {
+    font-size: 0.78571em; }
+  .titulos--carruselDos {
+    font-size: 0.66667em; }
   .resumenEnlaces {
     margin: 3px 20px; } }
 
