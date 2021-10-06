@@ -108,11 +108,11 @@ header{
     }
     .menu__enlaces{
         margin-left: 37px;
-        font-size: $titulos/1.4;
+        font-size: $titulos/1.3;
         color: rgb(255, 217, 0);
         font-weight: 800;
         text-decoration: none;
-        text-shadow: rgb(0, 0, 0) 1px 1px;
+        text-shadow: rgb(0, 0, 0) 2px 2px;
         font-style: italic;
     }
     .menu__home{
@@ -246,16 +246,8 @@ header{
 }
 .titulos--secundarios{
     font-size: $titulos/1.5;
-    color: rgb(187, 22, 0);
+    color: rgb(245, 25, 9);
     height: auto;
-}
-.titulos--productos{
-    font-size: $titulos/2.1;
-    background-color: rgb(88, 27, 8);
-    letter-spacing: 5px;
-    width: 300px;
-    height: 30px;
-    margin: 0;
 }
 .titulos--carrusel{
     text-shadow: rgb(0, 0, 0) 10px 3px 10px; 
@@ -280,7 +272,7 @@ header{
     .presentacion__texto{
         margin-top: 10px;
         color: rgb(136, 18, 18);
-        text-shadow: rgb(255, 255, 255) 2px 2px 7px;
+        text-shadow: rgb(250, 234, 5) 1px 1px 2px;
         letter-spacing: 3px;
         font-size: $titulos/1.7;
         text-align: justify;
@@ -732,20 +724,14 @@ header{
         height: $tamanoPortada/2;
     }
     .titulos{ 
+        font-size: $titulos/1.2;
         letter-spacing: 10px;
     }
     .titulos--principales{
-        font-size: $titulos/1.8;
+        font-size: $titulos/1.5;
     }
     .titulos--secundarios{
         font-size: $titulos/1.5;
-    }
-    .titulos--historia{
-        font-size: $titulos/1.9;
-        width: 100%;
-    }
-    .titulos--productos{
-        font-size: $titulos/1.9;
     }
     .titulos--carrusel{
         font-size: $titulos/2;
@@ -775,7 +761,7 @@ header{
 /* b)-----------------< 800 px ------------------------------------------*/
 @media screen and (max-width: 800px){
     .titulos{
-        font-size: $titulos/1.6;
+        font-size: $titulos/1.3;
     }
     .contenedorPrincipal{
         width: 100%;
@@ -785,7 +771,6 @@ header{
         background-image: linear-gradient(rgba(255, 123, 0, 0.616), rgba(221, 8, 8, 0.609));
         padding: 5px 15px;
         .presentacion__texto{
-            text-shadow: black 2px 2px 3px;
             font-size: $titulos/2.1;
         }
     }
@@ -883,15 +868,11 @@ header{
             margin: 5px;
         }
     }
-    .titulos{ 
-        font-size: $titulos/2;
-        letter-spacing: 5px;
+    .titulos{
+        font-size: $titulos/1.4;
     }
     .titulos--principales{
-        font-size: $titulos/2.1;
-    }
-    .titulos--productos{
-        font-size: $titulos/1.9;
+        font-size: $titulos/1.5;
     }
     .titulos--carrusel{
         font-size: $titulos/3;
@@ -958,6 +939,9 @@ header{
 }
 /* d)-----------------< 460 px ------------------------------------------*/
 @media screen and (max-width: 460px) {
+    .titulos{
+        font-size: $titulos/1.6;
+    }
     .resumenEnlaces{
         margin: 3px 20px;
     }

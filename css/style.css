@@ -80,11 +80,11 @@ header {
 
 .menu .menu__enlaces {
   margin-left: 37px;
-  font-size: 1.57143em;
+  font-size: 1.69231em;
   color: #ffd900;
   font-weight: 800;
   text-decoration: none;
-  text-shadow: black 1px 1px;
+  text-shadow: black 2px 2px;
   font-style: italic; }
 
 .menu .menu__home {
@@ -209,16 +209,8 @@ header {
 
 .titulos--secundarios {
   font-size: 1.46667em;
-  color: #bb1600;
+  color: #f51909;
   height: auto; }
-
-.titulos--productos {
-  font-size: 1.04762em;
-  background-color: #581b08;
-  letter-spacing: 5px;
-  width: 300px;
-  height: 30px;
-  margin: 0; }
 
 .titulos--carrusel {
   text-shadow: black 10px 3px 10px; }
@@ -242,7 +234,7 @@ header {
   .presentacion .presentacion__texto {
     margin-top: 10px;
     color: #881212;
-    text-shadow: white 2px 2px 7px;
+    text-shadow: #faea05 1px 1px 2px;
     letter-spacing: 3px;
     font-size: 1.29412em;
     text-align: justify; }
@@ -628,16 +620,12 @@ header {
   .carousel-inner {
     height: 225px; }
   .titulos {
+    font-size: 1.83333em;
     letter-spacing: 10px; }
   .titulos--principales {
-    font-size: 1.22222em; }
+    font-size: 1.46667em; }
   .titulos--secundarios {
     font-size: 1.46667em; }
-  .titulos--historia {
-    font-size: 1.15789em;
-    width: 100%; }
-  .titulos--productos {
-    font-size: 1.15789em; }
   .titulos--carrusel {
     font-size: 1.1em; }
   .titulos--carruselDos {
@@ -656,14 +644,13 @@ header {
 /* b)-----------------< 800 px ------------------------------------------*/
 @media screen and (max-width: 800px) {
   .titulos {
-    font-size: 1.375em; }
+    font-size: 1.69231em; }
   .contenedorPrincipal {
     width: 100%; }
   .presentacion {
     background-image: linear-gradient(rgba(255, 123, 0, 0.616), rgba(221, 8, 8, 0.609));
     padding: 5px 15px; }
     .presentacion .presentacion__texto {
-      text-shadow: black 2px 2px 3px;
       font-size: 1.04762em; }
   .secciones .secciones__contenedores {
     flex-direction: column;
@@ -731,12 +718,9 @@ header {
       height: 125px;
       margin: 5px; }
   .titulos {
-    font-size: 1.1em;
-    letter-spacing: 5px; }
+    font-size: 1.57143em; }
   .titulos--principales {
-    font-size: 1.04762em; }
-  .titulos--productos {
-    font-size: 1.15789em; }
+    font-size: 1.46667em; }
   .titulos--carrusel {
     font-size: 0.73333em; }
   .titulos--carruselDos {
@@ -780,6 +764,8 @@ header {
 
 /* d)-----------------< 460 px ------------------------------------------*/
 @media screen and (max-width: 460px) {
+  .titulos {
+    font-size: 1.375em; }
   .resumenEnlaces {
     margin: 3px 20px; } }
 
