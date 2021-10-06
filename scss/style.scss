@@ -157,7 +157,7 @@ header{
 }
 /* 4.c -------aside: enlaces externos y redes.------------*/
 .informacion{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     .informacion__enlaces{
         display: flex;
         justify-content: space-evenly;
@@ -285,7 +285,8 @@ header{
     background: radial-gradient(circle, rgba(255,31,0,1) 0%, rgba(255,148,0,1) 39%, rgba(255,255,255,1) 100%);
     .portada__foto{
         height: $tamanoPortada;
-        opacity: 80%;
+        width: 60%;
+        opacity: 90%;
     }
 }
 .flyer{
@@ -724,15 +725,7 @@ header{
         padding: 20px;
         box-sizing: border-box;
     }
-    .portada{
-        .portada__foto {
-            max-height: $tamanoPortada/1.3;
-            
-        }
-    }
-    .carousel-inner{
-        height: $tamanoPortada/1.3;
-    }
+    
     .titulos{ 
         font-size: $titulos/1.2;
         letter-spacing: 10px;
@@ -768,6 +761,15 @@ header{
 }
 /* b)-----------------< 800 px ------------------------------------------*/
 @media screen and (max-width: 800px){
+    .portada{
+        .portada__foto {
+            max-height: $tamanoPortada/1.3;
+            width: 80%;
+        }
+    }
+    .carousel-inner{
+        height: $tamanoPortada/1.3;
+    }
     .titulos{
         font-size: $titulos/1.3;
     }
@@ -775,7 +777,7 @@ header{
         font-size: $titulos/1.9;
     }
     .titulos--carruselDos{
-        font-size: $titulos/2.3;
+        font-size: $titulos/2.5;
     }
     .contenedorPrincipal{
         width: 100%;
@@ -871,6 +873,15 @@ header{
 }
 /* c)-----------------< 544 px ------------------------------------------*/
 @media screen and (max-width: 544px) {
+    .portada{
+        .portada__foto {
+            max-height: $tamanoPortada/1.4;
+            width: 100%;
+        }
+    }
+    .carousel-inner{
+        height: $tamanoPortada/1.4;
+    }
     .flyer{
         height: 170px;
         .flyer__texto{
@@ -892,7 +903,7 @@ header{
         font-size: $titulos/2.4;
     }
     .titulos--carruselDos{
-        font-size: $titulos/2.9;
+        font-size: $titulos/3.3;
     }
     .secciones{
         .secciones__texto{
@@ -960,7 +971,7 @@ header{
         font-size: $titulos/2.8;
     }
     .titulos--carruselDos{
-        font-size: $titulos/3.3;
+        font-size: $titulos/3.6;
     }
     .resumenEnlaces{
         margin: 3px 20px;
@@ -968,6 +979,14 @@ header{
 }
 /* e)-----------------< 405 px ------------------------------------------*/
 @media screen and (max-width: 405px) {
+    .portada{
+        .portada__foto {
+            max-height: $tamanoPortada/1.6;
+        }
+    }
+    .carousel-inner{
+        height: $tamanoPortada/1.6;
+    }
     .resumenEnlaces{
         width: 50px;
         height: 50px;

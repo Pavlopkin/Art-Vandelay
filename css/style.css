@@ -245,7 +245,8 @@ header {
   background: radial-gradient(circle, #ff1f00 0%, #ff9400 39%, white 100%); }
   .portada .portada__foto {
     height: 450px;
-    opacity: 80%; }
+    width: 60%;
+    opacity: 90%; }
 
 .flyer {
   display: flex;
@@ -625,10 +626,6 @@ header {
     height: auto;
     padding: 20px;
     box-sizing: border-box; }
-  .portada .portada__foto {
-    max-height: 346.15385px; }
-  .carousel-inner {
-    height: 346.15385px; }
   .titulos {
     font-size: 1.83333em;
     letter-spacing: 10px; }
@@ -651,12 +648,17 @@ header {
 
 /* b)-----------------< 800 px ------------------------------------------*/
 @media screen and (max-width: 800px) {
+  .portada .portada__foto {
+    max-height: 346.15385px;
+    width: 80%; }
+  .carousel-inner {
+    height: 346.15385px; }
   .titulos {
     font-size: 1.69231em; }
   .titulos--carrusel {
     font-size: 1.15789em; }
   .titulos--carruselDos {
-    font-size: 0.95652em; }
+    font-size: 0.88em; }
   .contenedorPrincipal {
     width: 100%; }
   .presentacion {
@@ -721,6 +723,11 @@ header {
 
 /* c)-----------------< 544 px ------------------------------------------*/
 @media screen and (max-width: 544px) {
+  .portada .portada__foto {
+    max-height: 321.42857px;
+    width: 100%; }
+  .carousel-inner {
+    height: 321.42857px; }
   .flyer {
     height: 170px; }
     .flyer .flyer__texto {
@@ -736,7 +743,7 @@ header {
   .titulos--carrusel {
     font-size: 0.91667em; }
   .titulos--carruselDos {
-    font-size: 0.75862em; }
+    font-size: 0.66667em; }
   .secciones .secciones__texto {
     font-size: 1em; }
   .secciones .secciones__foto {
@@ -781,12 +788,16 @@ header {
   .titulos--carrusel {
     font-size: 0.78571em; }
   .titulos--carruselDos {
-    font-size: 0.66667em; }
+    font-size: 0.61111em; }
   .resumenEnlaces {
     margin: 3px 20px; } }
 
 /* e)-----------------< 405 px ------------------------------------------*/
 @media screen and (max-width: 405px) {
+  .portada .portada__foto {
+    max-height: 281.25px; }
+  .carousel-inner {
+    height: 281.25px; }
   .resumenEnlaces {
     width: 50px;
     height: 50px;
