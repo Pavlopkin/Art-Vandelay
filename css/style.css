@@ -237,11 +237,12 @@ header {
 /* 7 -------INDEX.HTML------------*/
 .presentacion {
   height: auto;
-  background-image: linear-gradient(rgba(255, 123, 0, 0.616), rgba(221, 8, 8, 0.609));
+  background-image: linear-gradient(rgba(255, 123, 0, 0.616), rgba(221, 8, 8, 0.24));
   padding: 10px 50px; }
   .presentacion .presentacion__texto {
-    color: #ffe600;
-    text-shadow: black 2px 2px 7px;
+    margin-top: 10px;
+    color: #881212;
+    text-shadow: white 2px 2px 7px;
     letter-spacing: 3px;
     font-size: 1.29412em;
     text-align: justify; }
