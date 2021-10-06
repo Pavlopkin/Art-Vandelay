@@ -378,7 +378,7 @@ header{
         padding-top: 25px;
     }
     .secciones__contenedores--productos{
-        height: 550px;
+        height: 580px;
         flex-wrap: wrap;
         padding: 50px;
         box-sizing: border-box;
@@ -625,7 +625,7 @@ header{
 }
 .mensajeError{
     p{
-        font-size: 3em;
+        font-size: 2em;
         color: white;
         text-align: center;
         animation-name: aparece;
@@ -756,6 +756,31 @@ header{
     }
     .enlacesHistoria{
         font-size: $titulos/1.5;
+    }
+    /* 13 -------ERROR.HTML------------*/
+    .contenedorError{
+        .imgError{
+            width: 150px;
+            height: 150px;
+            border: 12px solid white;
+        }
+        .numero{
+            font-size: 12em;
+        }
+    }
+    .mensajeError{
+        p{
+            font-size: 1.5em;
+        }
+    }
+    .mensajeError--dos{
+        img{
+            width: 110px;
+            height: 110px;
+        }
+        p{
+            font-size: 1.5em;
+        }
     }
 
 }
@@ -960,6 +985,32 @@ header{
         height: 380px;
         background-size: contain;
         background-position:top;
+    }
+    /* 13 -------ERROR.HTML------------*/
+    .contenedorError{
+        .imgError{
+            width: 110px;
+            height: 110px;
+            border: 7px solid white;
+        }
+        .numero{
+            font-size: 9em;
+        }
+    }
+    .mensajeError{
+        p{
+            font-size: 1.3em;
+        }
+    }
+    .mensajeError--dos{
+        img{
+            width: 90px;
+            height: 90px;
+            border: 7px solid white;
+        }
+        p{
+            font-size: 1.2em;
+        }
     }
 }
 /* d)-----------------< 460 px ------------------------------------------*/

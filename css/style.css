@@ -323,7 +323,7 @@ header {
     flex-wrap: wrap;
     padding-top: 25px; }
   .secciones .secciones__contenedores--productos {
-    height: 550px;
+    height: 580px;
     flex-wrap: wrap;
     padding: 50px;
     box-sizing: border-box;
@@ -547,7 +547,7 @@ header {
     animation-duration: 2s; }
 
 .mensajeError p {
-  font-size: 3em;
+  font-size: 2em;
   color: white;
   text-align: center;
   animation-name: aparece;
@@ -644,7 +644,21 @@ header {
   .secciones .secciones__formulario {
     width: 80%; }
   .enlacesHistoria {
-    font-size: 1.46667em; } }
+    font-size: 1.46667em; }
+  /* 13 -------ERROR.HTML------------*/
+  .contenedorError .imgError {
+    width: 150px;
+    height: 150px;
+    border: 12px solid white; }
+  .contenedorError .numero {
+    font-size: 12em; }
+  .mensajeError p {
+    font-size: 1.5em; }
+  .mensajeError--dos img {
+    width: 110px;
+    height: 110px; }
+  .mensajeError--dos p {
+    font-size: 1.5em; } }
 
 /* b)-----------------< 800 px ------------------------------------------*/
 @media screen and (max-width: 800px) {
@@ -779,7 +793,22 @@ header {
   .cabeceraProd {
     height: 380px;
     background-size: contain;
-    background-position: top; } }
+    background-position: top; }
+  /* 13 -------ERROR.HTML------------*/
+  .contenedorError .imgError {
+    width: 110px;
+    height: 110px;
+    border: 7px solid white; }
+  .contenedorError .numero {
+    font-size: 9em; }
+  .mensajeError p {
+    font-size: 1.3em; }
+  .mensajeError--dos img {
+    width: 90px;
+    height: 90px;
+    border: 7px solid white; }
+  .mensajeError--dos p {
+    font-size: 1.2em; } }
 
 /* d)-----------------< 460 px ------------------------------------------*/
 @media screen and (max-width: 460px) {
