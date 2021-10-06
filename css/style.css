@@ -238,7 +238,7 @@ header {
 .presentacion {
   height: auto;
   background-image: linear-gradient(rgba(255, 123, 0, 0.616), rgba(221, 8, 8, 0.609));
-  padding: 30px 50px; }
+  padding: 10px 50px; }
   .presentacion .presentacion__texto {
     color: #ffe600;
     text-shadow: black 2px 2px 7px;
@@ -498,7 +498,12 @@ header {
   transition: 1s;
   filter: grayscale(0%); }
 
-/* 11 -------CONTACTO.HTML------------*/
+/* 11 -------UBICACION.HTML------------*/
+.portadaSucursal {
+  width: 100%;
+  margin: 60px 0; }
+
+/* 12 -------CONTACTO.HTML------------*/
 .secciones--contacto {
   height: auto;
   padding-bottom: 20px; }
@@ -510,7 +515,7 @@ header {
   transform: scale(1.1, 1.1);
   transition: 1s; }
 
-/* 12 -------ERROR.HTML------------*/
+/* 13 -------ERROR.HTML------------*/
 .headerError {
   display: flex;
   justify-content: center;
@@ -565,7 +570,7 @@ header {
     opacity: 75%;
     transition: 1s; }
 
-/* 13 -------MAPA.HTML------------*/
+/* 14 -------MAPA.HTML------------*/
 .mapa .mapa__lista {
   margin-top: 50px;
   text-align: center; }
@@ -643,17 +648,22 @@ header {
   .secciones .secciones__formulario {
     width: 80%; }
   .enlacesHistoria {
-    font-size: 1.46667em; } }
+    font-size: 1.46667em; }
+  .portadaSucursal {
+    margin: 30px 0; } }
 
 /* b)-----------------< 800 px ------------------------------------------*/
 @media screen and (max-width: 800px) {
+  .titulos {
+    font-size: 1.375em; }
   .contenedorPrincipal {
     width: 100%; }
   .presentacion {
-    height: auto;
-    padding: 10px; }
+    background-image: linear-gradient(rgba(255, 123, 0, 0.616), rgba(221, 8, 8, 0.609));
+    padding: 5px 15px; }
     .presentacion .presentacion__texto {
-      font-size: 1.1em; }
+      text-shadow: black 2px 2px 3px;
+      font-size: 1.04762em; }
   .secciones .secciones__contenedores {
     flex-direction: column;
     justify-content: center;
@@ -723,9 +733,9 @@ header {
     font-size: 1.1em;
     letter-spacing: 5px; }
   .titulos--principales {
-    font-size: 1em; }
+    font-size: 1.04762em; }
   .titulos--productos {
-    font-size: 0.95652em; }
+    font-size: 1.15789em; }
   .titulos--carrusel {
     font-size: 0.73333em; }
   .titulos--carruselDos {
@@ -763,7 +773,9 @@ header {
   .cabeceraProd {
     height: 380px;
     background-size: contain;
-    background-position: top; } }
+    background-position: top; }
+  .portadaSucursal {
+    margin: 10px 0; } }
 
 /* d)-----------------< 460 px ------------------------------------------*/
 @media screen and (max-width: 460px) {

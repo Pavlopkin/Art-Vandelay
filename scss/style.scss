@@ -275,7 +275,7 @@ header{
 .presentacion{
     height: auto;
     background-image: linear-gradient(rgba(255, 123, 0, 0.616), rgba(221, 8, 8, 0.609));
-    padding: 30px 50px;
+    padding: 10px 50px;
     .presentacion__texto{
         color: rgb(255, 230, 0);
         text-shadow: black 2px 2px 7px;
@@ -568,7 +568,14 @@ header{
     transition: 1s;
     filter: grayscale(0%);
 }
-/* 11 -------CONTACTO.HTML------------*/
+/* 11 -------UBICACION.HTML------------*/
+.portadaSucursal{
+    width: 100%;
+    margin: 60px 0;
+ 
+}
+
+/* 12 -------CONTACTO.HTML------------*/
 .secciones--contacto{
     height: auto;
     padding-bottom: 20px;
@@ -580,7 +587,7 @@ header{
     transform: scale(1.1,1.1);
     transition: 1s;
 }
-/* 12 -------ERROR.HTML------------*/
+/* 13 -------ERROR.HTML------------*/
 .headerError{
     display: flex;
     justify-content: center;
@@ -643,7 +650,7 @@ header{
         transition: 1s;
     }
 }
-/* 13 -------MAPA.HTML------------*/
+/* 14 -------MAPA.HTML------------*/
 .mapa{
     .mapa__lista{
         margin-top: 50px;
@@ -759,17 +766,25 @@ header{
     .enlacesHistoria{
         font-size: $titulos/1.5;
     }
+    .portadaSucursal{
+        margin: 30px 0;
+    }
 }
 /* b)-----------------< 800 px ------------------------------------------*/
 @media screen and (max-width: 800px){
+    .titulos{
+        font-size: $titulos/1.6;
+    }
     .contenedorPrincipal{
         width: 100%;
     }
     .presentacion{
-        height: auto;
-        padding: 10px;
+     
+        background-image: linear-gradient(rgba(255, 123, 0, 0.616), rgba(221, 8, 8, 0.609));
+        padding: 5px 15px;
         .presentacion__texto{
-            font-size: $titulos/2;
+            text-shadow: black 2px 2px 3px;
+            font-size: $titulos/2.1;
         }
     }
     .secciones{
@@ -871,10 +886,10 @@ header{
         letter-spacing: 5px;
     }
     .titulos--principales{
-        font-size: $titulos/2.2;
+        font-size: $titulos/2.1;
     }
     .titulos--productos{
-        font-size: $titulos/2.3;
+        font-size: $titulos/1.9;
     }
     .titulos--carrusel{
         font-size: $titulos/3;
@@ -934,6 +949,9 @@ header{
         height: 380px;
         background-size: contain;
         background-position:top;
+    }
+    .portadaSucursal{
+        margin: 10px 0;
     }
 }
 /* d)-----------------< 460 px ------------------------------------------*/
