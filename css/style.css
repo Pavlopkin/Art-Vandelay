@@ -365,22 +365,22 @@ header {
 .kelVarsen {
   width: 22%;
   box-sizing: border-box;
-  background-color: rgba(255, 102, 0, 0.65); }
+  background-color: rgba(255, 81, 0, 0.781); }
 
 .hePennypacker {
   width: 26%;
-  background-color: rgba(251, 56, 7, 0.651);
+  background-color: rgba(255, 81, 0, 0.781);
   box-sizing: border-box; }
 
 .artVandelay {
   width: 24%;
   box-sizing: border-box;
-  background-color: rgba(255, 102, 0, 0.65); }
+  background-color: rgba(255, 81, 0, 0.781); }
 
 .christineNyhart {
   width: 29%;
   box-sizing: border-box;
-  background-color: rgba(251, 56, 7, 0.651); }
+  background-color: rgba(255, 81, 0, 0.781); }
 
 .enlacesHistoria {
   display: flex;
@@ -397,7 +397,7 @@ header {
 .enlacesHistoria:hover {
   color: red;
   background-color: rgba(255, 210, 184, 0.322);
-  transition: 1s; }
+  transition: 2s; }
 
 /* 10 -------PRODUCTOS.HTML------------*/
 .zoom:hover {
