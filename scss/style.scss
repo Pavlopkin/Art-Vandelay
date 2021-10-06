@@ -260,8 +260,7 @@ header{
 .flex{
     display: flex;
     justify-content: space-around;
-    height: 400px;
-    width: 100%;
+
 }
 
 /* 7 -------INDEX.HTML------------*/
@@ -553,8 +552,8 @@ header{
     height: 100px;
     border-radius: 50%;
     opacity: 0.8;
-    border: solid rgb(255, 255, 255) 5px;
-    filter: grayscale(100%)
+    border: solid rgb(253, 197, 12) 5px;
+    filter: grayscale(50%)
 }
 .resumenEnlaces:hover{
     opacity: 1;
@@ -563,10 +562,17 @@ header{
     filter: grayscale(0%);
 }
 /* 11 -------UBICACION.HTML------------*/
-.portadaSucursal{
+.portadaSuc{
+    background-image: url(../assets/suc.jpg);
+    background-position: center;
     width: 100%;
-    margin: 60px 0;
- 
+    height: 350px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    .portadaSuc__foto{
+        height: 65%;
+    }
 }
 
 /* 12 -------CONTACTO.HTML------------*/
@@ -754,9 +760,7 @@ header{
     .enlacesHistoria{
         font-size: $titulos/1.5;
     }
-    .portadaSucursal{
-        margin: 30px 0;
-    }
+
 }
 /* b)-----------------< 800 px ------------------------------------------*/
 @media screen and (max-width: 800px){
@@ -801,7 +805,7 @@ header{
     .resumenEnlaces{
         width: 60px;
         height: 60px;
-        border: 2px solid white;
+        border: 2px solid rgb(253, 197, 12);
     }
     .cabeceraHistoria{
         width: 100%;
@@ -907,6 +911,9 @@ header{
             animation-iteration-count: infinite;
         }
     }
+    .portadaSuc{
+        height: 250px;
+    }
     .detalle{      
         .detalleTexto{
             font-size: $titulos/2;
@@ -932,9 +939,6 @@ header{
         height: 380px;
         background-size: contain;
         background-position:top;
-    }
-    .portadaSucursal{
-        margin: 10px 0;
     }
 }
 /* d)-----------------< 460 px ------------------------------------------*/

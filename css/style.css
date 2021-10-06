@@ -222,9 +222,7 @@ header {
 /* 6 -------convierte contenedores en flex-box------------*/
 .flex {
   display: flex;
-  justify-content: space-around;
-  height: 400px;
-  width: 100%; }
+  justify-content: space-around; }
 
 /* 7 -------INDEX.HTML------------*/
 .presentacion {
@@ -482,8 +480,8 @@ header {
   height: 100px;
   border-radius: 50%;
   opacity: 0.8;
-  border: solid white 5px;
-  filter: grayscale(100%); }
+  border: solid #fdc50c 5px;
+  filter: grayscale(50%); }
 
 .resumenEnlaces:hover {
   opacity: 1;
@@ -492,9 +490,16 @@ header {
   filter: grayscale(0%); }
 
 /* 11 -------UBICACION.HTML------------*/
-.portadaSucursal {
+.portadaSuc {
+  background-image: url(../assets/suc.jpg);
+  background-position: center;
   width: 100%;
-  margin: 60px 0; }
+  height: 350px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center; }
+  .portadaSuc .portadaSuc__foto {
+    height: 65%; }
 
 /* 12 -------CONTACTO.HTML------------*/
 .secciones--contacto {
@@ -637,9 +642,7 @@ header {
   .secciones .secciones__formulario {
     width: 80%; }
   .enlacesHistoria {
-    font-size: 1.46667em; }
-  .portadaSucursal {
-    margin: 30px 0; } }
+    font-size: 1.46667em; } }
 
 /* b)-----------------< 800 px ------------------------------------------*/
 @media screen and (max-width: 800px) {
@@ -671,7 +674,7 @@ header {
   .resumenEnlaces {
     width: 60px;
     height: 60px;
-    border: 2px solid white; }
+    border: 2px solid #fdc50c; }
   .cabeceraHistoria {
     width: 100%;
     height: 320px; }
@@ -742,6 +745,8 @@ header {
     animation-name: TextoResp;
     animation-duration: 2.5s;
     animation-iteration-count: infinite; }
+  .portadaSuc {
+    height: 250px; }
   .detalle .detalleTexto {
     font-size: 1.1em;
     font-weight: 700; }
@@ -758,9 +763,7 @@ header {
   .cabeceraProd {
     height: 380px;
     background-size: contain;
-    background-position: top; }
-  .portadaSucursal {
-    margin: 10px 0; } }
+    background-position: top; } }
 
 /* d)-----------------< 460 px ------------------------------------------*/
 @media screen and (max-width: 460px) {
