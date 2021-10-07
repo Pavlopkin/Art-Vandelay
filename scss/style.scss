@@ -36,9 +36,10 @@ $tamanoPortada: 450px;
 @keyframes late{
     0%{
         transform: scale(1,1);
+        
     }
     100%{
-        transform: scale(1.1,1.1);
+        transform: scale(1.1,1.1)
     }
 }
 /* 4 -------ESTILOS COMUNES A TODAS LAS SECCIONES------------*/
@@ -884,6 +885,9 @@ header{
             }
         }
     }
+    .noneSecond{
+        display: none;
+    }
 }
 /* c)-----------------< 544 px ------------------------------------------*/
 @media screen and (max-width: 544px) {
@@ -908,7 +912,7 @@ header{
         }
     }
     .titulos{
-        font-size: $titulos/1.6;
+        font-size: $titulos/1.9;
     }
     .titulos--principales{
         font-size: $titulos/1.5;
@@ -997,9 +1001,7 @@ header{
             font-size: 1.2em;
         }
     }
-    .noneSecond{
-        display: none;
-    }
+    
 }
 /* d)-----------------< 460 px ------------------------------------------*/
 @media screen and (max-width: 460px) {

@@ -727,7 +727,9 @@ header {
       .mapa .mapa__lista li a {
         padding: 7px 25px;
         font-size: 1.04762em;
-        width: 150px; } }
+        width: 150px; }
+  .noneSecond {
+    display: none; } }
 
 /* c)-----------------< 544 px ------------------------------------------*/
 @media screen and (max-width: 544px) {
@@ -745,7 +747,7 @@ header {
       height: 125px;
       margin: 5px; }
   .titulos {
-    font-size: 1.375em; }
+    font-size: 1.15789em; }
   .titulos--principales {
     font-size: 1.46667em; }
   .titulos--secundarios {
@@ -800,9 +802,7 @@ header {
     height: 90px;
     border: 7px solid white; }
   .mensajeError--dos p {
-    font-size: 1.2em; }
-  .noneSecond {
-    display: none; } }
+    font-size: 1.2em; } }
 
 /* d)-----------------< 460 px ------------------------------------------*/
 @media screen and (max-width: 460px) {
