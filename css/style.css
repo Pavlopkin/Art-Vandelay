@@ -8,35 +8,17 @@
   100% {
     opacity: 1; } }
 
-@keyframes animacionUno {
-  0% {
-    border: #4d4dd6 3px solid; }
-  50% {
-    border: #47ffd7 3px solid; }
-  100% {
-    border: #4c4fed 3px solid; } }
-
-@keyframes Texto {
-  0% {
-    font-size: 1em; }
-  100% {
-    font-size: 2em;
-    font-weight: 700;
-    letter-spacing: 15px; } }
-
-@keyframes TextoResp {
-  0% {
-    font-size: 0.3em; }
-  100% {
-    font-size: 0.9em;
-    font-weight: 700;
-    letter-spacing: 10px; } }
-
 @keyframes logo {
   0% {
     font-size: 20px; }
   100% {
     font-size: 31px; } }
+
+@keyframes late {
+  0% {
+    transform: scale(1, 1); }
+  100% {
+    transform: scale(1.1, 1.1); } }
 
 /* 4 -------ESTILOS COMUNES A TODAS LAS SECCIONES------------*/
 * {
@@ -79,7 +61,7 @@ header {
   transition: 1s; }
 
 .menu .menu__enlaces {
-  margin-left: 37px;
+  margin-left: 30px;
   font-size: 1.57143em;
   color: #ffd900;
   font-weight: 800;
@@ -184,7 +166,10 @@ header {
     margin: 10px; }
   .footer .footer__seinfeld {
     width: 100px;
-    height: 40px; }
+    height: 40px;
+    animation-name: late;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; }
   .footer .footer__texto {
     font-size: 1em;
     font-weight: 700; }
@@ -193,9 +178,9 @@ header {
 .titulos {
   text-align: center;
   width: 100%;
-  height: 60px;
+  height: 40px;
   font-size: 2.2em;
-  padding: 15px;
+  padding: 5px;
   background-color: linear-gradient(90deg, #ec7d00 0%, #fd211d 50%, #fcf645 100%);
   color: #fefeff;
   box-sizing: border-box;
@@ -208,8 +193,8 @@ header {
   font-size: 1.83333em; }
 
 .titulos--secundarios {
-  font-size: 1.46667em;
-  color: #f51909;
+  font-size: 1.57143em;
+  color: #f5e509;
   height: auto; }
 
 .titulos--carrusel {
@@ -245,7 +230,7 @@ header {
   background: radial-gradient(circle, #ff1f00 0%, #ff9400 39%, white 100%); }
   .portada .portada__foto {
     height: 450px;
-    width: 60%;
+    width: 55%;
     opacity: 90%; }
 
 .flyer {
@@ -322,12 +307,16 @@ header {
   .secciones .secciones__contenedores--historia {
     flex-wrap: wrap;
     padding-top: 25px; }
+    .secciones .secciones__contenedores--historia a {
+      color: #740b0b;
+      text-shadow: white 1px 1px 1px;
+      text-decoration: none; }
   .secciones .secciones__contenedores--productos {
     height: 580px;
     flex-wrap: wrap;
     padding: 50px;
     box-sizing: border-box;
-    border-top: 2px solid #eb5803; }
+    border-top: 2px solid #f15800; }
   .secciones .secciones__foto {
     height: 210px;
     margin: auto; }
@@ -339,10 +328,10 @@ header {
     font-weight: 800;
     text-decoration: underline 2px; }
   .secciones .opposite {
-    background-color: rgba(255, 251, 0, 0.787); }
+    background-color: rgba(192, 17, 11, 0.787); }
   .secciones .secciones__formulario {
     width: 50%;
-    margin: auto;
+    margin: 25px auto;
     box-sizing: border-box; }
   .secciones .secciones__datos {
     background-color: rgba(187, 69, 0, 0.52);
@@ -352,7 +341,7 @@ header {
 /* 9 -------HISTORIA.HTML------------*/
 .cabeceraHistoria {
   width: 100%;
-  height: 530px;
+  height: 440px;
   background-image: url(../assets/quien.JPG);
   background-size: cover; }
 
@@ -386,7 +375,7 @@ header {
   color: #f0bb0c;
   text-shadow: black 2px 2px 5px;
   font-weight: 900;
-  height: 530px; }
+  height: 440px; }
 
 .enlacesHistoria:hover {
   color: red;
@@ -497,13 +486,16 @@ header {
 .portadaSuc {
   background-image: url(../assets/suc.jpg);
   background-position: center;
+  background-size: cover;
   width: 100%;
   height: 350px;
   display: flex;
   align-items: flex-end;
   justify-content: center; }
   .portadaSuc .portadaSuc__foto {
-    height: 65%; }
+    height: 65%;
+    animation-name: aparece;
+    animation-duration: 3s; }
 
 /* 12 -------CONTACTO.HTML------------*/
 .secciones--contacto {
@@ -658,7 +650,9 @@ header {
     width: 110px;
     height: 110px; }
   .mensajeError--dos p {
-    font-size: 1.5em; } }
+    font-size: 1.5em; }
+  .noneFirst {
+    display: none; } }
 
 /* b)-----------------< 800 px ------------------------------------------*/
 @media screen and (max-width: 800px) {
@@ -751,9 +745,11 @@ header {
       height: 125px;
       margin: 5px; }
   .titulos {
-    font-size: 1.57143em; }
+    font-size: 1.375em; }
   .titulos--principales {
     font-size: 1.46667em; }
+  .titulos--secundarios {
+    font-size: 1.22222em; }
   .titulos--carrusel {
     font-size: 0.91667em; }
   .titulos--carruselDos {
@@ -764,17 +760,13 @@ header {
     width: 70%;
     margin: 7px auto; }
   .secciones .secciones__foto--historia {
-    margin: 5px 0; }
+    margin: 5px 0;
+    height: 160px; }
   .secciones .secciones__formulario {
     width: 80%; }
   .secciones .secciones__contenedores--productos {
     height: auto;
     padding: 10px; }
-  .activarError a {
-    text-decoration: none;
-    animation-name: TextoResp;
-    animation-duration: 2.5s;
-    animation-iteration-count: infinite; }
   .portadaSuc {
     height: 250px; }
   .detalle .detalleTexto {
@@ -808,18 +800,20 @@ header {
     height: 90px;
     border: 7px solid white; }
   .mensajeError--dos p {
-    font-size: 1.2em; } }
+    font-size: 1.2em; }
+  .noneSecond {
+    display: none; } }
 
 /* d)-----------------< 460 px ------------------------------------------*/
 @media screen and (max-width: 460px) {
-  .titulos {
-    font-size: 1.375em; }
   .titulos--carrusel {
     font-size: 0.78571em; }
   .titulos--carruselDos {
     font-size: 0.61111em; }
   .resumenEnlaces {
-    margin: 3px 20px; } }
+    margin: 3px 20px; }
+  .nonethird {
+    display: none; } }
 
 /* e)-----------------< 405 px ------------------------------------------*/
 @media screen and (max-width: 405px) {
