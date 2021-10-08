@@ -55,7 +55,7 @@ body{
 /* 4.a -------Contiene el layout de la página------------*/
 .contenedorPrincipal{ 
     margin: auto;
-    width: 98%;
+    width: 97%;
     max-width: 1150px;
     height: auto;
     background: rgb(152,11,11);
@@ -64,7 +64,7 @@ body{
     animation-duration: 1s;
     box-sizing: border-box;
 }
-/* 4.b -------repite estructura y contenido en todas las secciones------------*/
+/* 4.b -------Header -- repite estructura y contenido en todas las secciones------------*/
 header{
     background: rgb(152,11,11);
     background: linear-gradient(45deg, rgba(152,11,11,1) 0%, rgba(255,94,0,1) 30%, rgba(255,166,0,1) 70%, rgba(255,0,0,1) 100%);
@@ -73,16 +73,12 @@ header{
     align-content: center;
     box-sizing: border-box;
 }
+/* 4.c---------------------Menú-----------------------------*/
 .nav-item:hover{
     transform: scale(1.3,1.3);
     transition: 1s;
 }
 .menu{
-    .menu__logo:hover{
-        transform: scale(1.1,1.1);
-        opacity: 0.9;
-        transition: 1s;
-    }
     .menu__enlaces{
         margin-left: 30px;
         font-size: $titulos/1.4;
@@ -92,6 +88,7 @@ header{
         text-shadow: rgb(0, 0, 0) 2px 2px;
         font-style: italic;
     }
+    /*4.c.1----logo interactivo menú-----*/
     .menu__home{
         text-decoration: none;
         margin: 0 15px;
@@ -132,7 +129,7 @@ header{
         animation-duration: 1s;
     }
 }
-/* 4.c -------aside: enlaces externos y redes.------------*/
+/* 4.d -------aside: enlaces externos y redes.------------*/
 .informacion{
     background-color: rgb(255, 255, 255);
     .informacion__enlaces{
@@ -140,7 +137,7 @@ header{
         justify-content: space-evenly;
     }
 }
-/* 4.d -------repite contenido y estructura en todas las secciones------------*/
+/* 4.e -------Footer -- repite contenido y estructura en todas las secciones------------*/
 .footer{
     display: flex;
     flex-wrap: wrap;
@@ -155,19 +152,12 @@ header{
         margin-top: 7px;
         font-size: 0.9em;
     }
-    .footer__secciones{
-        display: flex;
-        justify-content: space-around;
-    }
-    .footer__articulos{
-        display: flex;
-        flex-direction: column;
-    }
     .footer__sucursales{
         width:50%;
         text-align: center;
         li{
             list-style: none;
+            margin-left: -50px;
         }
     }
     .footer__contacto{
@@ -175,6 +165,7 @@ header{
         text-align: center;
         li{
             list-style: none;
+            margin-left: -50px;
         }
     }
     .footer__titulos{
@@ -188,7 +179,6 @@ header{
         font-weight: 500;
         letter-spacing: 5px;
         padding-top: 20px;
-        box-sizing: border-box;
     }
     .footer__referencia{
         display: flex;
@@ -212,7 +202,7 @@ header{
         font-weight: 700;
     }
 }
-/* 5 -------Se utiliza con modificadores en todas las secciones------------*/
+/* 4.f -------Se utiliza con modificadores en todas las secciones------------*/
 .titulos{ 
     text-align: center;
     @include titulos (100%, 40px, $titulos, 5px, linear-gradient(90deg, rgba(236,125,0,1) 0%, rgba(253,33,29,1) 50%, rgba(252,246,69,1) 100%), rgb(254, 254, 255), border-box);
@@ -228,25 +218,17 @@ header{
     font-size: $titulos/1.4;
     color: rgb(245, 229, 9);
     height: auto;
+    text-shadow: black 4px 4px 5px;
 }
 .titulos--carrusel{
-    text-shadow: rgb(0, 0, 0) 10px 3px 10px; 
-}
-.titulos--carrusel{
+    color: rgb(255, 51, 0);
     font-size: $titulos/1.4;
 }
 .titulos--carruselDos{
     font-size: $titulos/1.7;
     text-shadow: rgb(0, 0, 0) 2px 3px 2px; 
 }
-/* 6 -------convierte contenedores en flex-box------------*/
-.flex{
-    display: flex;
-    justify-content: space-around;
-
-}
-
-/* 7 -------INDEX.HTML------------*/
+/* 4.g---------------Se utiliza en Index.html e historia.html--------------*/
 .presentacion{
     height: auto;
     background-image: linear-gradient(rgba(255, 123, 0, 0.616), rgba(221, 8, 8, 0.24));
@@ -256,10 +238,12 @@ header{
         color: rgb(136, 18, 18);
         text-shadow: rgb(250, 234, 5) 1px 1px 2px;
         letter-spacing: 3px;
-        font-size: $titulos/1.7;
+        font-size: $titulos/1.5;
         text-align: justify;
     }
 }
+/*/////////////////////////ESTILOS DE LAS SECCIONES\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+/* 5 -------INDEX.HTML------------*/
 .portada{
     text-align: center;
     background: radial-gradient(circle, rgba(255,31,0,1) 0%, rgba(255,148,0,1) 39%, rgba(255,255,255,1) 100%);
@@ -280,11 +264,6 @@ header{
     font-weight: 800;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    .flyer__titulo{
-        font-size: $titulos;
-        width: 90%;
-        font-weight: 900;
-    }
     .flyer__texto{
         font-size: $titulos*1.1;
         width: 30%;
@@ -301,10 +280,9 @@ header{
     }    
 }
 .flyer--colores{
-    background-color: rgba(226, 110, 43, 0.52);
-    color: white;
+    background-color: rgba(238, 3, 3, 0.548);
 }
-/* 8 -------SECCIONES y sus ramas dan estilo a-----------------------------
+/* 6 -------SECCIONES y sus ramas dan estilo a-----------------------------
 -------las secciones: productos / historia / ubicacion / contacto................*/
 .secciones{
     display: flex;
@@ -318,28 +296,22 @@ header{
         font-size: $titulos/1.8;
         text-align: justify;
     }
-    .secciones__texto--destacada{
-        margin: 30px;
-    }
-    .secciones__texto--ubicacion{
-        text-align: center;
-    }
-    .secciones__texto--historia{
+    .secciones__texto--historia{ /* historia.html*/
         width: 40%;
         color: rgb(88, 6, 6);
     }
-    .secciones__texto--sucursales{
+    .secciones__texto--sucursales{ /* ubicacion.html*/
         list-style: none;
         color: rgb(88, 6, 6);
     }
-    .secciones__texto--envios{
+    .secciones__texto--envios{ /* ubicacion.html*/
         font-size: $titulos/1.4;
         width: 30%;
         text-shadow: black 2px 2px 5px;
         color: rgb(255, 255, 255);
         margin:30px;
     }
-    .secciones__sucursales{
+    .secciones__sucursales{ /* ubicacion.html*/
         width: 40%;
     }
     .secciones__contenedores{
@@ -350,19 +322,15 @@ header{
         justify-content: space-evenly;
         border-top: 2px solid rgb(235, 88, 3);
     }
-    .secciones__contenedores--column{
-        flex-direction: column;
-    }
-    .secciones__contenedores--historia{
-        flex-wrap: wrap;
+    .secciones__contenedores--historia{ /*historia.html y ubicación.html*/
+        flex-wrap: wrap;                 
         padding-top: 25px;
         a{
-            color:rgb(116, 11, 11);
-            text-shadow: rgb(255, 255, 255) 1px 1px 1px;
-            text-decoration: none;
+            color:rgb(80, 13, 5);
+            font-style: italic;
         }
     }
-    .secciones__contenedores--productos{
+    .secciones__contenedores--productos{ /*productos.html*/
         height: 580px;
         flex-wrap: wrap;
         padding: 50px;
@@ -373,17 +341,10 @@ header{
         height: 210px;
         margin: auto;
     }
-    .secciones__foto--historia{
+    .secciones__foto--historia{ /*productos.html, historia.html, ubicacion.html*/
         width: 30%;
         margin: 20px 50px;
         border-radius: 30%;
-    }
-    .enfasisTexto{
-        font-weight: 800;
-        text-decoration: underline 2px;
-    }
-    .opposite{
-        background-color: rgba(192, 17, 11, 0.787);
     }
     .secciones__formulario{
         width: 50%;
@@ -398,6 +359,8 @@ header{
 }
 /* 9 -------HISTORIA.HTML------------*/
 .cabeceraHistoria{
+    display: flex;
+    justify-content: space-around;
     width: 100%;
     height: 440px;
     background-image: url(../assets/quien.JPG);
@@ -566,6 +529,13 @@ header{
         animation-duration: 3s;
         
     }
+}
+.enfasisTexto{
+    font-weight: 800;
+    text-decoration: underline 2px;
+}
+.opposite{
+    background-color: rgba(192, 17, 11, 0.787);
 }
 /* 12 -------CONTACTO.HTML------------*/
 .secciones--contacto{
