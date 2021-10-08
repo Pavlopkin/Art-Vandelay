@@ -5,18 +5,7 @@ $titulos: 2.2em;
 $medidaFotos: 250px;
 $tamanoPortada: 450px;
 
-/* 2 -------ELEMENTOS------------*/
-
-@mixin titulos($width, $heigth, $font-size, $padding, $background-color, $color, $box-sizing){
-    width:$width;
-    height: $heigth;
-    font-size:$font-size;
-    padding:$padding;
-    background-color: $background-color;
-    color:$color;
-    box-sizing: $box-sizing;
-}
-/* 3 -------ANIMACIONES------------*/
+/* 2 -------ANIMACIONES------------*/
 @keyframes aparece {
     0%{
         opacity: 0.1;
@@ -42,7 +31,7 @@ $tamanoPortada: 450px;
         transform: scale(1.1,1.1)
     }
 }
-/* 4 -------ESTILOS COMUNES A TODAS LAS SECCIONES------------*/
+/* 3 -------ESTILOS COMUNES A TODAS LAS SECCIONES------------*/
 *{
     margin:0;
     padding:0;
@@ -52,7 +41,7 @@ body{
     width: 100%;
     background-color: rgb(235, 88, 3);
 }
-/* 4.a -------Contiene el layout de la página------------*/
+/* 3.a -------Contiene el layout de la página------------*/
 .contenedorPrincipal{ 
     margin: auto;
     width: 97%;
@@ -64,7 +53,7 @@ body{
     animation-duration: 1s;
     box-sizing: border-box;
 }
-/* 4.b -------Header -- repite estructura y contenido en todas las secciones------------*/
+/* 3.b -------Header -- repite estructura y contenido en todas las secciones------------*/
 header{
     background: rgb(152,11,11);
     background: linear-gradient(45deg, rgba(152,11,11,1) 0%, rgba(255,94,0,1) 30%, rgba(255,166,0,1) 70%, rgba(255,0,0,1) 100%);
@@ -73,7 +62,7 @@ header{
     align-content: center;
     box-sizing: border-box;
 }
-/* 4.c---------------------Menú-----------------------------*/
+/* 3.c---------------------Menú-----------------------------*/
 .nav-item:hover{
     transform: scale(1.3,1.3);
     transition: 1s;
@@ -88,7 +77,7 @@ header{
         text-shadow: rgb(0, 0, 0) 2px 2px;
         font-style: italic;
     }
-    /*4.c.1----logo interactivo menú-----*/
+    /*3.c.1----logo interactivo menú-----*/
     .menu__home{
         text-decoration: none;
         margin: 0 15px;
@@ -129,7 +118,7 @@ header{
         animation-duration: 1s;
     }
 }
-/* 4.d -------aside: enlaces externos y redes.------------*/
+/* 3.d -------aside: enlaces externos y redes.------------*/
 .informacion{
     background-color: rgb(255, 255, 255);
     .informacion__enlaces{
@@ -140,7 +129,7 @@ header{
         }
     }
 }
-/* 4.e -------Footer -- repite contenido y estructura en todas las secciones------------*/
+/* 3.e -------Footer -- repite contenido y estructura en todas las secciones------------*/
 .footer{
     display: flex;
     flex-wrap: wrap;
@@ -208,10 +197,15 @@ header{
         font-weight: 700;
     }
 }
-/* 4.f -------Se utiliza con modificadores en todas las secciones------------*/
+/* 3.f -------Se utiliza con modificadores en todas las secciones------------*/
 .titulos{ 
+    color: white;
+    width: 100%;
+    height: 40px;
+    font-size: $titulos;
+    padding: 5px;
     text-align: center;
-    @include titulos (100%, 40px, $titulos, 5px, linear-gradient(90deg, rgba(236,125,0,1) 0%, rgba(253,33,29,1) 50%, rgba(252,246,69,1) 100%), rgb(254, 254, 255), border-box);
+    box-sizing: border-box;
     font-weight: 900;
     letter-spacing: 15px;
     text-shadow: black 2px 2px;
@@ -234,11 +228,11 @@ header{
     font-size: $titulos/1.7;
     text-shadow: rgb(0, 0, 0) 2px 3px 2px; 
 }
-/* 4.g---------------Se utiliza en Index.html e historia.html--------------*/
+/* 3.g---------------Se utiliza en Index.html e historia.html--------------*/
 .presentacion{
     height: auto;
     background-image: linear-gradient(rgba(255, 123, 0, 0.616), rgba(221, 8, 8, 0.24));
-    padding: 10px 50px;
+    padding: 20px 50px;
     .presentacion__texto{
         margin-top: 10px;
         color: rgb(136, 18, 18);
@@ -249,14 +243,14 @@ header{
     }
 }
 /*/////////////////////////ESTILOS DE LAS SECCIONES\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
-/* 5 -------INDEX.HTML------------*/
+/* 4 -------INDEX.HTML------------*/
 .portada{
     text-align: center;
     background: radial-gradient(circle, rgba(255,31,0,1) 0%, rgba(255,148,0,1) 39%, rgba(255,255,255,1) 100%);
     .portada__foto{
         height: $tamanoPortada;
         width: 55%;
-        opacity: 90%;
+        opacity: 40%;
     }
 }
 .flyer{
@@ -266,15 +260,20 @@ header{
     justify-content: space-evenly;
     align-items: center;
     box-sizing: border-box;
-    color: rgb(255, 184, 19);
-    font-weight: 800;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
     .flyer__texto{
+        color: rgb(255, 184, 19);
+        font-weight: 800;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        text-decoration: none;
         font-size: $titulos*1.1;
         width: 30%;
         font-weight: 700;
         text-shadow: rgb(0, 0, 0) 10px 3px 10px; 
+    }
+    .flyer__texto:hover{
+        transform: scale(1.1,1.1);
+        transition: 1s;
     }
     .flyer__foto{
         height: $medidaFotos;
@@ -288,7 +287,7 @@ header{
 .flyer--colores{
     background-color: rgba(238, 3, 3, 0.548);
 }
-/* 6 -------SECCIONES y sus ramas dan estilo a-----------------------------
+/* 5 -------SECCIONES y sus ramas dan estilo a-----------------------------
 -------las secciones: productos / historia / ubicacion / contacto................*/
 .secciones{
     display: flex;
@@ -330,7 +329,7 @@ header{
     }
     .secciones__contenedores--historia{ /*historia.html y ubicación.html*/
         flex-wrap: wrap;                 
-        padding-top: 25px;
+        padding: 50px 0;
         a{
             color:rgb(80, 13, 5);
             font-style: italic;
@@ -354,16 +353,27 @@ header{
     }
     .secciones__formulario{ /*contacto.html*/
         width: 50%;
-        margin: 25px auto;
+        margin: 50px auto;
         box-sizing: border-box;
     }
     .secciones__datos{  /* contacto.html*/
+        display: flex;
+        flex-direction: column;
         background-color: rgba(187, 69, 0, 0.52);
         border-radius: 25px;
         padding: 10px;
+        input{
+            width: 60%;
+            margin: auto;
+        }
+        textarea{
+            width: 60%;
+            height: 250px;
+            margin: auto;
+        }
     }
 }
-/* 7 -------HISTORIA.HTML------------*/
+/* 6 -------HISTORIA.HTML------------*/
 .cabeceraHistoria{
     display: flex;
     justify-content: space-around;
@@ -411,7 +421,7 @@ header{
     background-color: rgba(253, 215, 0, 0.472);
     transition: 2s;
 }
-/* 8 -------PRODUCTOS.HTML------------*/
+/* 7 -------PRODUCTOS.HTML------------*/
 .cabeceraProd{
     width: 100%;
     height: 540px;
@@ -481,7 +491,7 @@ header{
     transition: 2s;
     cursor: zoom-in;
 }
-/* 9 -------UBICACION.HTML------------*/
+/* 8 -------UBICACION.HTML------------*/
 .portadaSuc{
     background-image: url(../assets/suc.jpg);
     background-position: center;
@@ -504,7 +514,7 @@ header{
 .opposite{
     background-color: rgba(192, 17, 11, 0.787);
 }
-/* 10 -------CONTACTO.HTML------------*/
+/* 9 -------CONTACTO.HTML------------*/
 .secciones--contacto{
     height: auto;
     padding-bottom: 20px;
@@ -516,7 +526,7 @@ header{
     transform: scale(1.1,1.1);
     transition: 1s;
 }
-/* 11 -------error.html------------*/
+/* 10 -------error.html------------*/
 .headerError{
     display: flex;
     justify-content: center;
@@ -579,7 +589,7 @@ header{
         transition: 1s;
     }
 }
-/* 12 -------mapa.html------------*/
+/* 11 -------mapa.html------------*/
 .mapa{
     .mapa__lista{
         margin-top: 50px;
@@ -640,13 +650,15 @@ header{
             width: 80%;
         }
     }
-    /*-----------Menú----------------*/
-    .menu__desplegable{
-        background-color: rgba(212, 59, 39, 0.781);
-        border-bottom: yellow 2px solid;
-        text-align: center;
-        margin-top: 61px;
-        width: 90vw;
+    /*-----------Menú resp 991----------------*/
+    .menu{
+        .menu__desplegable{
+            background-color: rgba(228, 87, 5, 0.924);
+            border-bottom: yellow 2px solid;
+            text-align: center;
+            margin-top: 61px;
+            width: 90vw;
+        }
     }
     /*----------footer----------*/
     .footer{

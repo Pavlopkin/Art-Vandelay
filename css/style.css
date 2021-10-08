@@ -1,7 +1,6 @@
 @charset "UTF-8";
 /* 1 -------VARIABLES------------*/
-/* 2 -------ELEMENTOS------------*/
-/* 3 -------ANIMACIONES------------*/
+/* 2 -------ANIMACIONES------------*/
 @keyframes aparece {
   0% {
     opacity: 0.1; }
@@ -20,7 +19,7 @@
   100% {
     transform: scale(1.1, 1.1); } }
 
-/* 4 -------ESTILOS COMUNES A TODAS LAS SECCIONES------------*/
+/* 3 -------ESTILOS COMUNES A TODAS LAS SECCIONES------------*/
 * {
   margin: 0;
   padding: 0;
@@ -30,7 +29,7 @@ body {
   width: 100%;
   background-color: #eb5803; }
 
-/* 4.a -------Contiene el layout de la página------------*/
+/* 3.a -------Contiene el layout de la página------------*/
 .contenedorPrincipal {
   margin: auto;
   width: 97%;
@@ -42,7 +41,7 @@ body {
   animation-duration: 1s;
   box-sizing: border-box; }
 
-/* 4.b -------Header -- repite estructura y contenido en todas las secciones------------*/
+/* 3.b -------Header -- repite estructura y contenido en todas las secciones------------*/
 header {
   background: #980b0b;
   background: linear-gradient(45deg, #980b0b 0%, #ff5e00 30%, #ffa600 70%, red 100%);
@@ -51,13 +50,13 @@ header {
   align-content: center;
   box-sizing: border-box; }
 
-/* 4.c---------------------Menú-----------------------------*/
+/* 3.c---------------------Menú-----------------------------*/
 .nav-item:hover {
   transform: scale(1.3, 1.3);
   transition: 1s; }
 
 .menu {
-  /*4.c.1----logo interactivo menú-----*/ }
+  /*3.c.1----logo interactivo menú-----*/ }
   .menu .menu__enlaces {
     margin-left: 30px;
     font-size: 1.57143em;
@@ -101,7 +100,7 @@ header {
     animation-name: logo;
     animation-duration: 1s; }
 
-/* 4.d -------aside: enlaces externos y redes.------------*/
+/* 3.d -------aside: enlaces externos y redes.------------*/
 .informacion {
   background-color: white; }
   .informacion .informacion__enlaces {
@@ -110,7 +109,7 @@ header {
     .informacion .informacion__enlaces a {
       color: red; }
 
-/* 4.e -------Footer -- repite contenido y estructura en todas las secciones------------*/
+/* 3.e -------Footer -- repite contenido y estructura en todas las secciones------------*/
 .footer {
   display: flex;
   flex-wrap: wrap;
@@ -166,15 +165,14 @@ header {
     font-size: 1em;
     font-weight: 700; }
 
-/* 4.f -------Se utiliza con modificadores en todas las secciones------------*/
+/* 3.f -------Se utiliza con modificadores en todas las secciones------------*/
 .titulos {
-  text-align: center;
+  color: white;
   width: 100%;
   height: 40px;
   font-size: 2.2em;
   padding: 5px;
-  background-color: linear-gradient(90deg, #ec7d00 0%, #fd211d 50%, #fcf645 100%);
-  color: #fefeff;
+  text-align: center;
   box-sizing: border-box;
   font-weight: 900;
   letter-spacing: 15px;
@@ -198,11 +196,11 @@ header {
   font-size: 1.29412em;
   text-shadow: black 2px 3px 2px; }
 
-/* 4.g---------------Se utiliza en Index.html e historia.html--------------*/
+/* 3.g---------------Se utiliza en Index.html e historia.html--------------*/
 .presentacion {
   height: auto;
   background-image: linear-gradient(rgba(255, 123, 0, 0.616), rgba(221, 8, 8, 0.24));
-  padding: 10px 50px; }
+  padding: 20px 50px; }
   .presentacion .presentacion__texto {
     margin-top: 10px;
     color: #881212;
@@ -212,14 +210,14 @@ header {
     text-align: justify; }
 
 /*/////////////////////////ESTILOS DE LAS SECCIONES\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
-/* 5 -------INDEX.HTML------------*/
+/* 4 -------INDEX.HTML------------*/
 .portada {
   text-align: center;
   background: radial-gradient(circle, #ff1f00 0%, #ff9400 39%, white 100%); }
   .portada .portada__foto {
     height: 450px;
     width: 55%;
-    opacity: 90%; }
+    opacity: 40%; }
 
 .flyer {
   display: flex;
@@ -227,16 +225,20 @@ header {
   height: 300px;
   justify-content: space-evenly;
   align-items: center;
-  box-sizing: border-box;
-  color: #ffb813;
-  font-weight: 800;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center; }
+  box-sizing: border-box; }
   .flyer .flyer__texto {
+    color: #ffb813;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-decoration: none;
     font-size: 2.42em;
     width: 30%;
     font-weight: 700;
     text-shadow: black 10px 3px 10px; }
+  .flyer .flyer__texto:hover {
+    transform: scale(1.1, 1.1);
+    transition: 1s; }
   .flyer .flyer__foto {
     height: 250px;
     width: 250px; }
@@ -247,7 +249,7 @@ header {
 .flyer--colores {
   background-color: rgba(238, 3, 3, 0.548); }
 
-/* 6 -------SECCIONES y sus ramas dan estilo a-----------------------------
+/* 5 -------SECCIONES y sus ramas dan estilo a-----------------------------
 -------las secciones: productos / historia / ubicacion / contacto................*/
 .secciones {
   display: flex;
@@ -288,7 +290,7 @@ header {
   .secciones .secciones__contenedores--historia {
     /*historia.html y ubicación.html*/
     flex-wrap: wrap;
-    padding-top: 25px; }
+    padding: 50px 0; }
     .secciones .secciones__contenedores--historia a {
       color: #500d05;
       font-style: italic; }
@@ -310,15 +312,24 @@ header {
   .secciones .secciones__formulario {
     /*contacto.html*/
     width: 50%;
-    margin: 25px auto;
+    margin: 50px auto;
     box-sizing: border-box; }
   .secciones .secciones__datos {
     /* contacto.html*/
+    display: flex;
+    flex-direction: column;
     background-color: rgba(187, 69, 0, 0.52);
     border-radius: 25px;
     padding: 10px; }
+    .secciones .secciones__datos input {
+      width: 60%;
+      margin: auto; }
+    .secciones .secciones__datos textarea {
+      width: 60%;
+      height: 250px;
+      margin: auto; }
 
-/* 7 -------HISTORIA.HTML------------*/
+/* 6 -------HISTORIA.HTML------------*/
 .cabeceraHistoria {
   display: flex;
   justify-content: space-around;
@@ -364,7 +375,7 @@ header {
   background-color: rgba(253, 215, 0, 0.472);
   transition: 2s; }
 
-/* 8 -------PRODUCTOS.HTML------------*/
+/* 7 -------PRODUCTOS.HTML------------*/
 .cabeceraProd {
   width: 100%;
   height: 540px;
@@ -430,7 +441,7 @@ header {
   transition: 2s;
   cursor: zoom-in; }
 
-/* 9 -------UBICACION.HTML------------*/
+/* 8 -------UBICACION.HTML------------*/
 .portadaSuc {
   background-image: url(../assets/suc.jpg);
   background-position: center;
@@ -452,7 +463,7 @@ header {
 .opposite {
   background-color: rgba(192, 17, 11, 0.787); }
 
-/* 10 -------CONTACTO.HTML------------*/
+/* 9 -------CONTACTO.HTML------------*/
 .secciones--contacto {
   height: auto;
   padding-bottom: 20px; }
@@ -464,7 +475,7 @@ header {
   transform: scale(1.1, 1.1);
   transition: 1s; }
 
-/* 11 -------error.html------------*/
+/* 10 -------error.html------------*/
 .headerError {
   display: flex;
   justify-content: center;
@@ -519,7 +530,7 @@ header {
     opacity: 75%;
     transition: 1s; }
 
-/* 12 -------mapa.html------------*/
+/* 11 -------mapa.html------------*/
 .mapa .mapa__lista {
   margin-top: 50px;
   text-align: center; }
@@ -564,9 +575,9 @@ header {
     margin-bottom: 15px; }
   .secciones .secciones__formulario {
     width: 80%; }
-  /*-----------Menú----------------*/
-  .menu__desplegable {
-    background-color: rgba(212, 59, 39, 0.781);
+  /*-----------Menú resp 991----------------*/
+  .menu .menu__desplegable {
+    background-color: rgba(228, 87, 5, 0.924);
     border-bottom: yellow 2px solid;
     text-align: center;
     margin-top: 61px;

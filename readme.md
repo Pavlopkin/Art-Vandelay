@@ -1,3 +1,35 @@
+#Art Vandelay Industries (Tienda online)
+
+_Este proyecto está enfocado en el desarrollo de una página web destinada a una pequeña tienda de regalos. Para su desarrollo se apuntó a la creación de un diseño sencillo, pero que sea actractivo y acorde a la temática de los productos que ofrecen._
+
+## Estructura del proyecto 
+
+_Esta página esta compuesta por cinco secciones que se encuentran enlazadas entre sí. Estas son: _
+
+* index.html
+* Historia 
+* Productos 
+* Ubicación
+* Contacto (Formulario disponible para que el usuario se comunique con la empresa.)
+
+### Index.html
+_Es la página principal del proyecto, se muestra la información más relevante y se promueve el acceso al resto de las secciones._
+
+#### Historia.html
+_Otorga al usuario una breve descripción del origen de la empresa y las funciones que ocupan sus miembros._
+
+### Productos
+_ Da una breve descripción de los productos disponibles, su precio, modalidad de venta y envio _
+
+### Ubicación
+_Se proporciona información acerca de la locación de las sucursales, teléfonos de contacto y accesos.
+### Contacto
+_Se proporciona un formulario mediante el cual el usuario podrá dejar sugerencias, opiniones y/o informar sobre que productos está interesado.
+_
+###Un vistazo al código utilizado:
+####HTML code
+
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -152,3 +184,41 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
     </body>
 </html>
+```
+
+## Herramientas utilizadas 
+
+_Para el desarrollo de esta proyecto se utilizaron los siguientes lenguajes:_
+* HTML 5,
+*	SCSS
+* CSS,
+* boostrap 5 (https://getbootstrap.com) ,
+* Google Fonts (https://fonts.google.com/)
+
+## Software complementario📋
+
+_A lo largo del desarrollo de la página web también se hizo uso de las siguientes herramientas_
+
+*	GitHub
+* NodeJS
+
+## Instalación 🔧
+
+_Puede descargar el proyecto utilizando GitHub.  _
+
+_ 1) Ingrear al repositorio donde se encuentra el proyecto (https://github.com/Pavlopkin/Art-Vandelay) _
+
+_2) Hacer clic en el botón "code"._
+
+_3) Una vez desplegada las opciones, seleccionar "download Zip. _
+
+_4) Descomprimir la carpeta  y hacer clic en index.html. La página se ejecutará inmediatamente. _
+
+## Autor ✒️
+
+_Este sitio fue creado a los fines de ser presentado como proyecto finan el Coderhouse.com por:_
+
+* **Pablo Rodrigo Gomez** - *Diseño y contenido* - [pavlopkin](https://github.com/pavlopkin)
+
+
+###End
