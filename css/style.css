@@ -107,6 +107,8 @@ header {
   .informacion .informacion__enlaces {
     display: flex;
     justify-content: space-evenly; }
+    .informacion .informacion__enlaces a {
+      color: red; }
 
 /* 4.e -------Footer -- repite contenido y estructura en todas las secciones------------*/
 .footer {
@@ -122,6 +124,8 @@ header {
   .footer li {
     margin-top: 7px;
     font-size: 0.9em; }
+    .footer li a {
+      color: #8f0404; }
   .footer .footer__sucursales {
     width: 50%;
     text-align: center; }
@@ -221,7 +225,7 @@ header {
   display: flex;
   background-color: rgba(214, 79, 0, 0.445);
   height: 300px;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   box-sizing: border-box;
   color: #ffb813;
