@@ -454,7 +454,7 @@ header {
   .portadaSuc .portadaSuc__foto {
     height: 65%;
     animation-name: aparece;
-    animation-duration: 3s; }
+    animation-duration: 2s; }
 
 .enfasisTexto {
   font-weight: 800;
