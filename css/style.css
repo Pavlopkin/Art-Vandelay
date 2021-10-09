@@ -267,7 +267,7 @@ header {
     width: 40%;
     color: #580606; }
   .secciones .secciones__texto--sucursales {
-    /* ubicacion.html*/
+    /* ubicacion.html y productos.html*/
     list-style: none;
     color: #580606; }
   .secciones .secciones__texto--envios {
@@ -276,7 +276,8 @@ header {
     width: 30%;
     text-shadow: black 2px 2px 5px;
     color: white;
-    margin: 30px; }
+    margin: 30px;
+    letter-spacing: 3px; }
   .secciones .secciones__sucursales {
     /* ubicacion.html*/
     width: 40%; }
@@ -641,11 +642,6 @@ header {
     font-size: 0.88em; }
   .contenedorPrincipal {
     width: 100%; }
-  .presentacion {
-    background-image: linear-gradient(rgba(255, 123, 0, 0.616), rgba(221, 8, 8, 0.609));
-    padding: 5px 15px; }
-    .presentacion .presentacion__texto {
-      font-size: 1.04762em; }
   .secciones .secciones__contenedores {
     flex-direction: column;
     justify-content: center;
@@ -739,7 +735,6 @@ header {
   .secciones .secciones__texto {
     font-size: 1em; }
   .secciones .secciones__foto {
-    width: 70%;
     margin: 7px auto; }
   .secciones .secciones__foto--historia {
     margin: 5px 0;
@@ -750,6 +745,9 @@ header {
     height: auto;
     padding: 10px; }
   /*----------------historia.html resp 544------------------*/
+  .presentacion .presentacion__texto {
+    font-size: 1.04762em; }
+  /*----------------ubicacion.html resp 544------------------*/
   .portadaSuc {
     height: 250px; }
   /*------------------productos.html resp 544--------------*/
