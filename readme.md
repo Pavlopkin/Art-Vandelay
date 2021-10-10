@@ -10,7 +10,7 @@ _Esta página esta compuesta por cinco secciones que se encuentran enlazadas ent
 * Historia 
 * Productos 
 * Ubicación
-* Contacto (Formulario disponible para que el usuario se comunique con la empresa.)
+* Contacto 
 
 ### Index.html
 _Es la página principal del proyecto, se muestra la información más relevante y se promueve el acceso al resto de las secciones._
